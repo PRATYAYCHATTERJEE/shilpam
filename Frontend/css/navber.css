@@ -1,88 +1,137 @@
 /* =========================================
-   SILPAM NAVBAR
+   SILPAM ANNOUNCEMENT TICKER
 ========================================= */
 
-.site-header {
-    position: sticky;
-    top: 0;
-    z-index: 1000;
+.top-bar {
+    position: relative;
 
     width: 100%;
+    height: 34px;
 
-    background: rgba(252, 247, 238, 0.97);
+    display: flex;
+    align-items: center;
 
-    border-bottom: 1px solid rgba(101, 48, 25, 0.12);
+    overflow: hidden;
 
-    backdrop-filter: blur(12px);
+    background: #034428;
+
+    color: #fff7ed;
+
+    font-family: var(--sans);
+
+    border-bottom: 1px solid rgba(255, 235, 210, 0.12);
 }
 
 
 /* =========================================
-   TOP ANNOUNCEMENT BAR
+   MOVING TRACK
 ========================================= */
 
-.top-bar {
-    height: 34px;
+.announcement-track {
+    display: flex;
 
-    padding: 0 5%;
+    width: max-content;
 
+    flex-shrink: 0;
+
+    animation: announcementScroll 32s linear infinite;
+}
+
+
+/* =========================================
+   ANNOUNCEMENT GROUP
+========================================= */
+
+.announcement-group {
     display: flex;
     align-items: center;
-    justify-content: space-between;
 
-    background: #a94b27;
+    flex-shrink: 0;
+}
 
-    color: #fff5e8;
 
-    font-family: var(--sans);
+/* =========================================
+   INDIVIDUAL ANNOUNCEMENT
+========================================= */
+
+.announcement-item {
+    display: inline-flex;
+
+    align-items: center;
+
+    white-space: nowrap;
+
+    margin-right: 70px;
 
     font-size: 10px;
 
-    letter-spacing: 0.01em;
+    font-weight: 400;
+
+    letter-spacing: 0.015em;
 }
 
 
-/* Left */
+/* Golden decorative symbol */
 
-.top-left {
-    display: flex;
-    align-items: center;
+.announcement-symbol {
+    margin-right: 10px;
 
-    gap: 10px;
-}
+    color: #f1cf87;
 
-.top-icon {
-    color: #f4d18d;
+    font-size: 11px;
 
-    font-size: 16px;
+    line-height: 1;
 }
 
 
-/* Right */
+/* =========================================
+   INFINITE ANIMATION
+========================================= */
 
-.top-right {
-    display: flex;
-    align-items: center;
+@keyframes announcementScroll {
 
-    gap: 13px;
+    from {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateX(-50%);
+    }
+
 }
 
-.top-right span {
-    display: flex;
-    align-items: center;
 
-    gap: 6px;
+/* =========================================
+   PAUSE ON HOVER
+========================================= */
+
+.top-bar:hover .announcement-track {
+    animation-play-state: paused;
 }
 
-.truck-icon {
-    color: #f2d08e;
-}
 
-.top-divider {
-    width: 1px;
-    height: 12px;
+/* =========================================
+   MOBILE
+========================================= */
 
-    background: rgba(255,255,255,0.35);
+@media (max-width: 600px) {
+
+    .top-bar {
+        height: 30px;
+    }
+
+    .announcement-item {
+        margin-right: 45px;
+
+        font-size: 8px;
+    }
+
+    .announcement-symbol {
+        margin-right: 7px;
+
+        font-size: 9px;
+    }
+
 }
 
 
@@ -94,7 +143,7 @@
     width: 94%;
     max-width: 1500px;
 
-    height: 70px;
+    height: 65px;
 
     margin: 0 auto;
 
@@ -112,18 +161,63 @@
 ========================================= */
 
 .nav-logo {
-    width: 155px;
-    height: 100%;
-
     display: flex;
     align-items: center;
+
+    gap: 10px;
+
+    width: 245px;
+
+    text-decoration: none;
 
     flex-shrink: 0;
 }
 
+.brand-mark {
+    width: 48px;
+    height: 48px;
+
+    object-fit: contain;
+}
+
+.brand-text {
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+
+    line-height: 1;
+}
+
+.brand-name {
+    font-family: var(--serif);
+
+    font-size: 34px;
+
+    font-weight: 600;
+
+    letter-spacing: -0.02em;
+
+    color: #3f2114;
+}
+
+.brand-tagline {
+    margin-top: 5px;
+
+    font-family: var(--sans);
+
+    font-size: 8px;
+
+    letter-spacing: 0.16em;
+
+    color: #a94b27;
+
+    white-space: nowrap;
+}
+
 .nav-logo img {
-    width: 60px;
-    height: 60px;
+    width: 50px;
+    height: 50px;
 
     object-fit: contain;
     display: block;
