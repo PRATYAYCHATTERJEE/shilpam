@@ -29,3 +29,36 @@ document.addEventListener("DOMContentLoaded", () => {
     }, introDuration);
 
 });
+
+/* =========================================
+   SILPAM NAVBAR
+========================================= */
+
+const mobileMenu = document.getElementById("mobileMenu");
+const mobileNav = document.getElementById("mobileNav");
+
+if (mobileMenu && mobileNav) {
+
+    mobileMenu.addEventListener("click", () => {
+
+        mobileNav.classList.toggle("show");
+
+    });
+
+
+    /* Close mobile menu after clicking a link */
+
+    const mobileLinks =
+        mobileNav.querySelectorAll("a");
+
+    mobileLinks.forEach(link => {
+
+        link.addEventListener("click", () => {
+
+            mobileNav.classList.remove("show");
+
+        });
+
+    });
+
+}

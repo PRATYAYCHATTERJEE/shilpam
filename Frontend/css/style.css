@@ -571,3 +571,570 @@ body {
         font-size: 7px;
     }
 }
+
+
+
+
+/* =========================================
+   SILPAM NAVBAR
+========================================= */
+
+.site-header {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+
+    width: 100%;
+
+    background: rgba(252, 247, 238, 0.97);
+
+    border-bottom: 1px solid rgba(101, 48, 25, 0.12);
+
+    backdrop-filter: blur(12px);
+}
+
+
+/* =========================================
+   TOP ANNOUNCEMENT BAR
+========================================= */
+
+.top-bar {
+    height: 34px;
+
+    padding: 0 5%;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    background: #a94b27;
+
+    color: #fff5e8;
+
+    font-family: var(--sans);
+
+    font-size: 10px;
+
+    letter-spacing: 0.01em;
+}
+
+
+/* Left */
+
+.top-left {
+    display: flex;
+    align-items: center;
+
+    gap: 10px;
+}
+
+.top-icon {
+    color: #f4d18d;
+
+    font-size: 16px;
+}
+
+
+/* Right */
+
+.top-right {
+    display: flex;
+    align-items: center;
+
+    gap: 13px;
+}
+
+.top-right span {
+    display: flex;
+    align-items: center;
+
+    gap: 6px;
+}
+
+.truck-icon {
+    color: #f2d08e;
+}
+
+.top-divider {
+    width: 1px;
+    height: 12px;
+
+    background: rgba(255,255,255,0.35);
+}
+
+
+/* =========================================
+   MAIN NAVBAR
+========================================= */
+
+.navbar {
+    width: min(1450px, 92%);
+
+    min-height: 82px;
+
+    margin: auto;
+
+    display: flex;
+    align-items: center;
+
+    gap: 30px;
+}
+
+
+/* =========================================
+   LOGO
+========================================= */
+
+.nav-logo {
+    width: 205px;
+
+    display: flex;
+    align-items: center;
+
+    flex-shrink: 0;
+}
+
+.nav-logo img {
+    width: 145px;
+
+    height: auto;
+
+    object-fit: contain;
+
+    display: block;
+}
+
+
+/* =========================================
+   NAVIGATION LINKS
+========================================= */
+
+.nav-links {
+    flex: 1;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    gap: clamp(18px, 2vw, 32px);
+}
+
+.nav-link {
+    position: relative;
+
+    padding: 31px 0 27px;
+
+    color: #3d3028;
+
+    font-family: var(--serif);
+
+    font-size: 12px;
+
+    white-space: nowrap;
+
+    transition:
+        color 0.25s ease;
+}
+
+
+/* Underline */
+
+.nav-link::after {
+    content: "";
+
+    position: absolute;
+
+    left: 50%;
+    bottom: 20px;
+
+    width: 0;
+    height: 2px;
+
+    background: #a94b27;
+
+    transform: translateX(-50%);
+
+    transition:
+        width 0.3s ease;
+}
+
+
+.nav-link:hover {
+    color: #a94b27;
+}
+
+
+.nav-link:hover::after,
+.nav-link.active::after {
+    width: 100%;
+}
+
+
+.nav-link.active {
+    color: #a94b27;
+}
+
+
+/* =========================================
+   RIGHT ACTIONS
+========================================= */
+
+.nav-actions {
+    display: flex;
+
+    align-items: center;
+
+    gap: 4px;
+
+    flex-shrink: 0;
+}
+
+
+/* Icon buttons */
+
+.nav-icon {
+    width: 38px;
+    height: 38px;
+
+    display: grid;
+    place-items: center;
+
+    border: none;
+
+    background: transparent;
+
+    color: #6b321d;
+
+    border-radius: 50%;
+
+    transition:
+        background 0.25s ease,
+        transform 0.25s ease;
+}
+
+
+.nav-icon:hover {
+    background: rgba(169, 75, 39, 0.08);
+
+    transform: translateY(-1px);
+}
+
+
+.nav-icon svg {
+    width: 20px;
+    height: 20px;
+
+    fill: none;
+
+    stroke: currentColor;
+
+    stroke-width: 1.5;
+
+    stroke-linecap: round;
+
+    stroke-linejoin: round;
+}
+
+
+/* =========================================
+   CART
+========================================= */
+
+.cart-button {
+    position: relative;
+
+    width: 44px;
+    height: 44px;
+
+    display: grid;
+    place-items: center;
+
+    border: none;
+
+    background: transparent;
+
+    color: #6b321d;
+
+    margin-left: 3px;
+}
+
+
+.cart-button svg {
+    width: 22px;
+    height: 22px;
+
+    fill: none;
+
+    stroke: currentColor;
+
+    stroke-width: 1.5;
+
+    stroke-linecap: round;
+
+    stroke-linejoin: round;
+}
+
+
+.cart-count {
+    position: absolute;
+
+    top: 3px;
+    right: 1px;
+
+    width: 17px;
+    height: 17px;
+
+    display: grid;
+    place-items: center;
+
+    border-radius: 50%;
+
+    background: #9b482b;
+
+    color: white;
+
+    font-family: var(--sans);
+
+    font-size: 8px;
+
+    font-weight: 700;
+}
+
+
+/* =========================================
+   MOBILE MENU BUTTON
+========================================= */
+
+.mobile-menu {
+    display: none;
+
+    width: 40px;
+    height: 40px;
+
+    border: none;
+
+    background: transparent;
+
+    flex-direction: column;
+
+    align-items: center;
+    justify-content: center;
+
+    gap: 5px;
+}
+
+
+.mobile-menu span {
+    width: 21px;
+    height: 1.5px;
+
+    background: #653019;
+
+    transition:
+        transform 0.3s ease,
+        opacity 0.3s ease;
+}
+
+
+/* =========================================
+   MOBILE NAV
+========================================= */
+
+.mobile-nav {
+    display: none;
+
+    position: absolute;
+
+    top: 116px;
+
+    left: 0;
+    right: 0;
+
+    padding: 15px 6% 20px;
+
+    background: #fcf7ee;
+
+    border-top: 1px solid rgba(101, 48, 25, 0.08);
+
+    border-bottom: 1px solid rgba(101, 48, 25, 0.12);
+
+    box-shadow:
+        0 15px 30px rgba(80, 40, 15, 0.08);
+}
+
+
+.mobile-nav a {
+    display: block;
+
+    padding: 13px 0;
+
+    color: #4a3428;
+
+    font-family: var(--serif);
+
+    font-size: 14px;
+
+    border-bottom: 1px solid rgba(101, 48, 25, 0.08);
+}
+
+
+.mobile-nav a:last-child {
+    border-bottom: none;
+}
+
+
+.mobile-nav.show {
+    display: block;
+}
+
+
+/* =========================================
+   TABLET
+========================================= */
+
+@media (max-width: 1100px) {
+
+    .navbar {
+        gap: 15px;
+    }
+
+    .nav-logo {
+        width: 170px;
+    }
+
+    .nav-links {
+        gap: 15px;
+    }
+
+    .nav-link {
+        font-size: 11px;
+    }
+
+}
+
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 850px) {
+
+    .top-bar {
+        padding: 0 4%;
+
+        font-size: 8px;
+    }
+
+    .top-left {
+        gap: 5px;
+    }
+
+    .top-right {
+        gap: 7px;
+    }
+
+    .top-right span:first-child {
+        display: none;
+    }
+
+    .top-divider {
+        display: none;
+    }
+
+
+    .navbar {
+        min-height: 72px;
+
+        width: 92%;
+
+        justify-content: space-between;
+    }
+
+
+    .nav-logo {
+        width: 145px;
+    }
+
+    .nav-logo img {
+        width: 125px;
+    }
+
+
+    .nav-links {
+        display: none;
+    }
+
+
+    .nav-icon {
+        width: 36px;
+        height: 36px;
+    }
+
+
+    .nav-icon:first-child {
+        display: none;
+    }
+
+
+    .mobile-menu {
+        display: flex;
+    }
+
+}
+
+
+/* =========================================
+   SMALL MOBILE
+========================================= */
+
+@media (max-width: 500px) {
+
+    .top-bar {
+        height: 30px;
+    }
+
+    .top-left {
+        font-size: 7px;
+    }
+
+    .top-right {
+        font-size: 7px;
+    }
+
+
+    .navbar {
+        min-height: 68px;
+    }
+
+
+    .nav-logo {
+        width: 120px;
+    }
+
+    .nav-logo img {
+        width: 108px;
+    }
+
+
+    .nav-actions {
+        gap: 0;
+    }
+
+
+    .nav-icon {
+        width: 34px;
+        height: 34px;
+    }
+
+
+    .cart-button {
+        width: 38px;
+        height: 38px;
+    }
+
+
+    .mobile-nav {
+        top: 98px;
+    }
+
+}
