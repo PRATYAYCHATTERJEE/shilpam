@@ -62,3 +62,123 @@ if (mobileMenu && mobileNav) {
     });
 
 }
+
+/* =========================================
+   SILPAM HERO SLIDER
+========================================= */
+
+const heroTrack = document.getElementById("heroTrack");
+const heroDots = document.querySelectorAll(".hero-dot");
+
+let currentHeroSlide = 0;
+
+const totalHeroSlides = 5;
+
+let heroTimer;
+
+
+/* =========================================
+   MOVE TO SLIDE
+========================================= */
+
+function moveHeroSlide(index) {
+
+    if (index >= totalHeroSlides) {
+        currentHeroSlide = 0;
+    } 
+    else if (index < 0) {
+        currentHeroSlide = totalHeroSlides - 1;
+    } 
+    else {
+        currentHeroSlide = index;
+    }
+
+
+    const offset =
+        currentHeroSlide * 100;
+
+
+    heroTrack.style.transform =
+        `translateX(-${offset}%)`;
+
+
+    updateHeroDots();
+
+}
+
+
+/* =========================================
+   UPDATE DOTS
+========================================= */
+
+function updateHeroDots() {
+
+    heroDots.forEach((dot, index) => {
+
+        dot.classList.toggle(
+            "active",
+            index === currentHeroSlide
+        );
+
+    });
+
+}
+
+
+/* =========================================
+   AUTOMATIC SLIDER
+========================================= */
+
+function startHeroSlider() {
+
+    heroTimer = setInterval(() => {
+
+        moveHeroSlide(currentHeroSlide + 1);
+
+    }, 5000);
+
+}
+
+
+/* =========================================
+   RESET TIMER
+========================================= */
+
+function resetHeroSlider() {
+
+    clearInterval(heroTimer);
+
+    startHeroSlider();
+
+}
+
+
+/* =========================================
+   DOT CLICK
+========================================= */
+
+heroDots.forEach((dot) => {
+
+    dot.addEventListener("click", () => {
+
+        const slideIndex =
+            Number(dot.dataset.slide);
+
+        moveHeroSlide(slideIndex);
+
+        resetHeroSlider();
+
+    });
+
+});
+
+
+/* =========================================
+   START
+========================================= */
+
+if (heroTrack) {
+
+    startHeroSlider();
+
+}

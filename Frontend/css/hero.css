@@ -1,0 +1,145 @@
+/* =========================================
+   SILPAM HERO SLIDER
+========================================= */
+
+.hero-slider {
+    position: relative;
+
+    width: 100%;
+
+    overflow: hidden;
+
+    background: #f6ecdc;
+}
+
+
+/* =========================================
+   SLIDER TRACK
+========================================= */
+
+.hero-track {
+    display: flex;
+
+    width: 100%;
+
+    transform: translateX(0);
+
+    transition:
+        transform 0.9s
+        cubic-bezier(0.65, 0, 0.35, 1);
+}
+
+
+/* =========================================
+   INDIVIDUAL SLIDE
+========================================= */
+
+.hero-slide {
+    flex: 0 0 100%;
+
+    width: 100%;
+
+    position: relative;
+
+    overflow: hidden;
+}
+
+
+.hero-slide img {
+    width: 100%;
+
+    height: auto;
+
+    display: block;
+
+    object-fit: cover;
+}
+
+
+/* =========================================
+   HERO DOTS
+========================================= */
+
+.hero-dots {
+    position: absolute;
+
+    left: 50%;
+    bottom: 18px;
+
+    transform: translateX(-50%);
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 8px;
+
+    z-index: 5;
+}
+
+
+.hero-dot {
+    width: 8px;
+    height: 8px;
+
+    padding: 0;
+
+    border: 1px solid #8f492d;
+
+    border-radius: 50%;
+
+    background: rgba(255, 248, 235, 0.75);
+
+    cursor: pointer;
+
+    transition:
+        width 0.3s ease,
+        background 0.3s ease,
+        transform 0.3s ease;
+}
+
+
+.hero-dot:hover {
+    transform: scale(1.2);
+}
+
+
+.hero-dot.active {
+    width: 24px;
+
+    border-radius: 10px;
+
+    background: #9b482b;
+}
+
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 700px) {
+
+    .hero-slide img {
+        width: 100%;
+
+        height: auto;
+
+        object-fit: cover;
+    }
+
+    .hero-dots {
+        bottom: 10px;
+
+        gap: 6px;
+    }
+
+    .hero-dot {
+        width: 6px;
+        height: 6px;
+    }
+
+    .hero-dot.active {
+        width: 18px;
+    }
+
+}
