@@ -1,0 +1,381 @@
+/* =========================================
+   SILPAM MAIN SHOP AREA
+========================================= */
+
+.shop-main {
+    width: 100%;
+
+    padding: 20px 0 35px;
+
+    background: #f6ecdc;
+}
+
+
+/* =========================================
+   MAIN ART PANEL
+========================================= */
+
+.shop-panel {
+    position: relative;
+
+    width: min(1460px, 94%);
+
+    margin: 0 auto;
+
+    padding: 26px 30px 35px;
+
+    background:
+        radial-gradient(
+            circle at 20% 20%,
+            rgba(173, 102, 54, 0.025) 1px,
+            transparent 1.5px
+        ),
+        radial-gradient(
+            circle at 80% 80%,
+            rgba(173, 102, 54, 0.025) 1px,
+            transparent 1.5px
+        ),
+        #fffaf1;
+
+    background-size:
+        28px 28px,
+        32px 32px,
+        auto;
+
+    border: 1px solid rgba(139, 67, 38, 0.28);
+
+    border-radius: 8px;
+
+    box-shadow:
+        0 8px 28px rgba(76, 39, 23, 0.055);
+
+    overflow: hidden;
+}
+
+
+/* =========================================
+   INNER BORDER
+========================================= */
+
+.shop-panel::before {
+    content: "";
+
+    position: absolute;
+
+    inset: 6px;
+
+    border: 1px solid rgba(181, 119, 70, 0.18);
+
+    border-radius: 5px;
+
+    pointer-events: none;
+}
+
+
+/* =========================================
+   KOLKA DECORATION
+========================================= */
+
+/* =========================================
+   AUTHENTIC BENGALI KOLKA
+========================================= */
+
+.kolka {
+    position: absolute;
+
+    width: 125px;
+
+    z-index: 2;
+
+    pointer-events: none;
+
+    line-height: 0;
+}
+
+.kolka img {
+    width: 100%;
+    height: auto;
+
+    display: block;
+
+    object-fit: contain;
+}
+
+
+/* =========================================
+   TOP LEFT
+========================================= */
+
+.kolka-top-left {
+    top: 10px;
+    left: 7px;
+}
+
+
+/* =========================================
+   TOP RIGHT
+========================================= */
+
+.kolka-top-right {
+    top: 10px;
+    right: 7px;
+
+    transform: scaleX(-1);
+}
+
+
+/* =========================================
+   BOTTOM LEFT
+========================================= */
+
+.kolka-bottom-left {
+    bottom: 8px;
+    left: 7px;
+
+    transform: scaleY(-1);
+}
+
+
+/* =========================================
+   BOTTOM RIGHT
+========================================= */
+
+.kolka-bottom-right {
+    bottom: 8px;
+    right: 7px;
+
+    transform:
+        scale(-1, -1);
+}
+
+/* =========================================
+   SECTION HEADING
+========================================= */
+
+.section-heading {
+    position: relative;
+
+    z-index: 3;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    gap: 15px;
+
+    margin:
+        0 auto
+        24px;
+}
+
+.section-heading h2 {
+    margin: 0;
+
+    font-family: var(--serif);
+
+    font-size: 27px;
+
+    font-weight: 500;
+
+    color: #5b2c1a;
+
+    letter-spacing: -0.01em;
+}
+
+.heading-ornament {
+    color: #a94b27;
+
+    font-size: 15px;
+}
+
+
+/* =========================================
+   CATEGORY GRID
+========================================= */
+
+.category-grid {
+    position: relative;
+
+    z-index: 3;
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(6, minmax(0, 1fr));
+
+    gap: 16px;
+
+    padding:
+        0 15px;
+}
+
+
+/* =========================================
+   ORNAMENTAL DIVIDER
+========================================= */
+
+.ornamental-divider {
+    position: relative;
+
+    height: 1px;
+
+    margin:
+        20px 5px 22px;
+
+    background:
+        linear-gradient(
+            to right,
+            transparent,
+            rgba(139, 67, 38, 0.22),
+            transparent
+        );
+
+    text-align: center;
+}
+
+.ornamental-divider span {
+    position: absolute;
+
+    left: 50%;
+    top: 50%;
+
+    transform: translate(-50%, -50%);
+
+    width: 30px;
+
+    background: #fffaf1;
+
+    color: #a94b27;
+
+    font-size: 12px;
+}
+
+
+/* =========================================
+   FEATURED PRODUCT HEADING
+========================================= */
+
+.products-heading {
+    position: relative;
+
+    z-index: 3;
+
+    display: flex;
+
+    align-items: flex-end;
+
+    justify-content: space-between;
+
+    padding:
+        0 15px
+        12px;
+}
+
+.products-heading h2 {
+    margin: 0;
+
+    font-family: var(--serif);
+
+    font-size: 23px;
+
+    font-weight: 500;
+
+    color: #542b1b;
+}
+
+.products-heading p {
+    margin:
+        4px 0 0;
+
+    font-family: var(--sans);
+
+    font-size: 11px;
+
+    color: #8a6654;
+}
+
+.view-all {
+    color: #9b482b;
+
+    font-family: var(--serif);
+
+    font-size: 12px;
+
+    text-decoration: none;
+
+    transition:
+        color 0.2s ease;
+}
+
+.view-all span {
+    margin-left: 4px;
+}
+
+.view-all:hover {
+    color: #6e2e1b;
+}
+
+
+/* =========================================
+   RESPONSIVE
+========================================= */
+
+@media (max-width: 1100px) {
+
+    .category-grid {
+        grid-template-columns:
+            repeat(3, minmax(0, 1fr));
+    }
+
+}
+
+
+@media (max-width: 700px) {
+
+    .shop-main {
+        padding:
+            12px 0
+            25px;
+    }
+
+    .shop-panel {
+        width: 94%;
+
+        padding:
+            20px 12px
+            25px;
+    }
+
+    .section-heading h2 {
+        font-size: 21px;
+    }
+
+    .category-grid {
+        grid-template-columns:
+            repeat(2, minmax(0, 1fr));
+
+        gap: 10px;
+
+        padding: 0 5px;
+    }
+
+    .products-heading {
+        padding: 0 5px;
+    }
+
+    .products-heading h2 {
+        font-size: 19px;
+    }
+
+    .products-heading p {
+        display: none;
+    }
+
+    .kolka {
+        opacity: 0.35;
+        transform: scale(0.7);
+    }
+
+}

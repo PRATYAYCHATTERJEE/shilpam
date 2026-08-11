@@ -155,7 +155,7 @@
 
 .craft-tabs-section {
     width: 100%;
-    padding: 22px 0;
+    padding: 10px 0;
 
     background:
         radial-gradient(
@@ -184,7 +184,7 @@
     width: min(1480px, 94%);
     margin: 0 auto;
 
-    padding: 10px;
+    padding: 5px;
 
     background:
         linear-gradient(
@@ -261,11 +261,8 @@
 .craft-tabs {
     position: relative;
 
-    min-height: 112px;
-
-    padding:
-        7px 22px
-        13px;
+    min-height: 88px;
+    padding: 4px 18px 6px;
 
     display: flex;
 
@@ -334,8 +331,8 @@
 .craft-icon {
     position: relative;
 
-    width: 50px;
-    height: 50px;
+    width: 40px;
+    height: 40px;
 
     display: flex;
 
