@@ -182,3 +182,42 @@ if (heroTrack) {
     startHeroSlider();
 
 }
+
+
+/* =========================================
+   SILPAM CRAFT CATEGORY TABS
+========================================= */
+
+const craftTabs =
+    document.querySelectorAll(".craft-tab");
+
+
+craftTabs.forEach(tab => {
+
+    tab.addEventListener("click", () => {
+
+        /* Remove active state */
+
+        craftTabs.forEach(item => {
+            item.classList.remove("active");
+        });
+
+
+        /* Add active state */
+
+        tab.classList.add("active");
+
+
+        /* Get selected category */
+
+        const category =
+            tab.dataset.category;
+
+
+        console.log(
+            `Silpam category selected: ${category}`
+        );
+
+    });
+
+});
