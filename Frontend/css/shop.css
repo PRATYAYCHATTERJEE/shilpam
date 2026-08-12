@@ -108,7 +108,7 @@
 
 .kolka-top-left {
     top: 10px;
-    left: 7px;
+    left: -15px;
 }
 
 
@@ -118,7 +118,7 @@
 
 .kolka-top-right {
     top: 10px;
-    right: 7px;
+    right: -15px;
 
     transform: scaleX(-1);
 }
@@ -130,7 +130,7 @@
 
 .kolka-bottom-left {
     bottom: 8px;
-    left: 7px;
+    left: -15px;
 
     transform: scaleY(-1);
 }
@@ -142,7 +142,7 @@
 
 .kolka-bottom-right {
     bottom: 8px;
-    right: 7px;
+    right: -15px;
 
     transform:
         scale(-1, -1);
@@ -203,23 +203,23 @@
     display: grid;
 
     grid-template-columns:
-        repeat(6, minmax(0, 1fr));
+        repeat(5, minmax(0, 1fr));
 
-    gap: 18px;
+    gap: 20px;
 
     padding:
-        0 24px 20px;
+        0 85px 35px;
 }
 
 
 /* CARD */
 
 .craft-category-card {
+    min-width: 0;
+
     background: #fdf6e9;
 
-    border:
-        1px solid
-        rgba(139, 67, 38, 0.20);
+    border: 1px solid rgba(139, 67, 38, 0.20);
 
     border-radius: 9px;
 
@@ -231,7 +231,6 @@
         transform 0.3s ease,
         box-shadow 0.3s ease;
 }
-
 .craft-category-card:hover {
     transform: translateY(-5px);
 
