@@ -83,82 +83,76 @@ const craftCategories = {
 
         cards: [
              {
-    name: "Terracotta Vase",
+    name: "Sowpeace Terracotta Kathakali Horse",
     image: "assets/Terracotta/terra1.png    ",
     category: "Terracotta",
-    price: "₹450",
+    price: "₹650",
     link: "terracotta-vase.html"
 },
             {
-                name: "Handpainted Vases",
-                image: "assets/categories/terracotta-vases.jpg",
+                name: "Sowpeace Terracotta Large Durga",
+                image: "assets/Terracotta/terra2.png",
                 category: "55",
-                price: "₹55",
+                price: "₹1799",
                 link: "terracotta-vase.html"
             },
             {
-                 name: "Handpainted Vases",
-                image: "assets/categories/terracotta-vases.jpg",
+                 name: "Frog & Butterflay Terracotta Fountain",
+                image: "assets/Terracotta/terra3.png",
                 category: "55",
-                price: "₹55",
+                price: "₹2399",
                 link: "terracotta-vase.html"
             },
             {
-                name: "Handpainted Vases",
-                image: "assets/categories/terracotta-vases.jpg",
+                name: "Mud Haus Terracotta Planter - Set Of Four",
+                image: "assets/Terracotta/terra4.png",
                 category: "55",
-                price: "₹55",
+                price: "₹650",
                 link: "terracotta-vase.html"
             },
              {
-    name: "Terracotta Vase",
-    image: "assets/allcrafts/all.png",
+    name: "Terracotta Clay Diya Set – Handmade Pranati (6 pcs)",
+    image: "assets/Terracotta/terra5.png",
+    category: "Terracotta",
+    price: "₹120",
+    link: "terracotta-vase.html"
+},
+            {
+                name: "Claysip Terracotta Tea Cup (160 mL Each) - Set of Six",
+                image: "assets/Terracotta/terra6.png",
+                category: "55",
+                price: "₹850",
+                link: "terracotta-vase.html"
+            },
+            {
+                 name: "Wind Chimes",
+    image: "assets/Terracotta/terra7.png",
     category: "Terracotta",
     price: "₹899",
     link: "terracotta-vase.html"
 },
             {
-                name: "Terracotta Wall Art",
-                image: "assets/categories/terracotta-wall.jpg",
+                name: "Handmade Outdoor Glow - Clayelle Terracotta Lamp",
+                image: "assets/Terracotta/terra8.png",
                 category: "55",
-                price: "₹55",
+                price: "₹350",
                 link: "terracotta-vase.html"
             },
             {
-                 name: "Terracotta Vase",
-    image: "assets/allcrafts/all.png",
-    category: "Terracotta",
-    price: "₹899",
-    link: "terracotta-vase.html"
-},
-            {
-                name: "Clay Lamps",
-                image: "assets/categories/clay-lamps.jpg",
+                name: "Terracotta Water Pot with Tap | Handmade Clay Matka for Cool Drinking Water",
+                image: "assets/Terracotta/terra9.png",
                 category: "55",
-                price: "₹55",
+                price: "₹2799",
                 link: "terracotta-vase.html"
             },
             {
-                name: "Clay Lamps",
-                image: "assets/categories/clay-lamps.jpg",
-                category: "55",
-                price: "₹55",
-                link: "terracotta-vase.html"
-            },
-            {
-                name: "Clay Lamps",
-                image: "assets/categories/clay-lamps.jpg",
+                name: " Handmade Terracotta Water Bottle 1 Litre",
+                image: "assets/Terracotta/terra10.png",
                  category: "55",
-                price: "₹55",
+                price: "₹299",
                 link: "terracotta-vase.html"
             },
-            {
-                name: "Decorative Pottery",
-                image: "assets/categories/pottery.jpg",
-                category: "55",
-                price: "₹55",
-                link: "terracotta-vase.html"
-            }
+            
         ]
     },
 
