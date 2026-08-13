@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Sign Up | Silpam</title>
+
+    <link rel="stylesheet" href="css/signup.css">
+
+</head>
+
+
+<body>
+
+
+    <!-- =========================================
+         DECORATIVE KOLKAS
+    ========================================= -->
+
+    <div class="signup-kolka signup-kolka-left">
+
+        <img
+            src="assets/kolka.png"
+            alt=""
+        >
+
+    </div>
+
+
+    <div class="signup-kolka signup-kolka-right">
+
+        <img
+            src="assets/kolka.png"
+            alt=""
+        >
+
+    </div>
+
+
+
+    <!-- =========================================
+         SIGNUP PAGE
+    ========================================= -->
+
+    <main class="signup-page">
+
+
+        <!-- =====================================
+             BRAND
+        ====================================== -->
+
+        <div class="signup-brand">
+
+            <div class="brand-ornament">
+                ✦
+            </div>
+
+            <h1>
+                SILPAM
+            </h1>
+
+            <p>
+                A Piece of Bengal, Made for You.
+            </p>
+
+        </div>
+
+
+
+        <!-- =====================================
+             SIGNUP CARD
+        ====================================== -->
+
+        <section class="signup-card">
+
+
+            <!-- HEADING -->
+
+            <div class="signup-heading">
+
+                <span>✦</span>
+
+                <h2>
+                    Create Your Account
+                </h2>
+
+                <span>✦</span>
+
+            </div>
+
+
+            <p class="signup-subtitle">
+
+                Join the Silpam community
+
+            </p>
+
+
+
+            <!-- =================================
+                 SIGNUP FORM
+            ================================== -->
+
+            <form
+                class="signup-form"
+                id="signupForm"
+            >
+
+
+                <!-- NAME -->
+
+                <div class="form-group">
+
+                    <label for="name">
+                        Full Name
+                    </label>
+
+                    <input
+                        type="text"
+                        id="name"
+                        name="name"
+                        placeholder="Enter your full name"
+                        autocomplete="name"
+                        required
+                    >
+
+                </div>
+
+
+
+                <!-- EMAIL -->
+
+                <div class="form-group">
+
+                    <label for="email">
+                        Email Address
+                    </label>
+
+                    <input
+                        type="email"
+                        id="email"
+                        name="email"
+                        placeholder="Enter your email"
+                        autocomplete="email"
+                        required
+                    >
+
+                </div>
+
+
+
+                <!-- PHONE -->
+
+                <div class="form-group">
+
+                    <label for="phone">
+                        Phone Number
+                    </label>
+
+                    <input
+                        type="tel"
+                        id="phone"
+                        name="phone"
+                        placeholder="Enter your phone number"
+                        autocomplete="tel"
+                    >
+
+                </div>
+
+
+
+                <!-- PASSWORD -->
+
+                <div class="form-group">
+
+                    <label for="password">
+                        Password
+                    </label>
+
+                    <div class="password-input">
+
+                        <input
+                            type="password"
+                            id="password"
+                            name="password"
+                            placeholder="Create a password"
+                            autocomplete="new-password"
+                            required
+                        >
+
+                        <button
+                            type="button"
+                            class="password-toggle"
+                            id="passwordToggle"
+                        >
+                            ◉
+                        </button>
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- CONFIRM PASSWORD -->
+
+                <div class="form-group">
+
+                    <label for="confirmPassword">
+                        Confirm Password
+                    </label>
+
+                    <div class="password-input">
+
+                        <input
+                            type="password"
+                            id="confirmPassword"
+                            name="confirmPassword"
+                            placeholder="Confirm your password"
+                            autocomplete="new-password"
+                            required
+                        >
+
+                        <button
+                            type="button"
+                            class="password-toggle"
+                            id="confirmPasswordToggle"
+                        >
+                            ◉
+                        </button>
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- TERMS -->
+
+                <div class="signup-options">
+
+                    <label class="terms">
+
+                        <input
+                            type="checkbox"
+                            id="terms"
+                            required
+                        >
+
+                        <span>
+                            I agree to the
+                            <a href="#">
+                                Terms & Conditions
+                            </a>
+                        </span>
+
+                    </label>
+
+                </div>
+
+
+
+                <!-- SIGN UP BUTTON -->
+
+                <button
+                    type="submit"
+                    class="signup-button"
+                >
+
+                    Create Account
+
+                    <span>→</span>
+
+                </button>
+
+
+            </form>
+
+
+
+            <!-- =================================
+                 DIVIDER
+            ================================== -->
+
+            <div class="signup-divider">
+
+                <span></span>
+
+                <p>or</p>
+
+                <span></span>
+
+            </div>
+
+
+
+            <!-- =================================
+                 LOGIN
+            ================================== -->
+
+            <div class="login-text">
+
+                <span>
+                    Already have an account?
+                </span>
+
+                <a href="login.html">
+                    Sign in
+                </a>
+
+            </div>
+
+
+        </section>
+
+
+
+        <!-- =====================================
+             FOOTER
+        ====================================== -->
+
+        <div class="signup-footer">
+
+            <span>❖</span>
+
+            <p>
+                Handcrafted with the spirit of Bengal
+            </p>
+
+            <span>❖</span>
+
+        </div>
+
+
+    </main>
+
+
+
+    <script src="js/signup.js"></script>
+
+</body>
+
+</html>
