@@ -8,43 +8,71 @@ const craftCategories = {
     name: "Terracotta Vase",
     image: "assets/allcrafts/all.png",
     category: "Terracotta",
-    price: "₹899"
+    price: "₹899",
+    link: "terracotta-vase.html"
+},
+             {
+    name: "Terracotta Vase",
+    image: "assets/allcrafts/all.png",
+    category: "Terracotta",
+    price: "₹899",
+    link: "terracotta-vase.html"
 },
             {
                 name: "Kantha & Textiles",
-                image: "assets/categories/textiles.jpg"
+                image: "assets/categories/textiles.jpg",
+                category: "Terracotta",
+                price: "₹899",
+                link: "terracotta-vase.html"
             },
             {
                 name: "Kantha & Textiles",
-                image: "assets/categories/textiles.jpg"
+                image: "assets/categories/textiles.jpg",
+                category: "55",
+                price: "₹55",
+                link: "terracotta-vase.html"
             },
+             {
+    name: "Terracotta Vase",
+    image: "assets/allcrafts/all.png",
+    category: "Terracotta",
+    price: "₹899",
+    link: "terracotta-vase.html"
+},
             {
                 name: "Kantha & Textiles",
-                image: "assets/categories/textiles.jpg"
+                image: "assets/categories/textiles.jpg",
+                category: "55",
+                price: "₹55",
+                link: "terracotta-vase.html"
             },
+             {
+    name: "Terracotta Vase",
+    image: "assets/allcrafts/all.png",
+    category: "Terracotta",
+    price: "₹899",
+    link: "terracotta-vase.html"
+},
+             {
+    name: "Terracotta Vase",
+    image: "assets/allcrafts/all.png",
+    category: "Terracotta",
+    price: "₹899",
+    link: "terracotta-vase.html"
+},
             {
-                name: "Kantha & Textiles",
-                image: "assets/categories/textiles.jpg"
-            },
-            {
-                name: "Kantha & Textiles",
-                image: "assets/categories/textiles.jpg"
-            },
-            {
-                name: "Bamboo & Cane",
-                image: "assets/categories/bamboo.jpg"
-            },
-            {
-                name: "Dokra & Metal",
-                image: "assets/categories/dokra.jpg"
-            },
-            {
-                name: "Woodcraft",
-                image: "assets/categories/woodcraft.jpg"
+                 name: "Woodcraft",
+                image: "assets/categories/woodcraft.jpg",
+                category: "55",
+                price: "₹55",
+                link: "terracotta-vase.html"
             },
             {
                 name: "Home Décor",
-                image: "assets/categories/decor.jpg"
+                image: "assets/categories/decor.jpg",
+                category: "55",
+                price: "₹55",
+                link: "terracotta-vase.html"
             }
         ]
     },
@@ -54,45 +82,82 @@ const craftCategories = {
         title: "Terracotta Crafts",
 
         cards: [
+             {
+    name: "Terracotta Vase",
+    image: "assets/allcrafts/all.png",
+    category: "Terracotta",
+    price: "₹899",
+    link: "terracotta-vase.html"
+},
             {
                 name: "Handpainted Vases",
-                image: "assets/categories/terracotta-vases.jpg"
+                image: "assets/categories/terracotta-vases.jpg",
+                category: "55",
+                price: "₹55",
+                link: "terracotta-vase.html"
+            },
+            {
+                 name: "Handpainted Vases",
+                image: "assets/categories/terracotta-vases.jpg",
+                category: "55",
+                price: "₹55",
+                link: "terracotta-vase.html"
             },
             {
                 name: "Handpainted Vases",
-                image: "assets/categories/terracotta-vases.jpg"
+                image: "assets/categories/terracotta-vases.jpg",
+                category: "55",
+                price: "₹55",
+                link: "terracotta-vase.html"
             },
-            {
-                name: "Handpainted Vases",
-                image: "assets/categories/terracotta-vases.jpg"
-            },
-            {
-                name: "Handpainted Vases",
-                image: "assets/categories/terracotta-vases.jpg"
-            },
-            {
-                name: "Kantha & Textiles",
-                image: "assets/categories/textiles.jpg"
-            },
+             {
+    name: "Terracotta Vase",
+    image: "assets/allcrafts/all.png",
+    category: "Terracotta",
+    price: "₹899",
+    link: "terracotta-vase.html"
+},
             {
                 name: "Terracotta Wall Art",
-                image: "assets/categories/terracotta-wall.jpg"
+                image: "assets/categories/terracotta-wall.jpg",
+                category: "55",
+                price: "₹55",
+                link: "terracotta-vase.html"
+            },
+            {
+                 name: "Terracotta Vase",
+    image: "assets/allcrafts/all.png",
+    category: "Terracotta",
+    price: "₹899",
+    link: "terracotta-vase.html"
+},
+            {
+                name: "Clay Lamps",
+                image: "assets/categories/clay-lamps.jpg",
+                category: "55",
+                price: "₹55",
+                link: "terracotta-vase.html"
             },
             {
                 name: "Clay Lamps",
-                image: "assets/categories/clay-lamps.jpg"
+                image: "assets/categories/clay-lamps.jpg",
+                category: "55",
+                price: "₹55",
+                link: "terracotta-vase.html"
             },
             {
                 name: "Clay Lamps",
-                image: "assets/categories/clay-lamps.jpg"
-            },
-            {
-                name: "Clay Lamps",
-                image: "assets/categories/clay-lamps.jpg"
+                image: "assets/categories/clay-lamps.jpg",
+                 category: "55",
+                price: "₹55",
+                link: "terracotta-vase.html"
             },
             {
                 name: "Decorative Pottery",
-                image: "assets/categories/pottery.jpg"
+                image: "assets/categories/pottery.jpg",
+                category: "55",
+                price: "₹55",
+                link: "terracotta-vase.html"
             }
         ]
     },
@@ -104,24 +169,38 @@ const craftCategories = {
         cards: [
             {
                 name: "Kantha Stitch",
-                image: "assets/categories/kantha.jpg"
+                image: "assets/categories/kantha.jpg",
+                category: "55",
+                price: "₹55",
+                link: "terracotta-vase.html"
             },
             {
                 name: "Clay Lamps",
-                image: "assets/categories/clay-lamps.jpg"
+                image: "assets/categories/clay-lamps.jpg",
+                category: "55",
+                price: "₹55",
+                link: "terracotta-vase.html"
             },
-            {
-                name: "Clay Lamps",
-                image: "assets/categories/clay-lamps.jpg"
-            },
-            {
-                name: "Clay Lamps",
-                image: "assets/categories/clay-lamps.jpg"
-            },
-            {
-                name: "Clay Lamps",
-                image: "assets/categories/clay-lamps.jpg"
-            }   
+             {
+    name: "Terracotta Vase",
+    image: "assets/allcrafts/all.png",
+    category: "Terracotta",
+    price: "₹899",
+    link: "terracotta-vase.html"
+}, {
+    name: "Terracotta Vase",
+    image: "assets/allcrafts/all.png",
+    category: "Terracotta",
+    price: "₹899",
+    link: "terracotta-vase.html"
+},
+             {
+    name: "Terracotta Vase",
+    image: "assets/allcrafts/all.png",
+    category: "Terracotta",
+    price: "₹899",
+    link: "terracotta-vase.html"
+},   
         ]
     },
 
@@ -344,9 +423,12 @@ function renderCraftCategories(category) {
                     ${card.price}
                 </span>
 
-                <span class="craft-category-explore">
-                    Explore →
-                </span>
+                <a
+    href="${card.link}"
+    class="craft-category-explore"
+>
+    Explore →
+</a>
 
             </div>
 
