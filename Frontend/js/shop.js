@@ -5,8 +5,26 @@ const craftCategories = {
 
         cards: [
             {
-                name: "Pottery & Terracotta",
-                image: "assets/categories/terracotta.jpg"
+    name: "Terracotta Vase",
+    image: "assets/allcrafts/all.png",
+    category: "Terracotta",
+    price: "₹899"
+},
+            {
+                name: "Kantha & Textiles",
+                image: "assets/categories/textiles.jpg"
+            },
+            {
+                name: "Kantha & Textiles",
+                image: "assets/categories/textiles.jpg"
+            },
+            {
+                name: "Kantha & Textiles",
+                image: "assets/categories/textiles.jpg"
+            },
+            {
+                name: "Kantha & Textiles",
+                image: "assets/categories/textiles.jpg"
             },
             {
                 name: "Kantha & Textiles",
@@ -41,8 +59,32 @@ const craftCategories = {
                 image: "assets/categories/terracotta-vases.jpg"
             },
             {
+                name: "Handpainted Vases",
+                image: "assets/categories/terracotta-vases.jpg"
+            },
+            {
+                name: "Handpainted Vases",
+                image: "assets/categories/terracotta-vases.jpg"
+            },
+            {
+                name: "Handpainted Vases",
+                image: "assets/categories/terracotta-vases.jpg"
+            },
+            {
+                name: "Kantha & Textiles",
+                image: "assets/categories/textiles.jpg"
+            },
+            {
                 name: "Terracotta Wall Art",
                 image: "assets/categories/terracotta-wall.jpg"
+            },
+            {
+                name: "Clay Lamps",
+                image: "assets/categories/clay-lamps.jpg"
+            },
+            {
+                name: "Clay Lamps",
+                image: "assets/categories/clay-lamps.jpg"
             },
             {
                 name: "Clay Lamps",
@@ -65,17 +107,21 @@ const craftCategories = {
                 image: "assets/categories/kantha.jpg"
             },
             {
-                name: "Baluchari Sarees",
-                image: "assets/categories/baluchari.jpg"
+                name: "Clay Lamps",
+                image: "assets/categories/clay-lamps.jpg"
             },
             {
-                name: "Handwoven Sarees",
-                image: "assets/categories/sarees.jpg"
+                name: "Clay Lamps",
+                image: "assets/categories/clay-lamps.jpg"
             },
             {
-                name: "Kantha Bags",
-                image: "assets/categories/kantha-bags.jpg"
-            }
+                name: "Clay Lamps",
+                image: "assets/categories/clay-lamps.jpg"
+            },
+            {
+                name: "Clay Lamps",
+                image: "assets/categories/clay-lamps.jpg"
+            }   
         ]
     },
 
@@ -93,9 +139,35 @@ const craftCategories = {
                 image: "assets/categories/cane-bags.jpg"
             },
             {
+                name: "Cane Bags",
+                image: "assets/categories/cane-bags.jpg"
+            },
+            {
+                name: "Cane Bags",
+                image: "assets/categories/cane-bags.jpg"
+            },
+            {
+                name: "Cane Bags",
+                image: "assets/categories/cane-bags.jpg"
+            },
+            {
+                name: "Cane Bags",
+                image: "assets/categories/cane-bags.jpg"
+            },
+            {
+                name: "Cane Bags",
+                image: "assets/categories/cane-bags.jpg"
+            },
+            {
+                name: "Cane Bags",
+                image: "assets/categories/cane-bags.jpg"
+            },
+           
+            {
                 name: "Bamboo Furniture",
                 image: "assets/categories/furniture.jpg"
             },
+            
             {
                 name: "Bamboo Décor",
                 image: "assets/categories/bamboo-decor.jpg"
@@ -248,32 +320,40 @@ function renderCraftCategories(category) {
     container.innerHTML = data.cards.map(card => {
 
         return `
-            <article class="craft-category-card">
+    <article class="craft-category-card">
 
-                <div class="craft-category-image">
+        <div class="craft-category-image">
 
-                    <img
-                        src="${card.image}"
-                        alt="${card.name}"
-                        loading="lazy"
-                    >
+            <img
+                src="${card.image}"
+                alt="${card.name}"
+                loading="lazy"
+            >
 
-                </div>
+        </div>
 
-                <div class="craft-category-info">
+        <div class="craft-category-info">
 
-                    <h3>
-                        ${card.name}
-                    </h3>
+            <h3>
+                ${card.name}
+            </h3>
 
-                    <span>
-                        Explore →
-                    </span>
+            <div class="craft-category-bottom">
 
-                </div>
+                <span class="craft-category-price">
+                    ${card.price}
+                </span>
 
-            </article>
-        `;
+                <span class="craft-category-explore">
+                    Explore →
+                </span>
+
+            </div>
+
+        </div>
+
+    </article>
+`;
 
     }).join("");
 }

@@ -236,11 +236,6 @@ else if (category === "terracotta") {
 
 
 
-import {
-    allCrafts,
-    terracotta
-} from "./tabs/tabs1.js";
-
 
 
 /* =========================================
