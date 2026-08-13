@@ -84,9 +84,9 @@ const craftCategories = {
         cards: [
              {
     name: "Terracotta Vase",
-    image: "assets/allcrafts/all.png",
+    image: "assets/Terracotta/terra1.png    ",
     category: "Terracotta",
-    price: "₹899",
+    price: "₹450",
     link: "terracotta-vase.html"
 },
             {
