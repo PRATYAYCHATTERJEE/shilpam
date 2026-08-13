@@ -209,47 +209,77 @@ const craftCategories = {
         title: "Bamboo & Cane Crafts",
 
         cards: [
-            {
-                name: "Bamboo Baskets",
-                image: "assets/categories/baskets.jpg"
+           {
+                name: "Clay Lamps",
+                image: "assets/categories/clay-lamps.jpg",
+                 category: "55",
+                price: "₹55",
+                link: "terracotta-vase.html"
             },
             {
                 name: "Cane Bags",
-                image: "assets/categories/cane-bags.jpg"
+                image: "assets/categories/cane-bags.jpg",
+                category: "55",
+                price: "₹55",
+                link: "terracotta-vase.html"
             },
             {
                 name: "Cane Bags",
-                image: "assets/categories/cane-bags.jpg"
+                image: "assets/categories/cane-bags.jpg",
+                category: "55",
+                price: "₹55",
+                link: "terracotta-vase.html"
             },
             {
                 name: "Cane Bags",
-                image: "assets/categories/cane-bags.jpg"
+                image: "assets/categories/cane-bags.jpg",
+                category: "55",
+                price: "₹55",
+                link: "terracotta-vase.html"
             },
             {
                 name: "Cane Bags",
-                image: "assets/categories/cane-bags.jpg"
+                image: "assets/categories/cane-bags.jpg",
+                category: "55",
+                price: "₹55",
+                link: "terracotta-vase.html"
             },
             {
                 name: "Cane Bags",
-                image: "assets/categories/cane-bags.jpg"
-            },
-            {
-                name: "Cane Bags",
-                image: "assets/categories/cane-bags.jpg"
-            },
-            {
-                name: "Cane Bags",
-                image: "assets/categories/cane-bags.jpg"
+                image: "assets/categories/cane-bags.jpg",
+                category: "55",
+                price: "₹55",
+                link: "terracotta-vase.html"
             },
            
             {
                 name: "Bamboo Furniture",
-                image: "assets/categories/furniture.jpg"
+                image: "assets/categories/furniture.jpg",
+                category: "55",
+                price: "₹55",
+                link: "terracotta-vase.html"
             },
             
             {
                 name: "Bamboo Décor",
-                image: "assets/categories/bamboo-decor.jpg"
+                image: "assets/categories/bamboo-decor.jpg",
+                category: "55",
+                price: "₹55",
+                link: "terracotta-vase.html"
+            },
+            {
+                name: "Clay Lamps",
+                image: "assets/categories/clay-lamps.jpg",
+                 category: "55",
+                price: "₹55",
+                link: "terracotta-vase.html"
+            },
+            {
+                name: "Clay Lamps",
+                image: "assets/categories/clay-lamps.jpg",
+                 category: "55",
+                price: "₹55",
+                link: "terracotta-vase.html"
             }
         ]
     },
@@ -332,20 +362,32 @@ const craftCategories = {
 
         cards: [
             {
-                name: "Dokra Earrings",
-                image: "assets/categories/earrings.jpg"
+                name: "Clay Lamps",
+                image: "assets/categories/clay-lamps.jpg",
+                 category: "55",
+                price: "₹55",
+                link: "terracotta-vase.html"
             },
             {
                 name: "Dokra Necklaces",
-                image: "assets/categories/necklaces.jpg"
+                image: "assets/categories/necklaces.jpg",
+                category: "55",
+                price: "₹55",
+                link: "terracotta-vase.html"
             },
             {
                 name: "Traditional Jewellery",
-                image: "assets/categories/traditional-jewellery.jpg"
+                image: "assets/categories/traditional-jewellery.jpg",
+                category: "55",
+                price: "₹55",
+                link: "terracotta-vase.html"
             },
             {
                 name: "Handmade Accessories",
-                image: "assets/categories/accessories.jpg"
+                image: "assets/categories/accessories.jpg",
+                category: "55",
+                price: "₹55",
+                link: "terracotta-vase.html"
             }
         ]
     },
