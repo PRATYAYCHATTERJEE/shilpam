@@ -141,7 +141,7 @@ const craftCategories = {
             {
                 name: "Terracotta Water Pot with Tap | Handmade Clay Matka for Cool Drinking Water",
                 image: "assets/Terracotta/terra9.png",
-                category: "55",
+                category: "Terracotta",
                 price: "₹2799",
                 link: "terracotta-vase.html"
             },
