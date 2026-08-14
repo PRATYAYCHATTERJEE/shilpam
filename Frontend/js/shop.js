@@ -120,7 +120,7 @@ const craftCategories = {
             {
                 name: "Claysip Terracotta Tea Cup (160 mL Each) - Set of Six",
                 image: "assets/Terracotta/terra6.png",
-                category: "55",
+                category: "Terracotta",
                 price: "₹850",
                 link: "terracotta-vase.html"
             },
