@@ -134,7 +134,7 @@ const craftCategories = {
             {
                 name: "Handmade Outdoor Glow - Clayelle Terracotta Lamp",
                 image: "assets/Terracotta/terra8.png",
-                category: "55",
+                category: "Terracotta",
                 price: "₹350",
                 link: "terracotta-vase.html"
             },
