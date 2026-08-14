@@ -162,15 +162,15 @@ const craftCategories = {
 
         cards: [
             {
-                name: "Kantha Stitch",
-                image: "assets/categories/kantha.jpg",
+                name: "Kantha Forms and Transformations",
+                image: "assets/kantha/kan1.png",
                 category: "55",
                 price: "₹55",
                 link: "terracotta-vase.html"
             },
             {
-                name: "Clay Lamps",
-                image: "assets/categories/clay-lamps.jpg",
+                name: "Alpona: The Art of Bengali Folk Painting",
+                image: "assets/kantha/kan2.png",
                 category: "55",
                 price: "₹55",
                 link: "terracotta-vase.html"
@@ -194,7 +194,43 @@ const craftCategories = {
     category: "Terracotta",
     price: "₹899",
     link: "terracotta-vase.html"
-},   
+},  
+{
+    name: "Terracotta Vase",
+    image: "assets/allcrafts/all.png",
+    category: "Terracotta",
+    price: "₹899",
+    link: "terracotta-vase.html"
+},
+{
+    name: "Terracotta Vase",
+    image: "assets/allcrafts/all.png",
+    category: "Terracotta",
+    price: "₹899",
+    link: "terracotta-vase.html"
+},
+{
+    name: "Terracotta Vase",
+    image: "assets/allcrafts/all.png",
+    category: "Terracotta",
+    price: "₹899",
+    link: "terracotta-vase.html"
+},
+{
+    name: "Terracotta Vase",
+    image: "assets/allcrafts/all.png",
+    category: "Terracotta",
+    price: "₹899",
+    link: "terracotta-vase.html"
+},
+{
+    name: "Terracotta Vase",
+    image: "assets/allcrafts/all.png",
+    category: "Terracotta",
+    price: "₹899",
+    link: "terracotta-vase.html"
+},
+ 
         ]
     },
 
@@ -271,7 +307,7 @@ const craftCategories = {
             {
                 name: "Clay Lamps",
                 image: "assets/categories/clay-lamps.jpg",
-                 category: "55",
+                category: "55",
                 price: "₹55",
                 link: "terracotta-vase.html"
             }
@@ -284,21 +320,76 @@ const craftCategories = {
 
         cards: [
             {
-                name: "Dokra Figurines",
-                image: "assets/categories/dokra-figurines.jpg"
+                name: "Large Dhokra Craft Wall Piece - Goddess Durga Mahishasur Mardini",
+                image: "assets/dokra/dok1.png",
+                category: "55",
+                price: "₹55",
+                link: "terracotta-vase.html"
+                
             },
             {
-                name: "Dokra Jewellery",
-                image: "assets/categories/dokra-jewellery.jpg"
+                name: "Sowpeace Handcrafted Dhokra Art Deer Sitting Brass Showpiece,Tabletop Home Decor For Living Room.",
+                image: "assets/dokra/dok2.png",
+                category: "55",
+                price: "₹55",
+                link: "terracotta-vase.html"
             },
             {
-                name: "Metal Décor",
-                image: "assets/categories/metal-decor.jpg"
+                name: "Dhokra Art Musician Figurines Set or Vintage Tribal Metal Musician Statues",
+                image: "assets/dokra/dok3.png",
+                category: "55",
+                price: "₹55",
+                link: "terracotta-vase.html"
             },
             {
-                name: "Traditional Art",
-                image: "assets/categories/metal-art.jpg"
-            }
+                name: "Dokra Handicrafts | Timeless Tribal Art",
+                image: "assets/dokra/dok4.png",
+                category: "55",
+                price: "₹55",
+                link: "terracotta-vase.html"
+            },
+            {
+                name: "Dhokra Fusion Traditional Art - Design Type: Customizable",
+                image: "assets/dokra/dok5.png",
+                category: "55",
+                price: "₹55",
+                link: "terracotta-vase.html"
+            },
+            {
+                name: "Dhokra art and craft of Bastar and Ekatal",
+                image: "assets/dokra/dok6.png",
+                category: "55",
+                price: "₹55",
+                link: "terracotta-vase.html"
+            },
+            {
+                name: "cast iron furniture manufacturers",
+                image: "assets/dokra/dok7.png",
+                category: "55",
+                price: "₹55",
+                link: "terracotta-vase.html"
+            },
+            {
+                name: "Handcrafted Dhokra Art Wall Decor Panel",
+                image: "assets/dokra/dok8.png",
+                category: "55",
+                price: "₹55",
+                link: "terracotta-vase.html"
+            },
+            {
+                name: "Dhokra Craft Handmade Thikiri Necklace",
+                image: "assets/dokra/dok9.png",
+                category: "55",
+                price: "₹55",
+                link: "terracotta-vase.html"
+            },
+            {
+                name: "Dhokra Art Brass Pen Stand",
+                image: "assets/dokra/dok10.png",
+                category: "55",
+                price: "₹55",
+                link: "terracotta-vase.html"
+            },
         ]
     },
 
@@ -314,6 +405,30 @@ const craftCategories = {
             {
                 name: "Wooden Décor",
                 image: "assets/categories/wood-decor.jpg"
+            },
+            {
+                name: "Traditional Carvings",
+                image: "assets/categories/wood-carving.jpg"
+            },
+            {
+                name: "Traditional Carvings",
+                image: "assets/categories/wood-carving.jpg"
+            },
+            {
+                name: "Traditional Carvings",
+                image: "assets/categories/wood-carving.jpg"
+            },
+            {
+                name: "Traditional Carvings",
+                image: "assets/categories/wood-carving.jpg"
+            },
+            {
+                name: "Traditional Carvings",
+                image: "assets/categories/wood-carving.jpg"
+            },
+            {
+                name: "Traditional Carvings",
+                image: "assets/categories/wood-carving.jpg"
             },
             {
                 name: "Traditional Carvings",
