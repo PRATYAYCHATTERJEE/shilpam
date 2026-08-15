@@ -249,7 +249,7 @@ const craftCategories = {
             {
                 name: "Serving Tray",
                 image: "assets/bamboo/bamboo2.png",
-                category: "55",
+                category: "bamboo",
                 price: "₹55",
                 link: "terracotta-vase.html"
             },
