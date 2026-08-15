@@ -1,0 +1,54 @@
+/* =========================================
+   SELLER STORY / DECORATIVE SECTION
+========================================= */
+
+
+/*
+   This file is intentionally kept separate
+   so you can later add more artisan stories,
+   testimonials or cultural content without
+   touching the other sections.
+*/
+
+
+.story-decoration {
+
+    position: relative;
+
+    overflow: hidden;
+
+}
+
+
+.story-decoration::before {
+
+    content: "❧";
+
+    position: absolute;
+
+    left: 20px;
+
+    top: 20px;
+
+    color: var(--terracotta);
+
+    opacity: .3;
+
+}
+
+
+.story-decoration::after {
+
+    content: "❧";
+
+    position: absolute;
+
+    right: 20px;
+
+    bottom: 20px;
+
+    color: var(--terracotta);
+
+    opacity: .3;
+
+}
