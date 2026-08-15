@@ -270,7 +270,7 @@ const craftCategories = {
             {
                 name: "Cane Bags",
                 image: "assets/categories/cane-bags.jpg",
-                category: "55",
+                category: "bamboo",
                 price: "₹55",
                 link: "terracotta-vase.html"
             },
