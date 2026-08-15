@@ -1,0 +1,411 @@
+/* =========================================
+   SELLER NAVBAR
+========================================= */
+
+
+/* =========================================
+   NAVBAR CONTAINER
+========================================= */
+
+.seller-navbar {
+
+    position: relative;
+
+    z-index: 100;
+
+    background:
+        rgba(253, 245, 232, .96);
+
+    border-bottom:
+        1px solid var(--border);
+
+    webkit-backdrop-filter: blur(8px);
+
+}
+
+
+.seller-nav-container {
+
+    width:
+        min(
+            calc(100% - 50px),
+            1370px
+        );
+
+    min-height: 76px;
+
+    margin: auto;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    gap: 25px;
+
+}
+
+
+/* =========================================
+   LOGO
+========================================= */
+
+.seller-logo {
+
+    flex-shrink: 0;
+
+    display: flex;
+
+    align-items: center;
+
+}
+
+
+.seller-logo img {
+
+    width: 155px;
+
+    height: auto;
+
+    display: block;
+
+}
+
+
+/* =========================================
+   DESKTOP NAV
+========================================= */
+
+.seller-nav {
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    gap: 27px;
+
+    flex: 1;
+
+}
+
+
+.seller-nav a {
+
+    position: relative;
+
+    font-size: 12px;
+
+    font-weight: 500;
+
+    color: #352119;
+
+    padding: 28px 0;
+
+    white-space: nowrap;
+
+}
+
+
+.seller-nav a::after {
+
+    content: "";
+
+    position: absolute;
+
+    bottom: 18px;
+
+    left: 50%;
+
+    width: 0;
+
+    height: 2px;
+
+    background: var(--terracotta);
+
+    transform: translateX(-50%);
+
+    transition: width .25s ease;
+
+}
+
+
+.seller-nav a:hover::after,
+.seller-nav a.active::after {
+
+    width: 80%;
+
+}
+
+
+.seller-nav a.active {
+
+    color: var(--terracotta);
+
+}
+
+
+/* =========================================
+   ACTIONS
+========================================= */
+
+.seller-nav-actions {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 10px;
+
+}
+
+
+/* SEARCH */
+
+.nav-icon-button {
+
+    width: 38px;
+
+    height: 38px;
+
+    border: none;
+
+    background: transparent;
+
+    color: var(--brown);
+
+    cursor: pointer;
+
+}
+
+
+.nav-icon-button svg {
+
+    width: 19px;
+
+    height: 19px;
+
+    fill: none;
+
+    stroke: currentColor;
+
+    stroke-width: 1.7;
+
+}
+
+
+/* =========================================
+   SELLER LOGIN BUTTON
+========================================= */
+
+.seller-login-button {
+
+    padding: 11px 16px;
+
+    border: 1px solid var(--terracotta);
+
+    border-radius: 6px;
+
+    color: var(--terracotta);
+
+    background: transparent;
+
+    font-family: var(--serif);
+
+    font-size: 13px;
+
+    font-weight: 600;
+
+    white-space: nowrap;
+
+    transition:
+        background .25s ease,
+        color .25s ease;
+
+}
+
+
+.seller-login-button:hover {
+
+    color: white;
+
+    background: var(--terracotta);
+
+}
+
+
+/* =========================================
+   MOBILE MENU BUTTON
+========================================= */
+
+.mobile-menu-button {
+
+    display: none;
+
+    width: 38px;
+
+    height: 38px;
+
+    border: none;
+
+    background: transparent;
+
+    cursor: pointer;
+
+}
+
+
+.mobile-menu-button span {
+
+    display: block;
+
+    width: 22px;
+
+    height: 2px;
+
+    margin: 4px auto;
+
+    background: var(--brown);
+
+}
+
+
+/* =========================================
+   MOBILE NAV
+========================================= */
+
+.mobile-nav {
+
+    display: none;
+
+}
+
+
+/* =========================================
+   TABLET
+========================================= */
+
+@media (max-width: 1050px) {
+
+    .seller-nav {
+
+        gap: 16px;
+
+    }
+
+    .seller-nav a {
+
+        font-size: 11px;
+
+    }
+
+}
+
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 850px) {
+
+    .seller-nav {
+
+        display: none;
+
+    }
+
+
+    .nav-icon-button {
+
+        display: none;
+
+    }
+
+
+    .mobile-menu-button {
+
+        display: block;
+
+    }
+
+
+    .seller-nav-container {
+
+        min-height: 68px;
+
+        width:
+            calc(100% - 30px);
+
+    }
+
+
+    .seller-logo img {
+
+        width: 130px;
+
+    }
+
+
+    .mobile-nav {
+
+        display: none;
+
+        flex-direction: column;
+
+        padding: 10px 20px 20px;
+
+        border-top:
+            1px solid var(--border);
+
+        background: var(--paper);
+
+    }
+
+
+    .mobile-nav.show {
+
+        display: flex;
+
+    }
+
+
+    .mobile-nav a {
+
+        padding: 13px 5px;
+
+        border-bottom:
+            1px solid rgba(139,67,38,.1);
+
+        font-family: var(--serif);
+
+        font-size: 16px;
+
+    }
+
+
+    .mobile-seller-login {
+
+        margin-top: 10px;
+
+        text-align: center;
+
+        border: 1px solid var(--terracotta);
+
+        color: var(--terracotta);
+
+    }
+
+}
+
+
+@media (max-width: 500px) {
+
+    .seller-login-button {
+
+        display: none;
+
+    }
+
+}

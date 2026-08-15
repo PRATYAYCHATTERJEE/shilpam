@@ -1,0 +1,451 @@
+/* =========================================
+   SILPAM SELLER PAGE
+   BASE / VARIABLES / RESET
+========================================= */
+
+
+/* =========================================
+   DESIGN VARIABLES
+========================================= */
+
+:root {
+
+    /* Main Bengali-inspired palette */
+
+    --cream: #f7ecdc;
+
+    --cream-light: #fff8ec;
+
+    --paper: #fdf5e8;
+
+    --paper-dark: #f0dfc8;
+
+    --terracotta: #a94727;
+
+    --terracotta-dark: #87351d;
+
+    --brown: #4c281b;
+
+    --brown-light: #78533e;
+
+    --gold: #b7834b;
+
+    --border:
+        rgba(139, 67, 38, 0.22);
+
+    --border-dark:
+        rgba(139, 67, 38, 0.38);
+
+
+    /* Typography */
+
+    --serif:
+        "Cormorant Garamond",
+        Georgia,
+        serif;
+
+    --bengali:
+        "Noto Serif Bengali",
+        serif;
+
+    --sans:
+        "Inter",
+        Arial,
+        sans-serif;
+
+
+    /* Layout */
+
+    --container:
+        1180px;
+
+}
+
+
+/* =========================================
+   RESET
+========================================= */
+
+* {
+
+    margin: 0;
+
+    padding: 0;
+
+    box-sizing: border-box;
+
+}
+
+
+html {
+
+    scroll-behavior: smooth;
+
+}
+
+
+body {
+
+    background:
+        radial-gradient(
+            circle at 10% 10%,
+            rgba(174, 114, 63, 0.08),
+            transparent 30%
+        ),
+        radial-gradient(
+            circle at 90% 80%,
+            rgba(174, 114, 63, 0.06),
+            transparent 30%
+        ),
+        var(--cream);
+
+    color: var(--brown);
+
+    font-family: var(--sans);
+
+    overflow-x: hidden;
+
+}
+
+
+/* =========================================
+   DEFAULT ELEMENTS
+========================================= */
+
+img {
+
+    max-width: 100%;
+
+}
+
+
+a {
+
+    color: inherit;
+
+    text-decoration: none;
+
+}
+
+
+button,
+input,
+textarea,
+select {
+
+    font: inherit;
+
+}
+
+
+/* =========================================
+   COMMON CONTAINER
+========================================= */
+
+.section-container {
+
+    width: min(
+        calc(100% - 60px),
+        var(--container)
+    );
+
+    margin: 0 auto;
+
+    position: relative;
+
+}
+
+
+/* =========================================
+   DECORATIVE HEADING
+========================================= */
+
+.decorative-heading {
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    gap: 18px;
+
+    margin-bottom: 34px;
+
+}
+
+
+.decorative-heading h2 {
+
+    font-family: var(--serif);
+
+    font-size: 31px;
+
+    line-height: 1;
+
+    font-weight: 600;
+
+    color: var(--brown);
+
+    text-align: center;
+
+}
+
+
+.heading-line {
+
+    width: 60px;
+
+    height: 1px;
+
+    background: var(--gold);
+
+    position: relative;
+
+}
+
+
+.heading-line::after {
+
+    content: "✦";
+
+    position: absolute;
+
+    top: 50%;
+
+    left: 50%;
+
+    transform:
+        translate(-50%, -50%);
+
+    background: var(--cream);
+
+    padding: 0 6px;
+
+    color: var(--terracotta);
+
+    font-size: 11px;
+
+}
+
+
+/* =========================================
+   PAGE KOLKA
+========================================= */
+
+.page-kolka {
+
+    position: fixed;
+
+    z-index: 0;
+
+    width: 130px;
+
+    opacity: 0.28;
+
+    pointer-events: none;
+
+}
+
+
+.page-kolka img {
+
+    width: 100%;
+
+    display: block;
+
+}
+
+
+.page-kolka-left {
+
+    left: -45px;
+
+    top: 180px;
+
+}
+
+
+.page-kolka-right {
+
+    right: -45px;
+
+    bottom: 180px;
+
+    transform: scaleX(-1);
+
+}
+
+
+/* =========================================
+   COMMON BUTTONS
+========================================= */
+
+.primary-button,
+.secondary-button {
+
+    min-height: 46px;
+
+    display: inline-flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    gap: 10px;
+
+    padding: 0 20px;
+
+    border-radius: 7px;
+
+    font-family: var(--serif);
+
+    font-size: 15px;
+
+    font-weight: 600;
+
+    transition:
+        transform .25s ease,
+        box-shadow .25s ease,
+        background .25s ease;
+
+}
+
+
+.primary-button {
+
+    color: #fff8ed;
+
+    background: var(--terracotta);
+
+}
+
+
+.primary-button:hover {
+
+    background: var(--terracotta-dark);
+
+    transform: translateY(-2px);
+
+    box-shadow:
+        0 8px 18px
+        rgba(135, 53, 29, .18);
+
+}
+
+
+.secondary-button {
+
+    color: var(--terracotta);
+
+    border: 1px solid var(--terracotta);
+
+    background:
+        rgba(255, 248, 236, .45);
+
+}
+
+
+.secondary-button:hover {
+
+    background: var(--terracotta);
+
+    color: white;
+
+    transform: translateY(-2px);
+
+}
+
+
+/* =========================================
+   FOOTER
+========================================= */
+
+.seller-footer {
+
+    padding: 22px 20px;
+
+    background: var(--terracotta);
+
+    color: #fff4e5;
+
+    text-align: center;
+
+}
+
+
+.footer-ornament {
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    flex-wrap: wrap;
+
+    gap: 18px;
+
+    font-family: var(--bengali);
+
+    font-size: 19px;
+
+}
+
+
+.footer-ornament b {
+
+    font-family: var(--sans);
+
+    opacity: .7;
+
+}
+
+
+/* =========================================
+   RESPONSIVE
+========================================= */
+
+@media (max-width: 700px) {
+
+    .section-container {
+
+        width:
+            min(
+                calc(100% - 30px),
+                var(--container)
+            );
+
+    }
+
+
+    .decorative-heading {
+
+        gap: 10px;
+
+    }
+
+
+    .decorative-heading h2 {
+
+        font-size: 25px;
+
+    }
+
+
+    .heading-line {
+
+        width: 30px;
+
+    }
+
+
+    .page-kolka {
+
+        opacity: .12;
+
+        width: 90px;
+
+    }
+
+}
