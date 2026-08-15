@@ -500,42 +500,42 @@ const craftCategories = {
             },
              {
                 name: "Traditional Jewellery",
-                image: "assets/categories/clay-lamps.jpg",
+                image: "assets/Jwellary/jwellary5.png",
                  category: "55",
                 price: "₹55",
                 link: "terracotta-vase.html"
             },
              {
                 name: "Traditional Jewellery",
-                image: "assets/categories/clay-lamps.jpg",
+                image: "assets/Jwellary/jwellary6.png",
                  category: "55",
                 price: "₹55",
                 link: "terracotta-vase.html"
             },
              {
                 name: "Traditional Jewellery",
-                image: "assets/categories/clay-lamps.jpg",
+                image: "assets/Jwellary/jwellary7.png",
                  category: "55",
                 price: "₹55",
                 link: "terracotta-vase.html"
             },
              {
                 name: "Traditional Jewellery",
-                image: "assets/categories/clay-lamps.jpg",
+                image: "assets/Jwellary/jwellary8.png",
                  category: "55",
                 price: "₹55",
                 link: "terracotta-vase.html"
             },
              {
                 name: "Traditional Jewellery",
-                image: "assets/categories/clay-lamps.jpg",
+                image: "assets/Jwellary/jwellary9.png",
                  category: "55",
                 price: "₹55",
                 link: "terracotta-vase.html"
             },
              {
                 name: "Traditional Jewellery",
-                image: "assets/categories/clay-lamps.jpg",
+                image: "assets/Jwellary/jwellary10.png",
                  category: "55",
                 price: "₹55",
                 link: "terracotta-vase.html"
