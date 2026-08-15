@@ -84,113 +84,119 @@ document.addEventListener("DOMContentLoaded", () => {
 
 
     /* =========================================
-       SIGNUP FORM
-    ========================================= */
+   SIGNUP FORM
+========================================= */
 
-    const signupForm =
-        document.getElementById("signupForm");
+const signupForm =
+    document.getElementById("signupForm");
 
+if (signupForm) {
+    signupForm.addEventListener(
+        "submit",
+        async (event) => {
 
-    if (signupForm) {
+            event.preventDefault();
 
-        signupForm.addEventListener(
-            "submit",
-            (event) => {
+            const name =
+                document.getElementById("name").value.trim();
 
-                event.preventDefault();
+            const email =
+                document.getElementById("email").value.trim();
 
+            const phone =
+                document.getElementById("phone").value.trim();
 
-                const name =
-                    document.getElementById(
-                        "name"
-                    ).value.trim();
+            const passwordValue =
+                password.value;
 
-
-                const email =
-                    document.getElementById(
-                        "email"
-                    ).value.trim();
-
-
-                const phone =
-                    document.getElementById(
-                        "phone"
-                    ).value.trim();
+            const confirmPasswordValue =
+                confirmPassword.value;
 
 
-                const passwordValue =
-                    password.value;
+            /* =================================
+               PASSWORD MATCH
+            ================================= */
+
+            if (
+                passwordValue !==
+                confirmPasswordValue
+            ) {
+                alert("Passwords do not match.");
+                return;
+            }
 
 
-                const confirmPasswordValue =
-                    confirmPassword.value;
+            /* =================================
+               BASIC PASSWORD CHECK
+            ================================= */
+
+            if (passwordValue.length < 6) {
+                alert(
+                    "Password must contain at least 6 characters."
+                );
+                return;
+            }
 
 
+            /* =================================
+               SEND DATA TO BACKEND
+            ================================= */
 
-                /* =================================
-                   PASSWORD MATCH
-                ================================= */
+            try {
 
-                if (
-                    passwordValue !==
-                    confirmPasswordValue
-                ) {
-
-                    alert(
-                        "Passwords do not match."
-                    );
-
-                    return;
-
-                }
-
-
-
-                /* =================================
-                   BASIC PASSWORD CHECK
-                ================================= */
-
-                if (passwordValue.length < 6) {
-
-                    alert(
-                        "Password must contain at least 6 characters."
-                    );
-
-                    return;
-
-                }
-
-
-
-                /* =================================
-                   TEMPORARY DATA
-                ================================= */
-
-                console.log(
-                    "Signup Data:",
+                const response = await fetch(
+                    "http://localhost:5000/api/auth/register",
                     {
-                        name,
-                        email,
-                        phone,
-                        password:
-                            passwordValue
+                        method: "POST",
+
+                        headers: {
+                            "Content-Type": "application/json"
+                        },
+
+                        body: JSON.stringify({
+                            name: name,
+                            email: email,
+                            phone: phone,
+                            password: passwordValue
+                        })
                     }
                 );
 
 
-                /*
-                    Backend registration
-                    will be connected here later.
-                */
+                const data = await response.json();
 
 
-                alert(
-                    "Account details submitted successfully!"
+                /* =================================
+                   HANDLE RESPONSE
+                ================================= */
+
+                if (!response.ok) {
+
+                    alert(data.message || "Registration failed.");
+
+                    return;
+                }
+
+
+                alert("Account created successfully!");
+
+                // Go to login page
+                window.location.href = "login.html";
+
+
+            } catch (error) {
+
+                console.error(
+                    "Registration error:",
+                    error
                 );
 
+                alert(
+                    "Unable to connect to the server. Please try again."
+                );
             }
-        );
-
-    }
+        }
+    );
+}
 
 });

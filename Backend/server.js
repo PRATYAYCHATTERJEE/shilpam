@@ -5,14 +5,12 @@ dns.setServers([
     "1.1.1.1"
 ]);
 
-
-
-
 const express = require("express");
 const cors = require("cors");
 require("dotenv").config();
 
 const connectDB = require("./config/db");
+const authRoutes = require("./routes/authRoutes");
 
 const app = express();
 
@@ -23,12 +21,14 @@ app.use(express.json());
 // Connect to MongoDB
 connectDB();
 
+// Authentication routes
+app.use("/api/auth", authRoutes);
+
 // Test route
 app.get("/", (req, res) => {
     res.send("Silpam Backend is running!");
 });
 
-// Server
 const PORT = process.env.PORT || 5000;
 
 app.listen(PORT, () => {

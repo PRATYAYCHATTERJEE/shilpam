@@ -309,6 +309,183 @@ function renderCategoryProducts(products) {
 
 }
 
+/* =========================================
+   SILPAM — ACCOUNT DROPDOWN
+========================================= */
+
+document.addEventListener("DOMContentLoaded", () => {
+
+    const accountButton =
+        document.getElementById("accountButton");
+
+    const accountDropdown =
+        document.getElementById("accountDropdown");
+
+    const loggedOutMenu =
+        document.getElementById("loggedOutMenu");
+
+    const loggedInMenu =
+        document.getElementById("loggedInMenu");
+
+    const accountUserName =
+        document.getElementById("accountUserName");
+
+    const accountUserEmail =
+        document.getElementById("accountUserEmail");
+
+    const logoutButton =
+        document.getElementById("logoutButton");
+
+
+    /* =========================================
+       CHECK ELEMENTS
+    ========================================= */
+
+    if (
+        !accountButton ||
+        !accountDropdown
+    ) {
+        return;
+    }
+
+
+    /* =========================================
+       CHECK LOGIN STATUS
+    ========================================= */
+
+    const token =
+        localStorage.getItem("token");
+
+    const storedUser =
+        localStorage.getItem("user");
+
+    let user = null;
+
+    if (storedUser) {
+
+        try {
+
+            user = JSON.parse(storedUser);
+
+        } catch (error) {
+
+            console.error(
+                "Invalid user data:",
+                error
+            );
+
+            localStorage.removeItem("user");
+        }
+    }
+
+
+    /* =========================================
+       SET ACCOUNT STATE
+    ========================================= */
+
+    if (token && user) {
+
+        // User is logged in
+
+        loggedOutMenu.style.display = "none";
+        loggedInMenu.style.display = "block";
+
+        accountUserName.textContent =
+            `Hello, ${user.name} 👋`;
+
+        accountUserEmail.textContent =
+            user.email;
+
+    } else {
+
+        // User is logged out
+
+        loggedOutMenu.style.display = "block";
+        loggedInMenu.style.display = "none";
+    }
+
+
+    /* =========================================
+       OPEN / CLOSE DROPDOWN
+    ========================================= */
+
+    accountButton.addEventListener(
+        "click",
+        (event) => {
+
+            event.stopPropagation();
+
+            accountDropdown.classList.toggle(
+                "show"
+            );
+        }
+    );
+
+
+    /* =========================================
+       PREVENT DROPDOWN CLICK FROM CLOSING IT
+    ========================================= */
+
+    accountDropdown.addEventListener(
+        "click",
+        (event) => {
+
+            event.stopPropagation();
+
+        }
+    );
+
+
+    /* =========================================
+       CLICK OUTSIDE → CLOSE
+    ========================================= */
+
+    document.addEventListener(
+        "click",
+        () => {
+
+            accountDropdown.classList.remove(
+                "show"
+            );
+
+        }
+    );
+
+
+    /* =========================================
+       LOGOUT
+    ========================================= */
+
+    if (logoutButton) {
+
+        logoutButton.addEventListener(
+            "click",
+            () => {
+
+                // Remove JWT
+                localStorage.removeItem(
+                    "token"
+                );
+
+                // Remove user information
+                localStorage.removeItem(
+                    "user"
+                );
+
+                // Close dropdown
+                accountDropdown.classList.remove(
+                    "show"
+                );
+
+                // Refresh home page
+                window.location.reload();
+
+            }
+        );
+    }
+
+});
+
 
 /* =========================================
    DEFAULT CATEGORY

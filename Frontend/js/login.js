@@ -42,41 +42,99 @@ document.addEventListener("DOMContentLoaded", () => {
 
 
     /* =========================================
-       LOGIN FORM
-    ========================================= */
+   LOGIN FORM
+========================================= */
 
-    const loginForm =
-        document.querySelector(".login-form");
+const loginForm =
+    document.querySelector(".login-form");
+
+if (loginForm) {
+
+    loginForm.addEventListener(
+        "submit",
+        async (event) => {
+
+            event.preventDefault();
+
+            const email =
+                document.getElementById("email").value.trim();
+
+            const passwordValue =
+                password.value;
 
 
-    if (loginForm) {
+            /* =================================
+               SEND LOGIN REQUEST
+            ================================= */
 
-        loginForm.addEventListener(
-            "submit",
-            (event) => {
+            try {
 
-                event.preventDefault();
+                const response = await fetch(
+                    "http://localhost:5000/api/auth/login",
+                    {
+                        method: "POST",
 
-                const email =
-                    document.getElementById("email").value;
+                        headers: {
+                            "Content-Type": "application/json"
+                        },
 
-                const passwordValue =
-                    password.value;
+                        body: JSON.stringify({
+                            email: email,
+                            password: passwordValue
+                        })
+                    }
+                );
 
 
-                console.log("Login attempt:", {
-                    email,
-                    password: passwordValue
-                });
+                const data = await response.json();
 
-                /*
-                    Backend authentication
-                    will be connected here later.
-                */
 
+                /* =================================
+                   HANDLE RESPONSE
+                ================================= */
+
+                if (!response.ok) {
+
+                    alert(
+                        data.message ||
+                        "Invalid email or password."
+                    );
+
+                    return;
+                }
+
+
+// Store JWT
+localStorage.setItem("token", data.token);
+
+// Store user information
+localStorage.setItem(
+    "user",
+    JSON.stringify(data.user)
+);
+
+console.log("LOGIN RESPONSE:", data);
+console.log("JWT TOKEN:", data.token);
+console.log("USER:", data.user);
+
+alert("Login successful!");
+
+window.location.href = "index.html";
+
+
+            } catch (error) {
+
+                console.error(
+                    "Login error:",
+                    error
+                );
+
+                alert(
+                    "Unable to connect to the server. Please try again."
+                );
             }
-        );
-
-    }
+        }
+    );
+}
 
 });

@@ -459,6 +459,10 @@
     border-bottom: 1px solid rgba(101, 48, 25, 0.10);
 
     backdrop-filter: blur(10px);
+
+    /* Keep the navbar and account dropdown above the hero/slider */
+    position: relative;
+    z-index: 10000;
 }
 
 /* =========================================
@@ -697,4 +701,198 @@
         top: 98px;
     }
 
+}
+
+/* =========================================
+   ACCOUNT DROPDOWN
+========================================= */
+
+.account-container {
+    position: relative;
+    z-index: 10001;
+}
+
+
+/* DROPDOWN */
+
+.account-dropdown {
+    position: absolute;
+    top: calc(100% + 14px);
+    right: 0;
+
+    width: 290px;
+
+    background: #ffffff;
+
+    border-radius: 12px;
+
+    box-shadow:
+        0 10px 30px rgba(0, 0, 0, 0.15);
+
+    border: 1px solid #eeeeee;
+
+    overflow: hidden;
+
+    z-index: 10002;
+
+    display: none;
+}
+
+
+/* SHOW DROPDOWN */
+
+.account-dropdown.show {
+    display: block;
+}
+
+
+/* HEADER */
+
+.account-dropdown-header {
+    padding: 20px;
+
+    border-bottom: 1px solid #eeeeee;
+}
+
+.account-dropdown-header h3 {
+    margin: 0 0 6px;
+
+    font-size: 16px;
+
+    font-weight: 600;
+
+    color: #222222;
+}
+
+.account-dropdown-header p {
+    margin: 0;
+
+    font-size: 13px;
+
+    color: #777777;
+
+    word-break: break-word;
+}
+
+
+/* LOGIN BUTTON */
+
+.account-login-btn {
+    display: block;
+
+    margin: 16px 20px 12px;
+
+    padding: 11px;
+
+    text-align: center;
+
+    text-decoration: none;
+
+    border-radius: 6px;
+
+    background: #222222;
+
+    color: #ffffff;
+
+    font-size: 14px;
+
+    font-weight: 600;
+
+    transition: 0.2s ease;
+}
+
+.account-login-btn:hover {
+    opacity: 0.85;
+}
+
+
+/* REGISTER TEXT */
+
+.account-register-text {
+    text-align: center;
+
+    padding: 0 20px 18px;
+
+    margin: 0;
+
+    font-size: 12px;
+
+    color: #777777;
+}
+
+.account-register-text a {
+    color: #222222;
+
+    font-weight: 600;
+
+    text-decoration: none;
+}
+
+
+/* LOGGED-IN MENU */
+
+.account-menu-items {
+    padding: 8px 0;
+}
+
+
+/* MENU ITEM */
+
+.account-menu-items a {
+    display: flex;
+
+    align-items: center;
+
+    gap: 12px;
+
+    padding: 12px 20px;
+
+    color: #333333;
+
+    text-decoration: none;
+
+    font-size: 14px;
+
+    transition: background 0.2s ease;
+}
+
+.account-menu-items a:hover {
+    background: #f7f7f7;
+}
+
+.account-menu-items a span {
+    width: 20px;
+
+    text-align: center;
+}
+
+
+/* LOGOUT */
+
+.account-logout-btn {
+    width: calc(100% - 40px);
+
+    margin: 8px 20px 18px;
+
+    padding: 11px;
+
+    border: none;
+
+    border-radius: 6px;
+
+    background: #f5f5f5;
+
+    color: #333333;
+
+    font-size: 14px;
+
+    font-weight: 600;
+
+    cursor: pointer;
+
+    transition: 0.2s ease;
+}
+
+.account-logout-btn:hover {
+    background: #eeeeee;
 }
