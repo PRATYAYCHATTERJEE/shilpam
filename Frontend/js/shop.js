@@ -240,22 +240,22 @@ const craftCategories = {
 
         cards: [
            {
-                name: "Clay Lamps",
-                image: "assets/categories/clay-lamps.jpg",
+                name: "Handmade Bamboo Basket",
+                image: "bamboo1.png",
                  category: "55",
                 price: "₹55",
                 link: "terracotta-vase.html"
             },
             {
                 name: "Cane Bags",
-                image: "assets/categories/cane-bags.jpg",
+                image: "bamboo2.png",
                 category: "55",
                 price: "₹55",
                 link: "terracotta-vase.html"
             },
             {
                 name: "Cane Bags",
-                image: "assets/categories/cane-bags.jpg",
+                image: "bamboo3.png",
                 category: "55",
                 price: "₹55",
                 link: "terracotta-vase.html"
