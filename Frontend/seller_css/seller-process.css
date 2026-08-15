@@ -1,0 +1,322 @@
+/* =========================================
+   HOW IT WORKS
+========================================= */
+
+.how-it-works {
+
+    display: grid;
+
+    grid-template-columns:
+        1fr 1.15fr;
+
+    gap: 30px;
+
+    align-items: stretch;
+
+    padding: 20px 0 40px;
+
+}
+
+
+/* =========================================
+   PROCESS AREA
+========================================= */
+
+.process-area {
+
+    padding-top: 5px;
+
+}
+
+
+.process-heading {
+
+    margin-bottom: 30px;
+
+}
+
+
+/* =========================================
+   PROCESS GRID
+========================================= */
+
+.process-grid {
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(4, 1fr);
+
+}
+
+
+/* =========================================
+   PROCESS STEP
+========================================= */
+
+.process-step {
+
+    text-align: center;
+
+    padding: 0 10px;
+
+    position: relative;
+
+}
+
+
+.process-step:not(:last-child)::after {
+
+    content: "→";
+
+    position: absolute;
+
+    right: -6px;
+
+    top: 28px;
+
+    color: var(--terracotta);
+
+    font-size: 18px;
+
+}
+
+
+/* =========================================
+   PROCESS ICON
+========================================= */
+
+.process-icon {
+
+    width: 57px;
+
+    height: 57px;
+
+    margin: auto;
+
+    border-radius: 50%;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    border:
+        1px solid
+        var(--border-dark);
+
+    background:
+        #f3e2c9;
+
+    color: var(--terracotta);
+
+    font-family: var(--serif);
+
+    font-size: 17px;
+
+    font-weight: 700;
+
+}
+
+
+/* =========================================
+   PROCESS TITLE
+========================================= */
+
+.process-step h3 {
+
+    margin-top: 13px;
+
+    font-family: var(--serif);
+
+    font-size: 17px;
+
+    color: var(--terracotta);
+
+}
+
+
+/* =========================================
+   PROCESS DESCRIPTION
+========================================= */
+
+.process-step p {
+
+    margin-top: 7px;
+
+    font-size: 10.5px;
+
+    line-height: 1.55;
+
+    color: #61483b;
+
+}
+
+
+/* =========================================
+   STORY IMAGE
+========================================= */
+
+.process-story-image {
+
+    position: relative;
+
+    min-height: 300px;
+
+    overflow: hidden;
+
+    border-radius: 12px;
+
+}
+
+
+.process-story-image img {
+
+    width: 100%;
+
+    height: 100%;
+
+    display: block;
+
+    object-fit: cover;
+
+}
+
+
+/* =========================================
+   STORY IMAGE CONTENT
+========================================= */
+
+.story-image-content {
+
+    position: absolute;
+
+    inset: 0;
+
+    padding: 35px;
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+
+    justify-content: flex-start;
+
+    text-align: center;
+
+    background:
+        linear-gradient(
+            180deg,
+            rgba(60, 31, 20, .66),
+            rgba(60, 31, 20, .12) 65%,
+            rgba(60, 31, 20, .3)
+        );
+
+    color: #fff8ec;
+
+}
+
+
+.story-image-content h2 {
+
+    font-family: var(--serif);
+
+    font-size: 28px;
+
+    line-height: 1;
+
+    font-weight: 600;
+
+}
+
+
+.story-image-content p {
+
+    margin-top: 13px;
+
+    font-family: var(--bengali);
+
+    font-size: 15px;
+
+    line-height: 1.5;
+
+}
+
+
+.story-image-content span {
+
+    margin-top: 10px;
+
+    color: #f0c58e;
+
+}
+
+
+/* =========================================
+   TABLET
+========================================= */
+
+@media (max-width: 900px) {
+
+    .how-it-works {
+
+        grid-template-columns: 1fr;
+
+    }
+
+
+    .process-story-image {
+
+        min-height: 350px;
+
+    }
+
+}
+
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 600px) {
+
+    .process-grid {
+
+        grid-template-columns:
+            repeat(2, 1fr);
+
+        row-gap: 25px;
+
+    }
+
+
+    .process-step:nth-child(2)::after {
+
+        display: none;
+
+    }
+
+
+    .process-step p {
+
+        font-size: 11px;
+
+    }
+
+
+    .process-story-image {
+
+        min-height: 290px;
+
+    }
+
+
+    .story-image-content h2 {
+
+        font-size: 24px;
+
+    }
+
+}
