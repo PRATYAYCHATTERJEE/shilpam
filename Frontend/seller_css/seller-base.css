@@ -449,3 +449,33 @@ select {
     }
 
 }
+
+
+/* =========================================
+   SCROLL REVEAL
+========================================= */
+
+.benefit-item,
+.partner-type-card,
+.process-step {
+
+    opacity: 0;
+
+    transform: translateY(18px);
+
+    transition:
+        opacity .6s ease,
+        transform .6s ease;
+
+}
+
+
+.benefit-item.visible,
+.partner-type-card.visible,
+.process-step.visible {
+
+    opacity: 1;
+
+    transform: translateY(0);
+
+}
