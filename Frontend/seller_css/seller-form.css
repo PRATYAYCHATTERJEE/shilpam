@@ -1,0 +1,484 @@
+/* =========================================
+   PARTNERSHIP FORM
+========================================= */
+
+.partner-form-section {
+
+    padding: 0 20px 45px;
+
+}
+
+
+/* =========================================
+   FORM WRAPPER
+========================================= */
+
+.partner-form-wrapper {
+
+    width:
+        min(
+            100%,
+            1180px
+        );
+
+    margin: auto;
+
+    padding:
+        25px 45px 30px;
+
+    position: relative;
+
+    background:
+        linear-gradient(
+            135deg,
+            #fff8ec,
+            #f8ead5
+        );
+
+    border:
+        1px solid var(--border);
+
+    border-radius: 15px;
+
+    box-shadow:
+        0 8px 25px
+        rgba(82, 45, 27, .07);
+
+}
+
+
+/* =========================================
+   FORM
+========================================= */
+
+.partner-form {
+
+    display: grid;
+
+    grid-template-columns:
+        1fr 1fr;
+
+    gap: 18px 25px;
+
+}
+
+
+/* =========================================
+   LEFT FIELDS
+========================================= */
+
+.form-fields {
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(2, 1fr);
+
+    gap: 10px;
+
+}
+
+
+/* =========================================
+   FIELD
+========================================= */
+
+.form-field {
+
+    display: flex;
+
+    flex-direction: column;
+
+}
+
+
+.form-field label {
+
+    margin-bottom: 5px;
+
+    font-size: 10px;
+
+    font-weight: 700;
+
+    color: var(--brown);
+
+}
+
+
+.form-field input,
+.form-field select,
+.form-field textarea {
+
+    width: 100%;
+
+    border:
+        1px solid var(--border);
+
+    border-radius: 6px;
+
+    background:
+        rgba(255, 251, 243, .78);
+
+    color: var(--brown);
+
+    outline: none;
+
+    transition:
+        border-color .2s ease,
+        box-shadow .2s ease;
+
+}
+
+
+.form-field input,
+.form-field select {
+
+    height: 40px;
+
+    padding: 0 10px;
+
+    font-size: 10px;
+
+}
+
+
+.form-field textarea {
+
+    min-height: 126px;
+
+    resize: vertical;
+
+    padding: 10px;
+
+    font-size: 11px;
+
+}
+
+
+.form-field input::placeholder,
+.form-field textarea::placeholder {
+
+    color: #a48b78;
+
+}
+
+
+.form-field input:focus,
+.form-field select:focus,
+.form-field textarea:focus {
+
+    border-color: var(--terracotta);
+
+    box-shadow:
+        0 0 0 3px
+        rgba(169, 71, 39, .08);
+
+}
+
+
+/* =========================================
+   RIGHT FORM
+========================================= */
+
+.form-right {
+
+    display: grid;
+
+    grid-template-columns:
+        1.2fr .8fr;
+
+    gap: 12px;
+
+}
+
+
+.full-field {
+
+    min-width: 0;
+
+}
+
+
+/* =========================================
+   UPLOAD FIELD
+========================================= */
+
+.upload-field {
+
+    display: flex;
+
+    flex-direction: column;
+
+}
+
+
+.upload-field > label:first-child {
+
+    margin-bottom: 5px;
+
+    font-size: 10px;
+
+    font-weight: 700;
+
+    color: var(--brown);
+
+}
+
+
+/* =========================================
+   UPLOAD BOX
+========================================= */
+
+.upload-box {
+
+    min-height: 126px;
+
+    border:
+        1px dashed
+        rgba(139, 67, 38, .35);
+
+    border-radius: 9px;
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+
+    justify-content: center;
+
+    text-align: center;
+
+    cursor: pointer;
+
+    background:
+        rgba(255, 248, 236, .5);
+
+    transition:
+        background .25s ease,
+        border-color .25s ease;
+
+}
+
+
+.upload-box:hover {
+
+    background:
+        rgba(242, 222, 196, .7);
+
+    border-color:
+        var(--terracotta);
+
+}
+
+
+.upload-icon {
+
+    width: 35px;
+
+    height: 35px;
+
+    border-radius: 50%;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    margin-bottom: 6px;
+
+    color: var(--terracotta);
+
+    background: #f2dfc4;
+
+    font-size: 20px;
+
+}
+
+
+.upload-box strong {
+
+    font-size: 10px;
+
+}
+
+
+.upload-box span {
+
+    margin-top: 2px;
+
+    font-size: 9px;
+
+    color: var(--brown-light);
+
+}
+
+
+.upload-box small {
+
+    margin-top: 8px;
+
+    font-size: 8px;
+
+    color: #8c7160;
+
+}
+
+
+/* =========================================
+   SUBMIT AREA
+========================================= */
+
+.form-submit-area {
+
+    grid-column: 1 / -1;
+
+    text-align: center;
+
+    padding-top: 4px;
+
+}
+
+
+.submit-partner-button {
+
+    min-height: 46px;
+
+    padding: 0 28px;
+
+    display: inline-flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    gap: 10px;
+
+    border: none;
+
+    border-radius: 7px;
+
+    background: var(--terracotta);
+
+    color: white;
+
+    font-family: var(--serif);
+
+    font-size: 17px;
+
+    cursor: pointer;
+
+    transition:
+        transform .25s ease,
+        background .25s ease,
+        box-shadow .25s ease;
+
+}
+
+
+.submit-partner-button:hover {
+
+    background: var(--terracotta-dark);
+
+    transform: translateY(-2px);
+
+    box-shadow:
+        0 8px 18px
+        rgba(135, 53, 29, .18);
+
+}
+
+
+/* =========================================
+   FORM MESSAGE
+========================================= */
+
+.form-message {
+
+    min-height: 18px;
+
+    margin-top: 8px;
+
+    font-size: 11px;
+
+    color: var(--terracotta);
+
+}
+
+
+/* =========================================
+   TABLET
+========================================= */
+
+@media (max-width: 800px) {
+
+    .partner-form-wrapper {
+
+        padding: 25px;
+
+    }
+
+
+    .partner-form {
+
+        grid-template-columns: 1fr;
+
+    }
+
+
+    .form-right {
+
+        grid-template-columns:
+            1fr 1fr;
+
+    }
+
+}
+
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 600px) {
+
+    .partner-form-section {
+
+        padding:
+            0 12px 30px;
+
+    }
+
+
+    .partner-form-wrapper {
+
+        padding:
+            23px 15px;
+
+    }
+
+
+    .form-fields {
+
+        grid-template-columns: 1fr;
+
+    }
+
+
+    .form-right {
+
+        grid-template-columns: 1fr;
+
+    }
+
+
+    .submit-partner-button {
+
+        width: 100%;
+
+        font-size: 15px;
+
+    }
+
+}
