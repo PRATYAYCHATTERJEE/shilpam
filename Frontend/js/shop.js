@@ -477,8 +477,8 @@ const craftCategories = {
 
         cards: [
             {
-                name: "Wall Décor",
-                image: "assets/categories/wall-decor.jpg"
+                name: "Golden Devi Chau Mask – Tharkozi Design",
+                image: "assets/homeDecor/home1.png"
             },
             {
                 name: "Handmade Vases",
@@ -491,7 +491,31 @@ const craftCategories = {
             {
                 name: "Traditional Art",
                 image: "assets/categories/traditional-art.jpg"
-            }
+            },
+            {
+                name: "Decorative Pieces",
+                image: "assets/categories/decorative.jpg"
+            },
+            {
+                name: "Decorative Pieces",
+                image: "assets/categories/decorative.jpg"
+            },
+            {
+                name: "Decorative Pieces",
+                image: "assets/categories/decorative.jpg"
+            },
+            {
+                name: "Decorative Pieces",
+                image: "assets/categories/decorative.jpg"
+            },
+            {
+                name: "Decorative Pieces",
+                image: "assets/categories/decorative.jpg"
+            },
+            {
+                name: "Decorative Pieces",
+                image: "assets/categories/decorative.jpg"
+            },
         ]
     },
 
