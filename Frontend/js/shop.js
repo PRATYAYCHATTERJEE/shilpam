@@ -400,43 +400,73 @@ const craftCategories = {
         cards: [
             {
                 name: "Wooden Sculptures",
-                image: "assets/categories/wood-sculpture.jpg"
+                image: "assets/woodcraft/wood1.png",
+                category: "55",
+                price: "₹55",
+                link: "terracotta-vase.html"
             },
             {
-                name: "Wooden Décor",
-                image: "assets/categories/wood-decor.jpg"
+                name: "wooden stand flower vash",
+                image: "assets/woodcraft/wood2.png",
+                category: "55",
+                price: "₹55",
+                link: "terracotta-vase.html"
             },
             {
-                name: "Traditional Carvings",
-                image: "assets/categories/wood-carving.jpg"
+                name: "Painted wooden stand table",
+                image: "assets/woodcraft/wood3.png",
+                category: "55",
+                price: "₹55",
+                link: "terracotta-vase.html"
             },
             {
-                name: "Traditional Carvings",
-                image: "assets/categories/wood-carving.jpg"
+                name: "Wooden flower vash",
+                image: "assets/woodcraft/wood4.jpeg",
+                category: "55",
+                price: "₹55",
+                link: "terracotta-vase.html"
             },
             {
-                name: "Traditional Carvings",
-                image: "assets/categories/wood-carving.jpg"
+                name: "Decorated Wooden small almira",
+                image: "assets/woodcraft/wood5.jpeg",
+                category: "55",
+                price: "₹55",
+                link: "terracotta-vase.html"
             },
             {
-                name: "Traditional Carvings",
-                image: "assets/categories/wood-carving.jpg"
+                name: "Decorated mirror ",
+                image: "assets/woodcraft/wood6.jpeg",
+                category: "55",
+                price: "₹55",
+                link: "terracotta-vase.html"
             },
             {
-                name: "Traditional Carvings",
-                image: "assets/categories/wood-carving.jpg"
+                name: "Lokhi Pecha Wooden craft",
+                image: "assets/woodcraft/wood7.jpeg",
+                category: "55",
+                price: "₹55",
+                link: "terracotta-vase.html"
             },
             {
-                name: "Traditional Carvings",
-                image: "assets/categories/wood-carving.jpg"
+                name: "Wooden dinning table set",
+                image: "assets/woodcraft/wood8.jpeg",
+                category: "55",
+                price: "₹55",
+                link: "terracotta-vase.html"
             },
             {
-                name: "Traditional Carvings",
-                image: "assets/categories/wood-carving.jpg"
+                name: "Handcrafted Wooden Kitchenware Set",
+                image: "assets/woodcraft/wood9.jpeg",
+                category: "55",
+                price: "₹55",
+                link: "terracotta-vase.html"
             },
             {
-                name: "Wooden Utility",
-                image: "assets/categories/wood-utility.jpg"
+                name: "Table lamp with wooden base",
+                image: "assets/woodcraft/wood10.png",
+                category: "55",
+                price: "₹55",
+                link: "terracotta-vase.html"
             }
         ]
     },
