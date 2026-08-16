@@ -481,8 +481,8 @@ const craftCategories = {
                 image: "assets/homeDecor/home1.png"
             },
             {
-                name: "Handmade Vases",
-                image: "assets/categories/vases.jpg"
+                name: "Exquisite Papier Mache Wooden Handcrafted Wall Clock",
+                image: "assets/homeDecor/home2.png"
             },
             {
                 name: "Decorative Pieces",
