@@ -485,8 +485,8 @@ const craftCategories = {
                 image: "assets/homeDecor/home2.png"
             },
             {
-                name: "Decorative Pieces",
-                image: "assets/categories/decorative.jpg"
+                name: "ART & CRAFTS Home decor item “DEER HEAD” Decorative Showpiece",
+                image: "assets/homeDecor/home3.png"
             },
             {
                 name: "Traditional Art",
