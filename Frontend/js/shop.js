@@ -324,7 +324,7 @@ const craftCategories = {
                 image: "assets/dokra/dok1.png",
                 category: "55",
                 price: "₹55",
-                link: "terracotta-vase.html"
+                link: "Dokra & Metal Art"
                 
             },
             {
@@ -332,63 +332,63 @@ const craftCategories = {
                 image: "assets/dokra/dok2.png",
                 category: "55",
                 price: "₹55",
-                link: "terracotta-vase.html"
+                link: "Dokra & Metal Art"
             },
             {
                 name: "Dhokra Art Musician Figurines Set or Vintage Tribal Metal Musician Statues",
                 image: "assets/dokra/dok3.png",
                 category: "55",
                 price: "₹55",
-                link: "terracotta-vase.html"
+                link: "Dokra & Metal Art"
             },
             {
                 name: "Dokra Handicrafts | Timeless Tribal Art",
                 image: "assets/dokra/dok4.png",
                 category: "55",
                 price: "₹55",
-                link: "terracotta-vase.html"
+                link: "Dokra & Metal Art"
             },
             {
                 name: "Dhokra Fusion Traditional Art - Design Type: Customizable",
                 image: "assets/dokra/dok5.png",
                 category: "55",
                 price: "₹55",
-                link: "terracotta-vase.html"
+                link: "Dokra & Metal Art"
             },
             {
                 name: "Dhokra art and craft of Bastar and Ekatal",
                 image: "assets/dokra/dok6.png",
                 category: "55",
                 price: "₹55",
-                link: "terracotta-vase.html"
+                link: "Dokra & Metal Art"
             },
             {
                 name: "cast iron furniture manufacturers",
                 image: "assets/dokra/dok7.png",
                 category: "55",
                 price: "₹55",
-                link: "terracotta-vase.html"
+                link: "Dokra & Metal Art"
             },
             {
                 name: "Handcrafted Dhokra Art Wall Decor Panel",
                 image: "assets/dokra/dok8.png",
                 category: "55",
                 price: "₹55",
-                link: "terracotta-vase.html"
+                link: "Dokra & Metal Art"
             },
             {
                 name: "Dhokra Craft Handmade Thikiri Necklace",
                 image: "assets/dokra/dok9.png",
                 category: "55",
                 price: "₹55",
-                link: "terracotta-vase.html"
+                link: "Dokra & Metal Art"
             },
             {
                 name: "Dhokra Art Brass Pen Stand",
                 image: "assets/dokra/dok10.png",
                 category: "55",
                 price: "₹55",
-                link: "terracotta-vase.html"
+                link: "Dokra & Metal Art"
             },
         ]
     },
@@ -403,70 +403,70 @@ const craftCategories = {
                 image: "assets/woodcraft/wood1.png",
                 category: "55",
                 price: "₹55",
-                link: "terracotta-vase.html"
+                link: "Bengal Woodcraft"
             },
             {
                 name: "wooden stand flower vash",
                 image: "assets/woodcraft/wood2.png",
                 category: "55",
                 price: "₹55",
-                link: "terracotta-vase.html"
+                link: "Bengal Woodcraft"
             },
             {
                 name: "Painted wooden stand table",
                 image: "assets/woodcraft/wood3.png",
                 category: "55",
                 price: "₹55",
-                link: "terracotta-vase.html"
+                link: "Bengal Woodcraft"
             },
             {
                 name: "Wooden flower vash",
                 image: "assets/woodcraft/wood4.jpeg",
                 category: "55",
                 price: "₹55",
-                link: "terracotta-vase.html"
+                link: "Bengal Woodcraft"
             },
             {
                 name: "Decorated Wooden small almira",
                 image: "assets/woodcraft/wood5.jpeg",
                 category: "55",
                 price: "₹55",
-                link: "terracotta-vase.html"
+                link: "Bengal Woodcraft"
             },
             {
                 name: "Decorated mirror ",
                 image: "assets/woodcraft/wood6.jpeg",
                 category: "55",
                 price: "₹55",
-                link: "terracotta-vase.html"
+                link: "Bengal Woodcraft"
             },
             {
                 name: "Lokhi Pecha Wooden craft",
                 image: "assets/woodcraft/wood7.jpeg",
                 category: "55",
                 price: "₹55",
-                link: "terracotta-vase.html"
+                link: "Bengal Woodcraft"
             },
             {
                 name: "Wooden dinning table set",
                 image: "assets/woodcraft/wood8.jpeg",
                 category: "55",
                 price: "₹55",
-                link: "terracotta-vase.html"
+                link: "Bengal Woodcraft"
             },
             {
                 name: "Handcrafted Wooden Kitchenware Set",
                 image: "assets/woodcraft/wood9.jpeg",
                 category: "55",
                 price: "₹55",
-                link: "terracotta-vase.html"
+                link: "Bengal Woodcraft"
             },
             {
                 name: "Table lamp with wooden base",
                 image: "assets/woodcraft/wood10.png",
                 category: "55",
                 price: "₹55",
-                link: "terracotta-vase.html"
+                link: "Bengal Woodcraft"
             }
         ]
     },
@@ -478,43 +478,73 @@ const craftCategories = {
         cards: [
             {
                 name: "Golden Devi Chau Mask – Tharkozi Design",
-                image: "assets/homeDecor/home1.png"
+                image: "assets/homeDecor/home1.png",
+                category: "55",
+                price: "₹55",
+                link: "Handmade Home Décor"
             },
             {
                 name: "Exquisite Papier Mache Wooden Handcrafted Wall Clock",
-                image: "assets/homeDecor/home2.png"
+                image: "assets/homeDecor/home2.png",
+                category: "55",
+                price: "₹55",
+                link: "Handmade Home Décor"
             },
             {
                 name: "ART & CRAFTS Home decor item “DEER HEAD” Decorative Showpiece",
-                image: "assets/homeDecor/home3.png"
+                image: "assets/homeDecor/home3.png",
+                category: "55",
+                price: "₹55",
+                link: "Handmade Home Décor"
             },
             {
-                name: "Traditional Art",
-                image: "assets/categories/traditional-art.jpg"
-            },
-            {
-                name: "Decorative Pieces",
-                image: "assets/categories/decorative.jpg"
-            },
-            {
-                name: "Decorative Pieces",
-                image: "assets/categories/decorative.jpg"
-            },
-            {
-                name: "Decorative Pieces",
-                image: "assets/categories/decorative.jpg"
+                name: "Bengal's Chau mask acquires GI fame",
+                image: "assets/homeDecor/home4.png",
+                category: "55",
+                price: "₹55",
+                link: "Handmade Home Décor"
             },
             {
                 name: "Decorative Pieces",
-                image: "assets/categories/decorative.jpg"
+                image: "assets/homeDecor/home5.png",
+                category: "55",
+                price: "₹55",
+                link: "Handmade Home Décor"
+            },
+            {
+                name: "Tribal couple in Chhau Mask by Dharmendra Sutradhar",
+                image: "assets/homeDecor/home6.png",
+                category: "55",
+                price: "₹55",
+                link: "Handmade Home Décor"
+            },
+            {
+                name: "Handicraft Antique Baarati Musician Showpiece",
+                image: "assets/homeDecor/home7.png",
+                category: "55",
+                price: "₹55",
+                link: "Handmade Home Décor"
+            },
+            {
+                name: "Lamps Hanging | Cane Wicker Rattan Hanging Light",
+                image: "assets/homeDecor/home8.png",
+                category: "55",
+                price: "₹55",
+                link: "Handmade Home Décor"
             },
             {
                 name: "Decorative Pieces",
-                image: "assets/categories/decorative.jpg"
+                image: "assets/homeDecor/home9.png",
+                category: "55",
+                price: "₹55",
+                link: "Handmade Home Décor"
             },
             {
                 name: "Decorative Pieces",
-                image: "assets/categories/decorative.jpg"
+                image: "assets/homeDecor/home10.png",
+                category: "55",
+                price: "₹55",
+                link: "Handmade Home Décor"
             },
         ]
     },
