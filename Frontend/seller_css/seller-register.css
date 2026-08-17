@@ -227,38 +227,36 @@ body {
 
 
 /* =====================================================
-   HEADER
+   HEADER — COMPACT
 ===================================================== */
 
 .seller-header {
-
-    width: min(1250px, 92%);
+    width: min(1200px, 92%);
 
     margin: auto;
 
-    padding: 25px 0;
+    padding: 14px 0;
 
     display: flex;
-
     align-items: center;
-
     justify-content: space-between;
 
     position: relative;
-
     z-index: 5;
 
-    border-bottom: 1px solid rgba(99,48,25,.12);
+    border-bottom: 1px solid rgba(99, 48, 25, .12);
 }
 
 
+/* =====================================================
+   LOGO
+===================================================== */
+
 .seller-logo {
-
     display: flex;
-
     align-items: center;
 
-    gap: 12px;
+    gap: 8px;
 
     text-decoration: none;
 
@@ -267,54 +265,55 @@ body {
 
 
 .seller-logo img {
-
-    width: 58px;
-
-    height: 58px;
+    width: 42px;
+    height: 42px;
 
     object-fit: contain;
 }
 
 
 .seller-logo h2 {
-
     font-family: var(--serif);
 
-    font-size: 25px;
+    font-size: 20px;
 
-    letter-spacing: .08em;
+    letter-spacing: .07em;
+
+    line-height: 1;
 }
 
 
 .seller-logo span {
-
     display: block;
+
+    margin-top: 2px;
 
     color: var(--terracotta);
 
-    font-size: 9px;
+    font-size: 7px;
 
-    letter-spacing: .16em;
+    letter-spacing: .13em;
 }
 
 
-.login-link {
+/* =====================================================
+   LOGIN LINK
+===================================================== */
 
+.login-link {
     text-decoration: none;
 
     color: #765e4e;
 
-    font-size: 14px;
+    font-size: 12px;
 }
 
 
 .login-link strong {
-
     color: var(--terracotta);
 
-    margin-left: 5px;
+    margin-left: 4px;
 }
-
 
 /* =====================================================
    HERO — COMPACT VERSION
