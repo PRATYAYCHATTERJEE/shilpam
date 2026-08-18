@@ -28,9 +28,6 @@ app.use("/api/auth", authRoutes);
 // Seller routes
 app.use("/api/sellers", sellerRoutes);
 
-// AI routes
-app.use("/api/ai", aiRoutes);
-
 // Test route
 app.get("/", (req, res) => {
     res.send("Silpam Backend is running!");

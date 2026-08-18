@@ -1,12 +1,26 @@
 const express = require("express");
 
 const {
-    registerSeller
+    registerSeller,
+    loginSeller
 } = require("../controllers/sellerController");
+
 
 const router = express.Router();
 
-// Seller registration / partnership request
-router.post("/register", registerSeller);
+
+// Seller registration
+router.post(
+    "/register",
+    registerSeller
+);
+
+
+// Seller login
+router.post(
+    "/login",
+    loginSeller
+);
+
 
 module.exports = router;
