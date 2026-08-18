@@ -262,52 +262,52 @@ const craftCategories = {
             },
             {
                 name: "Cane Bags",
-                image: "assets/categories/cane-bags.jpg",
+                image: "assets/bamboo/bamboo4.png",
                 category: "bamboo",
                 price: "₹55",
                 link: "terracotta-vase.html"
             },
             {
                 name: "Cane Bags",
-                image: "assets/categories/cane-bags.jpg",
+                image: "assets/bamboo/bamboo5.png",
                 category: "bamboo",
                 price: "₹55",
                 link: "terracotta-vase.html"
             },
             {
                 name: "Cane Bags",
-                image: "assets/categories/cane-bags.jpg",
-                category: "55",
+                image: "assets/bamboo/bamboo6.png",
+                category: "bamboo",
                 price: "₹55",
                 link: "terracotta-vase.html"
             },
            
             {
                 name: "Bamboo Furniture",
-                image: "assets/categories/furniture.jpg",
-                category: "55",
+                image: "assets/bamboo/bamboo7.png",
+                category: "bamboo",
                 price: "₹55",
                 link: "terracotta-vase.html"
             },
             
             {
                 name: "Bamboo Décor",
-                image: "assets/categories/bamboo-decor.jpg",
-                category: "55",
+                image: "assets/bamboo/bamboo8.png",
+                category: "bamboo",
                 price: "₹55",
                 link: "terracotta-vase.html"
             },
             {
                 name: "Clay Lamps",
-                image: "assets/categories/clay-lamps.jpg",
+                image: "assets/bamboo/bamboo9.png",
                  category: "55",
                 price: "₹55",
                 link: "terracotta-vase.html"
             },
             {
                 name: "Clay Lamps",
-                image: "assets/categories/clay-lamps.jpg",
-                category: "55",
+                image: "assets/bamboo/bamboo10.png",
+                category: "bamboo",
                 price: "₹55",
                 link: "terracotta-vase.html"
             }
