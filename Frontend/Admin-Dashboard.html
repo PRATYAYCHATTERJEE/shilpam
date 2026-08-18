@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>SILPAM Admin Panel</title>
+
+    <link rel="stylesheet"
+          href="admin_css/admin-dashboard.css">
+
+</head>
+
+<body>
+
+    <!-- SIDEBAR -->
+
+    <aside class="sidebar">
+
+        <div class="logo">
+            SILPAM
+        </div>
+
+        <p class="panel-title">
+            Admin Panel
+        </p>
+
+
+        <nav>
+
+            <button class="nav-item active">
+                Dashboard
+            </button>
+
+            <button class="nav-item">
+                Sellers
+            </button>
+
+            <button class="nav-item">
+                Products
+            </button>
+
+            <button class="nav-item">
+                Orders
+            </button>
+
+        </nav>
+
+
+        <button id="logoutBtn"
+                class="logout-btn">
+
+            Logout
+
+        </button>
+
+    </aside>
+
+
+
+    <!-- MAIN CONTENT -->
+
+    <main class="main-content">
+
+
+        <!-- HEADER -->
+
+        <header class="header">
+
+            <div>
+
+                <h1>
+                    Admin Dashboard
+                </h1>
+
+                <p>
+                    Manage SILPAM sellers and applications.
+                </p>
+
+            </div>
+
+
+            <div class="admin-info">
+
+                <div class="admin-avatar">
+                    A
+                </div>
+
+                <div>
+
+                    <strong id="adminName">
+                        Admin
+                    </strong>
+
+                    <small>
+                        Administrator
+                    </small>
+
+                </div>
+
+            </div>
+
+        </header>
+
+
+
+        <!-- STATISTICS -->
+
+        <section class="stats">
+
+            <div class="stat-card">
+
+                <h3>
+                    Total Sellers
+                </h3>
+
+                <strong id="totalSellers">
+                    0
+                </strong>
+
+            </div>
+
+
+            <div class="stat-card">
+
+                <h3>
+                    Pending
+                </h3>
+
+                <strong id="pendingSellers">
+                    0
+                </strong>
+
+            </div>
+
+
+            <div class="stat-card">
+
+                <h3>
+                    Approved
+                </h3>
+
+                <strong id="approvedSellers">
+                    0
+                </strong>
+
+            </div>
+
+
+            <div class="stat-card">
+
+                <h3>
+                    Rejected
+                </h3>
+
+                <strong id="rejectedSellers">
+                    0
+                </strong>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- SELLER APPLICATIONS -->
+
+        <section class="seller-section">
+
+            <div class="section-header">
+
+                <div>
+
+                    <h2>
+                        Seller Applications
+                    </h2>
+
+                    <p>
+                        Review and manage seller registrations.
+                    </p>
+
+                </div>
+
+
+                <button id="refreshBtn"
+                        class="refresh-btn">
+
+                    Refresh
+
+                </button>
+
+            </div>
+
+
+            <!-- Loading -->
+
+            <div id="loading"
+                 class="loading">
+
+                Loading sellers...
+
+            </div>
+
+
+            <!-- Error -->
+
+            <div id="errorMessage"
+                 class="error-message">
+
+            </div>
+
+
+            <!-- TABLE -->
+
+            <div class="table-container">
+
+                <table>
+
+                    <thead>
+
+                        <tr>
+
+                            <th>
+                                Seller
+                            </th>
+
+                            <th>
+                                Business
+                            </th>
+
+                            <th>
+                                Email
+                            </th>
+
+                            <th>
+                                Craft
+                            </th>
+
+                            <th>
+                                Location
+                            </th>
+
+                            <th>
+                                Status
+                            </th>
+
+                            <th>
+                                Actions
+                            </th>
+
+                        </tr>
+
+                    </thead>
+
+
+                    <tbody id="sellerTableBody">
+
+                    </tbody>
+
+                </table>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <script src="js/admin-dashboard.js"></script>
+
+</body>
+
+</html>

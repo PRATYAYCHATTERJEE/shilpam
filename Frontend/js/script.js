@@ -486,6 +486,56 @@ document.addEventListener("DOMContentLoaded", () => {
 
 });
 
+const adminLink =
+    document.getElementById("adminDashboardLink");
+
+const token =
+    localStorage.getItem("token");
+
+const userData =
+    localStorage.getItem("user");
+
+const storedRole =
+    localStorage.getItem("role");
+
+
+if (adminLink) {
+
+    adminLink.style.display = "none";
+
+
+    if (token && userData) {
+
+        try {
+
+            const user =
+                JSON.parse(userData);
+
+
+            const role =
+                user.role || storedRole;
+
+
+            if (role === "admin") {
+
+                adminLink.style.display =
+                    "block";
+
+            }
+
+        } catch (error) {
+
+            console.error(
+                "User data error:",
+                error
+            );
+
+        }
+
+    }
+
+}
+
 
 /* =========================================
    DEFAULT CATEGORY

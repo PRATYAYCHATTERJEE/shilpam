@@ -149,9 +149,7 @@ loginForm.addEventListener("submit", async (event) => {
 
 
     if (!valid) {
-
         return;
-
     }
 
 
@@ -165,132 +163,105 @@ loginForm.addEventListener("submit", async (event) => {
         "Signing you in...";
 
 
-    /*
-       -----------------------------------------------------
-       BACKEND LOGIN WILL GO HERE
-       -----------------------------------------------------
+    try {
 
-       Example:
+        /* =================================================
+           SEND LOGIN REQUEST
+           ================================================= */
 
-       const response = await fetch(
-           "http://localhost:5000/api/sellers/login",
-           {
-               method: "POST",
+        const response = await fetch(
+            "http://localhost:5000/api/sellers/login",
+            {
+                method: "POST",
 
-               headers: {
-                   "Content-Type": "application/json"
-               },
+                headers: {
+                    "Content-Type": "application/json"
+                },
 
-               body: JSON.stringify({
-                   email,
-                   password
-               })
-           }
-       );
-
-       const data = await response.json();
-
-       if (!response.ok) {
-           throw new Error(data.message);
-       }
-
-       localStorage.setItem(
-           "sellerToken",
-           data.token
-       );
-
-       window.location.href =
-           "seller-dashboard.html";
-
-       -----------------------------------------------------
-    */
-
-
-    /* Temporary demo */
-
-    setTimeout(() => {
-
-        alert(
-            "Login validated successfully!\n\n" +
-            "Backend authentication can now be connected."
+                body: JSON.stringify({
+                    email: email,
+                    password: password
+                })
+            }
         );
+
+
+        const data = await response.json();
+
+
+        console.log(
+            "SELLER LOGIN RESPONSE:",
+            data
+        );
+
+
+        /* =================================================
+           HANDLE ERROR
+           ================================================= */
+
+        if (!response.ok) {
+
+            throw new Error(
+                data.message ||
+                "Seller login failed."
+            );
+
+        }
+
+
+        /* =================================================
+           SAVE JWT
+           ================================================= */
+
+        localStorage.setItem(
+            "sellerToken",
+            data.token
+        );
+
+
+        /* =================================================
+           SAVE SELLER DATA
+           ================================================= */
+
+        localStorage.setItem(
+            "seller",
+            JSON.stringify(data.seller)
+        );
+
+
+        console.log(
+            "Seller logged in:",
+            data.seller
+        );
+
+
+        /* =================================================
+           REDIRECT
+           ================================================= */
+
+        window.location.href =
+            "Seller-dashboard.html";
+
+
+    } catch (error) {
+
+        console.error(
+            "Seller login error:",
+            error
+        );
+
+
+        passwordError.textContent =
+            error.message ||
+            "Unable to login. Please try again.";
+
+    } finally {
 
         loginBtn.classList.remove("loading");
 
         loginBtn.querySelector("span:first-child").textContent =
             "Login to Seller Dashboard";
 
-    }, 1200);
-
-});
-
-
-/* =========================================================
-   GOOGLE LOGIN
-   ========================================================= */
-
-googleLogin.addEventListener("click", () => {
-
-    /*
-       Connect Google OAuth here.
-
-       Example flow:
-
-       window.location.href =
-           "http://localhost:5000/auth/google";
-    */
-
-    alert(
-        "Google Login will be connected through Google OAuth."
-    );
-
-});
-
-
-/* =========================================================
-   FORGOT PASSWORD
-   ========================================================= */
-
-forgotPassword.addEventListener("click", (event) => {
-
-    event.preventDefault();
-
-    const email =
-        emailInput.value.trim();
-
-
-    if (email && validateEmail(email)) {
-
-        alert(
-            "Password reset instructions will be sent to:\n" +
-            email
-        );
-
-    } else {
-
-        emailError.textContent =
-            "Enter your email first to reset your password.";
-
-        emailInput.focus();
-
     }
-
-});
-
-
-/* =========================================================
-   REMOVE ERROR WHEN USER TYPES
-   ========================================================= */
-
-emailInput.addEventListener("input", () => {
-
-    emailError.textContent = "";
-
-});
-
-
-passwordInput.addEventListener("input", () => {
-
-    passwordError.textContent = "";
 
 });

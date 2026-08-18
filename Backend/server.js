@@ -12,6 +12,7 @@ require("dotenv").config();
 const connectDB = require("./config/db");
 const authRoutes = require("./routes/authRoutes");
 const sellerRoutes = require("./routes/sellerRoutes");
+const adminRoutes = require("./routes/adminRoutes");
 
 const app = express();
 
@@ -27,6 +28,9 @@ app.use("/api/auth", authRoutes);
 
 // Seller routes
 app.use("/api/sellers", sellerRoutes);
+
+// Admin routes
+app.use("/api/admin", adminRoutes);
 
 // Test route
 app.get("/", (req, res) => {
