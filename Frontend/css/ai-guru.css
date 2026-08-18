@@ -313,3 +313,45 @@ body {
         padding: 0 15px;
     }
 }
+
+
+
+/* =========================================
+   VOICE STATE
+========================================= */
+
+.icon-button.listening {
+    background: #9c5b35;
+    color: white;
+    transform: scale(1.05);
+    box-shadow: 0 0 0 8px rgba(156, 91, 53, 0.12);
+    animation: voicePulse 1.2s infinite;
+}
+
+.voice-status {
+    min-height: 24px;
+    text-align: center;
+    padding: 5px 15px 12px;
+    color: #9c5b35;
+    font-size: 13px;
+    transition: 0.3s ease;
+}
+
+@keyframes voicePulse {
+
+    0% {
+        box-shadow:
+            0 0 0 0 rgba(156, 91, 53, 0.35);
+    }
+
+    70% {
+        box-shadow:
+            0 0 0 12px rgba(156, 91, 53, 0);
+    }
+
+    100% {
+        box-shadow:
+            0 0 0 0 rgba(156, 91, 53, 0);
+    }
+
+}
