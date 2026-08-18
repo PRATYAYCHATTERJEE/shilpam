@@ -10,7 +10,6 @@ const cors = require("cors");
 require("dotenv").config();
 
 const connectDB = require("./config/db");
-const aiRoutes = require("./routes/aiRoutes");
 const authRoutes = require("./routes/authRoutes");
 
 const app = express();
@@ -24,7 +23,7 @@ connectDB();
 
 // Authentication routes
 app.use("/api/auth", authRoutes);
-app.use("/api/ai", aiRoutes);
+
 // Test route
 app.get("/", (req, res) => {
     res.send("Silpam Backend is running!");
