@@ -1,56 +1,101 @@
-import { GoogleGenAI } from "@google/genai";
+let aiClient = null;
 
-const ai = new GoogleGenAI({
-  apiKey: process.env.GEMINI_API_KEY
-});
+async function getGeminiClient() {
+    if (!aiClient) {
+        const { GoogleGenAI } = await import("@google/genai");
+
+        aiClient = new GoogleGenAI({
+            apiKey: process.env.GEMINI_API_KEY
+        });
+    }
+
+    return aiClient;
+}
 
 const SILPAM_SYSTEM_INSTRUCTION = `
-You are "Silpam AI Guru", the Bengali craft assistant for Silpam.
+You are "Silpam AI Guru", the Bengali AI assistant for Silpam.
 
-Your job is to help people learn, make, improve, and sell handmade handicrafts.
+Silpam is a platform that helps people learn, create, and sell handmade crafts.
 
-Rules:
-1. Prefer Bengali when the user speaks Bengali.
-2. Use simple, natural Bengali that an artisan can easily understand.
-3. Give practical step-by-step instructions.
-4. Ask a short follow-up question when the user's situation is unclear.
-5. Never pretend to have physically inspected something unless an image was provided.
-6. Never invent precise traditional craft techniques when you are uncertain.
-7. When appropriate, explain materials, tools, measurements, safety, finishing,
-   pricing, packaging, and selling.
-8. Keep answers concise unless the user asks for detailed instructions.
-9. Be respectful toward traditional artisans and local craft knowledge.
-10. Your goal is to help the user successfully complete the craft.
+Your main job is to help artisans and learners with handicrafts.
+
+You can help with:
+- Learning handicrafts
+- Step-by-step craft instructions
+- Materials
+- Tools
+- Craft techniques
+- Measurements
+- Finishing
+- Common mistakes
+- Product improvement
+- Basic pricing
+- Packaging
+- Selling handmade products
+
+IMPORTANT RULES:
+
+1. If the user speaks Bengali, answer in Bengali.
+2. Use simple, natural Bengali.
+3. Keep voice-style answers easy to understand.
+4. Give practical instructions.
+5. Prefer step-by-step explanations when useful.
+6. Never claim that you can see an object unless an image is actually provided.
+7. Do not invent traditional craft techniques when you are uncertain.
+8. Respect traditional artisan knowledge.
+9. Ask a short follow-up question when more information is needed.
+10. Be friendly, encouraging and respectful.
+
+You are not just a chatbot.
+You are a digital craft mentor helping the user complete their work.
 `;
 
-export async function askSilpamAI({
-  message,
-  course = "",
-  step = "",
-  language = "bn"
+async function askSilpamAI({
+    message,
+    course = "",
+    step = "",
+    language = "bn"
 }) {
-  if (!message || !message.trim()) {
-    throw new Error("Message is required");
-  }
 
-  const context = `
-Current course: ${course || "Not specified"}
-Current learning step: ${step || "Not specified"}
-Preferred language: ${language}
+    if (!message || !message.trim()) {
+        throw new Error("Message is required");
+    }
+
+    if (!process.env.GEMINI_API_KEY) {
+        throw new Error("GEMINI_API_KEY is missing from .env");
+    }
+
+    const ai = await getGeminiClient();
+
+    const prompt = `
+Current Silpam course:
+${course || "Not specified"}
+
+Current learning step:
+${step || "Not specified"}
+
+Preferred language:
+${language}
 
 User question:
 ${message}
 `;
 
-  const interaction = await ai.interactions.create({
-    model: "gemini-3.6-flash",
-    system_instruction: SILPAM_SYSTEM_INSTRUCTION,
-    input: context,
-    generation_config: {
-      temperature: 0.6,
-      thinking_level: "low"
-    }
-  });
+    const response = await ai.models.generateContent({
+        model: "gemini-3.6-flash",
 
-  return interaction.output_text;
+        contents: prompt,
+
+        config: {
+            systemInstruction: SILPAM_SYSTEM_INSTRUCTION,
+            temperature: 0.6,
+            maxOutputTokens: 500
+        }
+    });
+
+    return response.text;
 }
+
+module.exports = {
+    askSilpamAI
+};
