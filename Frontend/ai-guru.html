@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="bn">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Silpam AI Guru</title>
+
+    <link rel="stylesheet" href="./css/ai-guru.css">
+</head>
+
+<body>
+
+    <main class="ai-page">
+
+        <!-- Header -->
+        <header class="ai-header">
+            <div class="ai-brand">
+                <div class="ai-logo">S</div>
+
+                <div>
+                    <h1>Silpam AI Guru</h1>
+                    <p>আপনার ডিজিটাল কারুশিল্প সহকারী</p>
+                </div>
+            </div>
+
+            <div class="ai-status">
+                <span class="status-dot"></span>
+                AI Online
+            </div>
+        </header>
+
+
+        <!-- Assistant intro -->
+        <section class="ai-intro">
+
+            <div class="guru-avatar">
+                ✨
+            </div>
+
+            <div>
+                <h2>নমস্কার! 👋</h2>
+
+                <p>
+                    আমি Silpam AI Guru।
+                    আপনি যে কোনো হস্তশিল্প তৈরি করার সময়
+                    আমাকে প্রশ্ন করতে পারেন।
+                </p>
+            </div>
+
+        </section>
+
+
+        <!-- Context -->
+        <section class="craft-context">
+
+            <div class="context-item">
+                <span>🎨</span>
+
+                <div>
+                    <small>Learning</small>
+                    <strong>Bamboo Flower Vase</strong>
+                </div>
+            </div>
+
+            <div class="context-item">
+                <span>📍</span>
+
+                <div>
+                    <small>Current Step</small>
+                    <strong>Outer Weaving</strong>
+                </div>
+            </div>
+
+        </section>
+
+
+        <!-- Chat -->
+        <section class="chat-container">
+
+            <div class="welcome-message">
+                <span class="message-avatar">S</span>
+
+                <div class="message assistant-message">
+                    এখন আপনি কী জানতে চান?
+                    <br>
+                    যেমন: <b>“এই ধাপের পর কী করব?”</b>
+                </div>
+            </div>
+
+            <div id="chatMessages"></div>
+
+        </section>
+
+
+        <!-- Input -->
+        <section class="chat-input-area">
+
+            <button
+                type="button"
+                id="voiceButton"
+                class="icon-button"
+                title="Voice">
+                🎙️
+            </button>
+
+            <input
+                type="text"
+                id="messageInput"
+                placeholder="আপনার প্রশ্ন লিখুন..."
+                autocomplete="off"
+            >
+
+            <button
+                type="button"
+                id="sendButton"
+                class="send-button">
+                Send
+            </button>
+
+        </section>
+
+        <p id="voiceStatus" class="voice-status"></p>
+
+    </main>
+
+    <script src="./js/ai-guru.js"></script>
+
+</body>
+
+</html>
