@@ -11,6 +11,7 @@ require("dotenv").config();
 
 const connectDB = require("./config/db");
 const authRoutes = require("./routes/authRoutes");
+const sellerRoutes = require("./routes/sellerRoutes");
 
 const app = express();
 
@@ -23,6 +24,12 @@ connectDB();
 
 // Authentication routes
 app.use("/api/auth", authRoutes);
+
+// Seller routes
+app.use("/api/sellers", sellerRoutes);
+
+// AI routes
+app.use("/api/ai", aiRoutes);
 
 // Test route
 app.get("/", (req, res) => {
