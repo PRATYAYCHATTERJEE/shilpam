@@ -197,42 +197,202 @@ document.addEventListener("DOMContentLoaded", () => {
 
     const craftTabs = document.querySelectorAll(".craft-tab");
 
-    console.log("Craft tabs found:", craftTabs.length);
-
     craftTabs.forEach(tab => {
 
         tab.addEventListener("click", () => {
 
-            console.log("TAB CLICKED:", tab.dataset.category);
-
-            /* Remove active from all tabs */
+            // Remove active from all tabs
             craftTabs.forEach(item => {
                 item.classList.remove("active");
             });
 
-            /* Add active to clicked tab */
+            // Add active to clicked tab
             tab.classList.add("active");
 
-            /* Selected category */
+            // Get category
             const category = tab.dataset.category;
-if (category === "all") {
 
-    renderCategoryProducts(allCrafts);
+            console.log("Selected:", category);
 
-}
 
-else if (category === "terracotta") {
+            /* ================================
+               ALL CRAFTS
+            ================================= */
 
-    renderCategoryProducts(terracotta);
+            if (category === "all") {
 
-}
-            console.log("Selected category:", category);
+                renderCategoryProducts(allCrafts);
+
+            }
+
+
+            /* ================================
+               TERRACOTTA
+            ================================= */
+
+            else if (category === "terracotta") {
+
+                renderCategoryProducts(terracotta);
+
+            }
+
+
+            /* ================================
+               ARTISANS
+            ================================= */
+
+            else if (category === "artisans") {
+
+                renderArtisans();
+
+            }
 
         });
 
     });
 
 });
+
+const artisans = [
+
+    {
+        name: "Gopal Pal",
+        craft: "Terracotta Artisan",
+        location: "Bishnupur, West Bengal",
+        image: "images/artisans/gopal.jpg",
+        description: "Creating traditional terracotta art inspired by Bengal's heritage."
+    },
+
+    {
+        name: "Maya Das",
+        craft: "Kantha Artist",
+        location: "Shantiniketan, West Bengal",
+        image: "images/artisans/maya.jpg",
+        description: "Keeping the beautiful tradition of Bengali Kantha embroidery alive."
+    },
+
+    {
+        name: "Haripada Saha",
+        craft: "Bamboo Craftsman",
+        location: "Nadia, West Bengal",
+        image: "images/artisans/haripada.jpg",
+        description: "Crafting beautiful handmade products from natural bamboo and cane."
+    },
+
+    {
+        name: "Sabitri Roy",
+        craft: "Dokra Artisan",
+        location: "Bankura, West Bengal",
+        image: "images/artisans/sabitri.jpg",
+        description: "Practising the ancient Dokra metal craft of Bengal."
+    }
+
+];
+
+
+function renderArtisans() {
+
+    const categoryProducts =
+        document.getElementById("categoryProducts");
+
+    if (!categoryProducts) {
+        console.error("categoryProducts container not found");
+        return;
+    }
+
+    categoryProducts.innerHTML = "";
+
+
+    /* ================================
+       ARTISAN HEADER
+    ================================= */
+
+    const heading = document.createElement("div");
+
+    heading.className = "artisan-section-heading";
+
+    heading.innerHTML = `
+        <span>✦</span>
+
+        <div>
+            <small>MEET THE PEOPLE BEHIND THE CRAFT</small>
+            <h2>Meet Our Artisans</h2>
+            <p>
+                Stories, skills and traditions passed down through generations.
+            </p>
+        </div>
+
+        <span>✦</span>
+    `;
+
+    categoryProducts.appendChild(heading);
+
+
+    /* ================================
+       ARTISAN GRID
+    ================================= */
+
+    const grid = document.createElement("div");
+
+    grid.className = "artisan-grid";
+
+
+    artisans.forEach(artisan => {
+
+        const card = document.createElement("div");
+
+        card.className = "artisan-card";
+
+        card.innerHTML = `
+
+            <div class="artisan-image">
+
+                <img
+                    src="${artisan.image}"
+                    alt="${artisan.name}"
+                >
+
+                <span class="artisan-badge">
+                    Artisan
+                </span>
+
+            </div>
+
+
+            <div class="artisan-info">
+
+                <h3>
+                    ${artisan.name}
+                </h3>
+
+                <span class="artisan-craft">
+                    ${artisan.craft}
+                </span>
+
+                <p class="artisan-location">
+                    ✦ ${artisan.location}
+                </p>
+
+                <p class="artisan-description">
+                    ${artisan.description}
+                </p>
+
+                <button class="artisan-view">
+                    Discover Story →
+                </button>
+
+            </div>
+
+        `;
+
+        grid.appendChild(card);
+
+    });
+
+
+    categoryProducts.appendChild(grid);
+
+}
 
 
 
