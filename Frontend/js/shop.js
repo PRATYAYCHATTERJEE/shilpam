@@ -157,76 +157,76 @@ const craftCategories = {
     },
 
 
-    textiles: {
-        title: "Kantha & Textiles",
+    Artworks: {
+        title: "Artworks & Paintings",
 
         cards: [
             {
-                name: "Kantha Forms and Transformations",
-                image: "assets/kantha/kan1.png",
+                name: "artworks & Paintings",
+                image: "assets/Artworks/art1.png",
                 category: "55",
                 price: "₹55",
                 link: "terracotta-vase.html"
             },
             {
-                name: "Alpona: The Art of Bengali Folk Painting",
-                image: "assets/kantha/kan2.png",
+                name: "artworks & Paintings",
+                image: "assets/Artworks/art2.png",
                 category: "55",
                 price: "₹55",
                 link: "terracotta-vase.html"
             },
              {
-    name: "Terracotta Vase",
-    image: "assets/allcrafts/all.png",
-    category: "Terracotta",
+    name: "artworks & Paintings",
+    image: "assets/Artworks/art3.png",
+    category: "Artworks",
     price: "₹899",
     link: "terracotta-vase.html"
 }, {
-    name: "Terracotta Vase",
-    image: "assets/allcrafts/all.png",
-    category: "Terracotta",
+    name: "artworks & Paintings",
+    image: "assets/Artworks/art4.png",
+    category: "Artworks",
     price: "₹899",
     link: "terracotta-vase.html"
 },
              {
-    name: "Terracotta Vase",
-    image: "assets/allcrafts/all.png",
-    category: "Terracotta",
+    name: "artworks & Paintings",
+    image: "assets/Artworks/art5.png",
+    category: "Artworks",
     price: "₹899",
     link: "terracotta-vase.html"
 },  
 {
-    name: "Terracotta Vase",
-    image: "assets/allcrafts/all.png",
-    category: "Terracotta",
+    name: "artworks & Paintings",
+    image: "assets/Artworks/art6.png",
+    category: "Artworks",
     price: "₹899",
     link: "terracotta-vase.html"
 },
 {
-    name: "Terracotta Vase",
-    image: "assets/allcrafts/all.png",
-    category: "Terracotta",
+    name: "artworks & Paintings",
+    image: "assets/Artworks/art7.png",
+    category: "Artworks",
     price: "₹899",
     link: "terracotta-vase.html"
 },
 {
-    name: "Terracotta Vase",
-    image: "assets/allcrafts/all.png",
-    category: "Terracotta",
+    name: "artworks & Paintings",
+    image: "assets/Artworks/art8.png",
+    category: "Artworks",
     price: "₹899",
     link: "terracotta-vase.html"
 },
 {
-    name: "Terracotta Vase",
-    image: "assets/allcrafts/all.png",
-    category: "Terracotta",
+    name: "artworks & Paintings",
+    image: "assets/Artworks/art9.png",
+    category: "Artworks",
     price: "₹899",
     link: "terracotta-vase.html"
 },
 {
-    name: "Terracotta Vase",
-    image: "assets/allcrafts/all.png",
-    category: "Terracotta",
+    name: "artworks & Paintings",
+    image: "assets/Artworks/art10.png",
+    category: "Artworks",
     price: "₹899",
     link: "terracotta-vase.html"
 },
