@@ -633,20 +633,74 @@ const craftCategories = {
 
         cards: [
             {
-                name: "Cane Bags",
-                image: "assets/categories/cane-bag.jpg"
+                name: "Bags & Accessories",
+                image: "assets/Bags/bag1.png",
+                category: "55",
+                price: "₹55",
+                link: "Dokra & Metal Art"
             },
             {
-                name: "Kantha Bags",
-                image: "assets/categories/kantha-bag.jpg"
+                name: "Bags & Accessories",
+                image: "assets/Bags/bag2.png",
+                category: "55",
+                price: "₹55",
+                link: "kantha-bag.html"
             },
             {
-                name: "Handwoven Bags",
-                image: "assets/categories/handwoven-bag.jpg"
+                name: "Bags & Accessories",
+                image: "assets/Bags/bag3.png",
+                category: "55",
+                price: "₹55",
+                link: "handwoven-bag.html"
             },
             {
-                name: "Traditional Accessories",
-                image: "assets/categories/traditional-bags.jpg"
+                name: "Bags & Accessories",
+                image: "assets/Bags/bag4.png",
+                category: "55",
+                price: "₹55",
+                link: "traditional-bags.html"  
+            },
+             {
+                name: "Bags & Accessories",
+                image: "assets/Bags/bag5.png",
+                category: "55",
+                price: "₹55",
+                link: "Dokra & Metal Art"
+            },
+             {
+                name: "Bags & Accessories",
+                image: "assets/Bags/bag6.jpeg",
+                category: "55",
+                price: "₹55",
+                link: "Dokra & Metal Art"
+            },
+             {
+                name: "Bags & Accessories",
+                image: "assets/Bags/bag7.png",
+                category: "55",
+                price: "₹55",
+                link: "Dokra & Metal Art"
+            },
+             {
+                name: "Bags & Accessories",
+                image: "assets/Bags/bag8.png",
+                category: "55",
+                price: "₹55",
+                link: "Dokra & Metal Art"
+            },
+             {
+                name: "Bags & Accessories",
+                image: "assets/Bags/bag9.png",
+                category: "55",
+                price: "₹55",
+                link: "Dokra & Metal Art"
+            },
+             {
+                name: "Bags & Accessories",
+                image: "assets/Bags/bag10.png",
+                category: "55",
+                price: "₹55",
+                link: "Dokra & Metal Art"
             }
         ]
     }
