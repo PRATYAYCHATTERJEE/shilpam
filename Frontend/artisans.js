@@ -20,7 +20,7 @@ document.addEventListener("DOMContentLoaded", () => {
             location: "Bishnupur, Bankura",
             district: "bankura",
             experience: 25,
-            rating: 4.8,
+            rating: 4.7,
             reviews: 120,
             description:
                 "Keeping the rich tradition of terracotta art alive for generations.",
