@@ -675,39 +675,43 @@
 
     position: relative;
 
-    min-height: 294px;
+    min-height: 330px;
 
-    padding: 17px 15px 14px;
+    padding: 18px 15px 82px;
 
     display: grid;
 
     grid-template-columns: 150px 1fr;
 
-    gap: 14px;
+    column-gap: 20px;
 
     background:
-
         linear-gradient(
             145deg,
-            rgba(255,253,247,.92),
-            rgba(250,243,232,.92)
+            rgba(255,253,247,.96),
+            rgba(250,243,232,.96)
         );
 
     border: 1px solid rgba(91,64,48,.12);
 
-    border-radius: 11px;
+    border-radius: 14px;
 
     box-shadow:
         0 4px 13px rgba(76,44,23,.07);
 
     overflow: hidden;
 
+    box-sizing: border-box;
+
     transition:
         transform .3s ease,
         box-shadow .3s ease;
-
 }
 
+
+/* =========================================================
+   CARD HOVER
+========================================================= */
 
 .artisan-card:hover {
 
@@ -727,20 +731,28 @@
 
     width: 150px;
 
-    height: 190px;
+    height: 220px;
 
-    border-radius: 50% 50% 47% 47%;
+    border-radius:
+        50% 50% 47% 47%;
 
     overflow: hidden;
 
     border: 2px solid #fff;
 
-    outline: 1px solid rgba(168,68,22,.35);
+    outline:
+        1px solid rgba(168,68,22,.35);
 
     background: #d8c4ad;
 
+    flex-shrink: 0;
+
 }
 
+
+/* =========================================================
+   CARD PHOTO IMAGE
+========================================================= */
 
 .artisan-card-photo img {
 
@@ -752,7 +764,8 @@
 
     display: block;
 
-    transition: transform .5s ease;
+    transition:
+        transform .5s ease;
 
 }
 
@@ -777,10 +790,18 @@
 
     flex-direction: column;
 
+    padding-top: 2px;
+
 }
 
 
+/* =========================================================
+   CARD TOP
+========================================================= */
+
 .artisan-card-top {
+
+    width: 100%;
 
     display: flex;
 
@@ -788,22 +809,32 @@
 
     justify-content: space-between;
 
-    gap: 7px;
+    gap: 8px;
 
 }
 
+
+/* =========================================================
+   ARTISAN BADGE
+========================================================= */
 
 .artisan-badge {
 
     display: inline-flex;
 
-    padding: 6px 10px;
+    align-items: center;
+
+    justify-content: center;
+
+    padding: 7px 13px;
 
     border-radius: 20px;
 
     font-size: 10px;
 
     font-weight: 600;
+
+    line-height: 1;
 
     white-space: nowrap;
 
@@ -813,6 +844,10 @@
 
 }
 
+
+/* =========================================================
+   HEART BUTTON
+========================================================= */
 
 .artisan-heart {
 
@@ -830,7 +865,11 @@
 
     padding: 0;
 
-    transition: .2s ease;
+    margin-left: auto;
+
+    transition:
+        color .2s ease,
+        transform .2s ease;
 
 }
 
@@ -851,15 +890,21 @@
 
 .artisan-card h3 {
 
-    margin: 13px 0 7px;
+    margin:
 
-    font-family: var(--artisan-serif);
+        15px 0 8px;
 
-    font-size: 25px;
+    font-family:
+
+        var(--artisan-serif);
+
+    font-size: 26px;
 
     font-weight: 700;
 
-    line-height: 1;
+    line-height: 1.15;
+
+    color: #3f2418;
 
 }
 
@@ -882,14 +927,19 @@
 
     line-height: 1.5;
 
+    color: #493d35;
+
 }
 
 
 .artisan-location span {
 
-    color: var(--artisan-terracotta);
+    color:
+        var(--artisan-terracotta);
 
     font-size: 14px;
+
+    line-height: 1;
 
 }
 
@@ -900,50 +950,79 @@
 
 .artisan-description {
 
-    margin: 12px 0 0;
+    margin:
 
-    font-family: var(--artisan-serif);
+        16px 0 0;
+
+    font-family:
+
+        var(--artisan-serif);
 
     font-size: 14px;
 
-    line-height: 1.55;
+    line-height: 1.65;
 
-    color: #49352a;
+    color: #665349;
+
+    max-width: 280px;
 
 }
 
 
 /* =========================================================
    CARD BOTTOM
+   IMPORTANT:
+   This now stretches across the FULL CARD
 ========================================================= */
 
 .artisan-card-bottom {
 
-    margin-top: auto;
+    position: absolute;
+
+    left: 15px;
+
+    right: 15px;
+
+    bottom: 14px;
+
+    height: 58px;
 
     padding-top: 12px;
 
-    border-top: 1px solid rgba(91,64,48,.10);
+    border-top:
+        1px solid rgba(91,64,48,.12);
 
     display: flex;
 
-    align-items: flex-end;
+    align-items: center;
 
     justify-content: space-between;
 
-    gap: 8px;
+    gap: 15px;
+
+    box-sizing: border-box;
 
 }
 
+
+/* =========================================================
+   STATS
+========================================================= */
 
 .artisan-stats {
 
     display: flex;
 
-    gap: 14px;
+    align-items: center;
+
+    gap: 26px;
 
 }
 
+
+/* =========================================================
+   INDIVIDUAL STAT
+========================================================= */
 
 .artisan-stat {
 
@@ -951,28 +1030,56 @@
 
     flex-direction: column;
 
-    gap: 1px;
+    justify-content: center;
+
+    gap: 3px;
 
 }
 
+
+/* =========================================================
+   STAT VALUE
+========================================================= */
 
 .artisan-stat strong {
 
-    font-size: 13px;
+    display: flex;
+
+    align-items: center;
+
+    gap: 5px;
+
+    font-size: 15px;
+
+    line-height: 1;
 
     font-weight: 600;
 
+    color: #3f2418;
+
 }
 
+
+/* =========================================================
+   STAT LABEL
+========================================================= */
 
 .artisan-stat span {
 
     font-size: 9px;
 
+    line-height: 1.2;
+
     color: #715d4e;
+
+    white-space: nowrap;
 
 }
 
+
+/* =========================================================
+   RATING
+========================================================= */
 
 .artisan-rating strong {
 
@@ -980,41 +1087,54 @@
 
     align-items: center;
 
-    gap: 3px;
-
-}
-
-
-.artisan-rating strong::before {
-
-    content: "☆";
-
-    color: var(--artisan-terracotta);
-
-    font-size: 17px;
+    gap: 5px;
 
 }
 
 
 /* =========================================================
-   VIEW PROFILE
+   RATING STAR
+========================================================= */
+
+.artisan-rating strong::before {
+
+    content: "☆";
+
+    color:
+        var(--artisan-terracotta);
+
+    font-size: 21px;
+
+    line-height: 1;
+
+}
+
+
+/* =========================================================
+   VIEW PROFILE BUTTON
 ========================================================= */
 
 .artisan-profile-button {
 
     border: 0;
 
-    border-radius: 6px;
+    border-radius: 7px;
 
-    padding: 9px 12px;
+    padding: 11px 18px;
 
-    background: var(--artisan-terracotta);
+    min-width: 118px;
+
+    height: 40px;
+
+    background:
+        var(--artisan-terracotta);
 
     color: #fff;
 
-    font-family: var(--artisan-sans);
+    font-family:
+        var(--artisan-sans);
 
-    font-size: 10px;
+    font-size: 11px;
 
     font-weight: 600;
 
@@ -1022,19 +1142,222 @@
 
     white-space: nowrap;
 
-    transition: .25s ease;
+    transition:
+
+        background .25s ease,
+
+        transform .25s ease,
+
+        box-shadow .25s ease;
 
 }
 
+
+/* =========================================================
+   BUTTON HOVER
+========================================================= */
 
 .artisan-profile-button:hover {
 
-    background: var(--artisan-terracotta-dark);
+    background:
+        var(--artisan-terracotta-dark);
 
-    transform: translateY(-1px);
+    transform:
+        translateY(-2px);
+
+    box-shadow:
+        0 5px 12px rgba(168,68,22,.20);
 
 }
 
+
+/* =========================================================
+   OPTIONAL:
+   DIFFERENT BADGE COLORS
+========================================================= */
+
+.artisan-card[data-craft="bamboo"] .artisan-badge {
+
+    background: #dfe7c9;
+
+}
+
+
+.artisan-card[data-craft="dokra"] .artisan-badge {
+
+    background: #f2d7a3;
+
+}
+
+
+.artisan-card[data-craft="kantha"] .artisan-badge {
+
+    background: #dfcfe4;
+
+}
+
+
+.artisan-card[data-craft="folk"] .artisan-badge {
+
+    background: #f4c58e;
+
+}
+
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media (max-width: 900px) {
+
+    .artisan-card {
+
+        grid-template-columns: 130px 1fr;
+
+        column-gap: 16px;
+
+        min-height: 340px;
+
+    }
+
+
+    .artisan-card-photo {
+
+        width: 130px;
+
+        height: 200px;
+
+    }
+
+
+    .artisan-card h3 {
+
+        font-size: 23px;
+
+    }
+
+
+    .artisan-description {
+
+        font-size: 13px;
+
+    }
+
+
+    .artisan-stats {
+
+        gap: 18px;
+
+    }
+
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 600px) {
+
+    .artisan-card {
+
+        grid-template-columns: 110px 1fr;
+
+        column-gap: 13px;
+
+        min-height: 330px;
+
+        padding:
+
+            15px 12px 78px;
+
+    }
+
+
+    .artisan-card-photo {
+
+        width: 110px;
+
+        height: 175px;
+
+    }
+
+
+    .artisan-badge {
+
+        font-size: 9px;
+
+        padding: 6px 9px;
+
+    }
+
+
+    .artisan-heart {
+
+        font-size: 22px;
+
+    }
+
+
+    .artisan-card h3 {
+
+        font-size: 21px;
+
+        margin-top: 12px;
+
+    }
+
+
+    .artisan-location {
+
+        font-size: 10px;
+
+    }
+
+
+    .artisan-description {
+
+        font-size: 12px;
+
+        line-height: 1.55;
+
+    }
+
+
+    .artisan-card-bottom {
+
+        left: 12px;
+
+        right: 12px;
+
+    }
+
+
+    .artisan-stats {
+
+        gap: 13px;
+
+    }
+
+
+    .artisan-stat strong {
+
+        font-size: 13px;
+
+    }
+
+
+    .artisan-profile-button {
+
+        min-width: 100px;
+
+        padding: 9px 12px;
+
+        font-size: 10px;
+
+    }
+
+}
 
 /* =========================================================
    CATEGORY COLOR VARIANTS
