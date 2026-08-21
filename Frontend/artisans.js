@@ -19,7 +19,7 @@ document.addEventListener("DOMContentLoaded", () => {
             craft: "Terracotta Artisan",
             location: "Bishnupur, Bankura",
             district: "bankura",
-            experience: 25,
+            experience: 5,
             rating: 4.7,
             reviews: 120,
             description:
