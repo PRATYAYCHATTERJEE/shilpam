@@ -36,7 +36,7 @@ document.addEventListener("DOMContentLoaded", () => {
             location: "Shantiniketan, Birbhum",
             district: "birbhum",
             experience: 18,
-            rating: 4.7,
+            rating: 4.9,
             reviews: 98,
             description:
                 "Crafting beautiful bamboo products with skill and patience.",
