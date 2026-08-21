@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Meet the Artisans | Silpam</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=DM+Sans:wght@400;500;600;700&family=Noto+Serif+Bengali:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="artisans.css">
+</head>
+
+
+<body class="artisan-page">
+
+
+    <!-- =========================================
+         TOP HEADER
+    ========================================== -->
+
+    <header class="artisan-header">
+
+        <a href="index.html" class="artisan-brand">
+
+            <div class="artisan-brand-symbol">
+                ✿
+            </div>
+
+            <div class="artisan-brand-text">
+
+                <h1>Silpam</h1>
+
+                <span>Crafted with Heritage</span>
+
+            </div>
+
+        </a>
+
+
+        <a href="index.html" class="artisan-home-button">
+
+            <span>←</span>
+
+            Back to Home
+
+        </a>
+
+    </header>
+
+
+
+    <!-- =========================================
+         DECORATIVE BACKGROUND
+    ========================================== -->
+
+    <div class="artisan-decor artisan-decor-left">
+
+        <span>❧</span>
+        <span>❦</span>
+        <span>❧</span>
+
+    </div>
+
+
+    <div class="artisan-decor artisan-decor-right">
+
+        <span>❦</span>
+        <span>❧</span>
+        <span>❦</span>
+
+    </div>
+
+
+
+    <!-- =========================================
+         HERO
+    ========================================== -->
+
+    <section class="artisan-hero">
+
+        <div class="artisan-hero-ornament">
+
+            <span>❧</span>
+
+            <i></i>
+
+            <span>❧</span>
+
+        </div>
+
+
+        <h2>
+            Meet the Artisans
+        </h2>
+
+
+        <div class="artisan-hero-divider">
+
+            <span></span>
+
+            <b>✦</b>
+
+            <span></span>
+
+        </div>
+
+
+        <p>
+            The talented hands and creative hearts behind every
+            Silpam creation.
+        </p>
+
+
+        <p class="artisan-bengali-subtitle">
+            কারিগরের হাতে বোনা বাংলার গল্প
+        </p>
+
+    </section>
+
+
+
+    <!-- =========================================
+         MAIN ARTISAN AREA
+    ========================================== -->
+
+    <main class="artisan-main">
+
+
+        <!-- =====================================
+             FILTER PANEL
+        ====================================== -->
+
+        <section class="artisan-filter-panel">
+
+
+            <div class="artisan-category-tabs">
+
+
+                <button
+                    class="artisan-tab active"
+                    data-category="all">
+
+                    <span>▦</span>
+
+                    All Artisans
+
+                </button>
+
+
+                <button
+                    class="artisan-tab"
+                    data-category="terracotta">
+
+                    <span>♧</span>
+
+                    Terracotta
+
+                </button>
+
+
+                <button
+                    class="artisan-tab"
+                    data-category="bamboo">
+
+                    <span>◇</span>
+
+                    Bamboo & Cane
+
+                </button>
+
+
+                <button
+                    class="artisan-tab"
+                    data-category="dokhra">
+
+                    <span>♜</span>
+
+                    Dokra & Metal
+
+                </button>
+
+
+                <button
+                    class="artisan-tab"
+                    data-category="woodcraft">
+
+                    <span>♧</span>
+
+                    Woodcraft
+
+                </button>
+
+
+                <button
+                    class="artisan-tab"
+                    data-category="textile">
+
+                    <span>♧</span>
+
+                    Textile
+
+                </button>
+
+
+                <button
+                    class="artisan-tab"
+                    data-category="jewellery">
+
+                    Jewellery
+
+                </button>
+
+
+                <button
+                    class="artisan-tab"
+                    data-category="others">
+
+                    Others
+
+                </button>
+
+
+            </div>
+
+
+
+            <!-- FILTER CONTROLS -->
+
+            <div class="artisan-filter-controls">
+
+
+                <select id="artisanDistrict">
+
+                    <option value="all">
+                        All Districts
+                    </option>
+
+                    <option value="bankura">
+                        Bankura
+                    </option>
+
+                    <option value="birbhum">
+                        Birbhum
+                    </option>
+
+                    <option value="purulia">
+                        Purulia
+                    </option>
+
+                    <option value="murshidabad">
+                        Murshidabad
+                    </option>
+
+                    <option value="nadia">
+                        Nadia
+                    </option>
+
+                    <option value="kolkata">
+                        Kolkata
+                    </option>
+
+                    <option value="hooghly">
+                        Hooghly
+                    </option>
+
+                    <option value="paschim medinipur">
+                        Paschim Medinipur
+                    </option>
+
+                </select>
+
+
+                <select id="artisanSort">
+
+                    <option value="popular">
+                        Sort by: Popular
+                    </option>
+
+                    <option value="experience">
+                        Most Experienced
+                    </option>
+
+                    <option value="rating">
+                        Highest Rated
+                    </option>
+
+                    <option value="name">
+                        Name
+                    </option>
+
+                </select>
+
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =====================================
+             ARTISAN GRID
+        ====================================== -->
+
+        <section
+            class="artisan-grid"
+            id="artisanGrid">
+
+        </section>
+
+
+
+        <!-- =====================================
+             SUPPORT SECTION
+        ====================================== -->
+
+        <section class="artisan-support">
+
+
+            <div class="artisan-support-intro">
+
+                <div class="artisan-support-icon">
+                    ♡
+                </div>
+
+                <div>
+
+                    <h3>
+                        Support Artisans,
+                        <br>
+                        Empower Communities
+                    </h3>
+
+                    <p>
+                        Every purchase you make helps artisans grow
+                        and preserve our rich cultural heritage.
+                    </p>
+
+                    <span class="artisan-support-bengali">
+                        আপনার কেনাকাটায় বাঁচে বাংলার ঐতিহ্য
+                    </span>
+
+                </div>
+
+            </div>
+
+
+
+            <div class="artisan-support-items">
+
+
+                <div class="artisan-support-item">
+
+                    <div class="support-icon">
+                        ♧
+                    </div>
+
+                    <span>
+                        Fair Opportunities
+                    </span>
+
+                </div>
+
+
+                <div class="artisan-support-item">
+
+                    <div class="support-icon">
+                        ❦
+                    </div>
+
+                    <span>
+                        Sustainable Livelihoods
+                    </span>
+
+                </div>
+
+
+                <div class="artisan-support-item">
+
+                    <div class="support-icon">
+                        ♡
+                    </div>
+
+                    <span>
+                        Empowering Women
+                    </span>
+
+                </div>
+
+
+                <div class="artisan-support-item">
+
+                    <div class="support-icon">
+                        ♜
+                    </div>
+
+                    <span>
+                        Preserving Heritage
+                    </span>
+
+                </div>
+
+
+            </div>
+
+        </section>
+
+
+    </main>
+
+
+
+    <script src="artisans.js"></script>
+
+</body>
+
+</html>
