@@ -37,7 +37,7 @@ document.addEventListener("DOMContentLoaded", () => {
             district: "birbhum",
             experience: 18,
             rating: 4.9,
-            reviews: 98,
+            reviews: 9,
             description:
                 "Crafting beautiful bamboo products with skill and patience.",
             image: "images/artisans/maya-das.jpg"
