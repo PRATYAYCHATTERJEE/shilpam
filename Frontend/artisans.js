@@ -24,7 +24,7 @@ document.addEventListener("DOMContentLoaded", () => {
             reviews: 120,
             description:
                 "Keeping the rich tradition of terracotta art alive for generations.",
-            image: "images/artisans/gopal-pal.jpg"
+            image: "assets/bamboo/bamboo1.png"
         },
 
 
