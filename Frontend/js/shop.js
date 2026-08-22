@@ -706,7 +706,7 @@ const craftCategories = {
     },
 
     handembroidery: {
-        title: "Bags & Accessories",
+        title: "হাতের সূচিকর্ম ",
 
         cards: [
             {
