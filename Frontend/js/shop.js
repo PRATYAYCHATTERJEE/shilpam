@@ -714,7 +714,7 @@ const craftCategories = {
                 image: "",
                 category: "55",
                 price: "₹55",
-                link: "Dokra & Metal Art"
+                link: "Dokra &  Art"
             },
             {
                 name: "Bags & Accessories",
