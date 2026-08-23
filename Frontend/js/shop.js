@@ -726,7 +726,7 @@ const craftCategories = {
             {
                 name: "Bags & Accessories",
                 image: "assets/Bags/bag3.png",
-                category: "55",
+                category: "555",
                 price: "₹55",
                 link: "handwoven-bag.html"
             },
