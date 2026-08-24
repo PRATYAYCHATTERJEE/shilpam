@@ -98,7 +98,7 @@ document.addEventListener("DOMContentLoaded", () => {
             category: "jewellery",
             craft: "Jewellery Artisan",
             location: "Kolkata, West Bengal",
-            district: "kolkata",
+            district: "mumbai",
             experience: 12,
             rating: 4.7,
             reviews: 95,
