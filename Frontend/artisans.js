@@ -117,7 +117,7 @@ document.addEventListener("DOMContentLoaded", () => {
             district: "hooghly",
             experience: 10,
             rating: 4.6,
-            reviews: 70,
+            reviews: 7,
             description:
                 "Eco-friendly jute creations for a better tomorrow.",
             image: "images/artisans/lata-halder.jpg"
