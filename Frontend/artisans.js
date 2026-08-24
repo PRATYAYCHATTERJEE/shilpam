@@ -64,7 +64,7 @@ document.addEventListener("DOMContentLoaded", () => {
             id: 4,
             name: "Sabita Roy",
             category: "textile",
-            craft: "Kantha Artisan",
+            craft: "Kantha ",
             location: "Murshidabad, West Bengal",
             district: "murshidabad",
             experience: 15,
