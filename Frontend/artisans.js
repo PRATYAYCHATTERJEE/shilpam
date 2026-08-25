@@ -67,7 +67,7 @@ document.addEventListener("DOMContentLoaded", () => {
             craft: "Kantha ",
             location: "Murshidabad, West Bengal",
             district: "murshidabad",
-            experience: 15,
+            experience: 1,
             rating: 4.8,
             reviews: 102,
             description:
