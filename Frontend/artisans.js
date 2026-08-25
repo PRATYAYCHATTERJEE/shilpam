@@ -132,7 +132,7 @@ document.addEventListener("DOMContentLoaded", () => {
             location: "Pingla, Paschim Medinipur",
             district: "paschim medinipur",
             experience: 1,
-            rating: 4.8,
+            rating: 4.0,
             reviews: 110,
             description:
                 "Bringing Bengali folk art to life with vibrant colors.",
