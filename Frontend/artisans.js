@@ -115,7 +115,7 @@ document.addEventListener("DOMContentLoaded", () => {
             craft: "Jute Artisan",
             location: "Hooghly, West Bengal",
             district: "hooghly",
-            experience: 10,
+            experience: 1,
             rating: 4.6,
             reviews: 7,
             description:
