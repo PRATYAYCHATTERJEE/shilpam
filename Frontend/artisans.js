@@ -97,7 +97,7 @@ document.addEventListener("DOMContentLoaded", () => {
             name: "Purnima Karmakar",
             category: "jewellery",
             craft: "Jewellery Artisan",
-            location: "Kolkata, West Bengal",
+            location: " West Bengal",
             district: "mumbai",
             experience: 12,
             rating: 4.7,
