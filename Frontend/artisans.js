@@ -78,7 +78,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
         {
             id: 5,
-            name: "Rina Mondal",
+            name: " Mondal",
             category: "woodcraft",
             craft: "Woodcraft Artisan",
             location: "Nadia, West Bengal",
