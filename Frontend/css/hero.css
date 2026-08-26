@@ -146,6 +146,31 @@
 
 
 
+.craft-icon {
+    width: 52px;
+    height: 52px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border: 1px solid rgba(170, 80, 35, 0.25);
+    border-radius: 50%;
+
+    overflow: hidden;
+}
+
+.craft-icon img {
+    width: 26px;
+    height: 26px;
+
+    object-fit: contain;
+
+    display: block;
+}
+
+
+
 
 
 
