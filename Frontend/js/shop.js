@@ -34,19 +34,19 @@ const craftCategories = {
             },
              {
     name: "Terracotta Vase",
-    image: "assets/dokra/dok1.png",
+    image: "assets/dokra/dok3.png",
     category: "Terracotta",
     price: "₹899",
     link: "terracotta-vase.html"
 },
             {
                 name: "Kantha & Textiles",
-                image: "assets/categories/textiles.jpg",
+                image: "assets/woodcraft/wood8.jpeg",
                 category: "55",
                 price: "₹55",
                 link: "terracotta-vase.html"
             },
-             {
+             { 
     name: "Terracotta Vase",
     image: "assets/allcrafts/all.png",
     category: "Terracotta",
