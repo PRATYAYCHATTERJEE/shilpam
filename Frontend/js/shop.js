@@ -6,35 +6,35 @@ const craftCategories = {
         cards: [
             {
     name: "Terracotta Vase",
-    image: "assets/allcrafts/all.png",
+    image: "assets/Bamboo/bamboo1.png",
     category: "Terracotta",
     price: "₹899",
     link: "terracotta-vase.html"
 },
              {
     name: "Terracotta Vase",
-    image: "assets/allcrafts/all.png",
+    image: "assets/Terracotta/terra1.png",
     category: "Terracotta",
     price: "₹899",
     link: "terracotta-vase.html"
 },
             {
                 name: "Kantha & Textiles",
-                image: "assets/categories/textiles.jpg",
+                image: "assets/Jwellary/jwellary1.png",
                 category: "Terracotta",
                 price: "₹899",
                 link: "terracotta-vase.html"
             },
             {
                 name: "Kantha & Textiles",
-                image: "assets/categories/textiles.jpg",
+                image: "assets/Madur/mad3.png",
                 category: "55",
                 price: "₹55",
                 link: "terracotta-vase.html"
             },
              {
     name: "Terracotta Vase",
-    image: "assets/allcrafts/all.png",
+    image: "assets/homeDecor/home1.png",
     category: "Terracotta",
     price: "₹899",
     link: "terracotta-vase.html"
