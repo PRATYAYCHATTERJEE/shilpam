@@ -1,7 +1,7 @@
 const craftCategories = {
 
     all: {
-        title: "Shop by Category",
+        title: "Popular Products",
 
         cards: [
             {
