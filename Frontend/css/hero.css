@@ -146,29 +146,39 @@
 
 
 
+/* ================================
+   CRAFT CATEGORY ICON
+================================ */
+
 .craft-icon {
-    width: 52px;
-    height: 52px;
+    width: 56px;
+    height: 56px;
 
     display: flex;
     align-items: center;
     justify-content: center;
 
-    border: 1px solid rgba(170, 80, 35, 0.25);
+    border: 1px solid rgba(170, 80, 35, 0.28);
     border-radius: 50%;
 
-    overflow: hidden;
+    box-sizing: border-box;
+    flex-shrink: 0;
 }
 
+
+/* YOUR CUSTOM ICON IMAGE */
+
 .craft-icon img {
-    width: 26px;
-    height: 26px;
+    width: 34px;
+    height: 34px;
 
     object-fit: contain;
 
     display: block;
-}
 
+    /* Makes small icons appear sharper */
+    transform: scale(1.05);
+}
 
 
 
