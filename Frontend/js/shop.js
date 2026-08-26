@@ -753,28 +753,28 @@ const craftCategories = {
             },
              {
                 name: "Bags & Accessories",
-                image: "assets/Bags/bag7.png",
+                image: "assets/madur/mad7.png",
                 category: "55",
                 price: "₹555",
                 link: "Dokra & Metal Art"
             },
              {
                 name: "Bags & Accessories",
-                image: "assets/Bags/bag8.png",
+                image: "assets/madur/mad8.png",
                 category: "55",
                 price: "₹55",
                 link: "Dokra & Metal Art"
             },
              {
                 name: "Bags & Accessories",
-                image: "assets/Bags/bag9.png",
+                image: "assets/madur/mad9.png",
                 category: "55",
                 price: "₹55",
                 link: "Dokra & Metal Art"
             },
              {
                 name: "Bags & Accessories",
-                image: "assets/Bags/bag10.png",
+                image: "assets/madur/mad10.png",
                 category: "55",
                 price: "₹55",
                 link: "Dokra & Metal Art"
