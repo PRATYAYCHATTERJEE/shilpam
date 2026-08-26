@@ -55,14 +55,14 @@ const craftCategories = {
 },
              {
     name: "Terracotta Vase",
-    image: "assets/allcrafts/all.png",
+    image: "assets/Bags/bag1.png",
     category: "Terracotta",
     price: "₹899",
     link: "terracotta-vase.html"
 },
             {
                  name: "Woodcraft",
-                image: "assets/categories/woodcraft.jpg",
+                image: "assets/Artworks/art1.png",
                 category: "55",
                 price: "₹55",
                 link: "terracotta-vase.html"
