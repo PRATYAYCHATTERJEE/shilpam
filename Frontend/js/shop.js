@@ -711,21 +711,21 @@ const craftCategories = {
         cards: [
             {
                 name: "Bags & Accessories",
-                image: "",
+                image: "assets/Madur/mad1.png",
                 category: "55",
                 price: "₹55",
                 link: "Dokra &  Art"
             },
             {
                 name: "Bags & Accessories",
-                image: "assets/Bags/bag2.png",
+                image: "assets/madur/mad2.png",
                 category: "555",
                 price: "₹55",
                 link: "kantha-bag.html"
             },
             {
                 name: "Bags & Accessories",
-                image: "assets/Bags/bag3.png",
+                image: "assets/madur/mad3.png",
                 category: "555",
                 price: "₹55",
                 link: "handwoven-bag.html"
