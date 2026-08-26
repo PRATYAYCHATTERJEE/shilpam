@@ -69,7 +69,7 @@ const craftCategories = {
             },
             {
                 name: "Home Décor",
-                image: "assets/categories/decor.jpg",
+                image: "assets/Madur/mad4.png",
                 category: "55",
                 price: "₹55",
                 link: "terracotta-vase.html"
