@@ -33,7 +33,7 @@ document.addEventListener("DOMContentLoaded", () => {
             name: "Maya Das",
             category: "bamboo",
             craft: "Bamboo Artisan",
-            location: "Shantiniketan, Birbhum",
+            location: " Birbhum",
             district: "birbhum",
             experience: 18,
             rating: 4.9,
