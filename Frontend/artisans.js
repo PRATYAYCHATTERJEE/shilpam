@@ -49,7 +49,7 @@ document.addEventListener("DOMContentLoaded", () => {
             name: "Haripada Saha",
             category: "dokhra",
             craft: "Dokra Artisan",
-            location: "Dariapur, Purulia",
+            location: "Purulia",
             district: "purulia",
             experience: 30,
             rating: 4.9,
