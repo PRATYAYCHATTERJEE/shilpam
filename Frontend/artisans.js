@@ -100,7 +100,7 @@ document.addEventListener("DOMContentLoaded", () => {
             location: " West Bengal",
             district: "mumbai",
             experience: 12,
-            rating: 4.7,
+            rating: 4.8,
             reviews: 95,
             description:
                 "Designing handcrafted jewellery inspired by tradition.",
