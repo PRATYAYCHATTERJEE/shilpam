@@ -777,7 +777,7 @@ const craftCategories = {
                 image: "assets/madur/mad10.png",
                 category: "55",
                 price: "₹55",
-                link: "Dokra & Metal Art"
+                link: "হাতের সূচিকর্ম "
             }
         ]
     }
