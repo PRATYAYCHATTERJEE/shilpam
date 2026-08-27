@@ -749,28 +749,28 @@ const craftCategories = {
                 image: "assets/madur/mad6.png",
                 category: "55",
                 price: "₹55",
-                link: "Dokra & Metal Art"
+                link: "হাতের সূচিকর্ম "
             },
              {
                 name: "Bags & Accessories",
                 image: "assets/madur/mad7.png",
                 category: "55",
                 price: "₹555",
-                link: "Dokra & Metal Art"
+                link: "হাতের সূচিকর্ম "
             },
              {
                 name: "Bags & Accessories",
                 image: "assets/madur/mad8.png",
                 category: "55",
                 price: "₹55",
-                link: "Dokra & Metal Art"
+                link: "হাতের সূচিকর্ম "
             },
              {
                 name: "Bags & Accessories",
                 image: "assets/madur/mad9.png",
                 category: "55",
                 price: "₹55",
-                link: "Dokra & Metal Art"
+                link: "হাতের সূচিকর্ম "
             },
              {
                 name: "Bags & Accessories",
