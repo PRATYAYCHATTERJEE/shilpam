@@ -64,7 +64,7 @@ const craftCategories = {
                  name: "Woodcraft",
                 image: "assets/Artworks/art1.png",
                 category: "55",
-                price: "₹554",
+                price: "₹55",
                 link: "terracotta-vase.html"
             },
             {
