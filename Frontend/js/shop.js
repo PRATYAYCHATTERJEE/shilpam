@@ -714,21 +714,21 @@ const craftCategories = {
                 image: "assets/Madur/mad1.png",
                 category: "55",
                 price: "₹55",
-                link: "Dokra &  Art"
+                link: "হাতের সূচিকর্ম "
             },
             {
                 name: "Bags & Accessories",
                 image: "assets/madur/mad2.png",
                 category: "555",
                 price: "₹55",
-                link: "kantha-bag.html"
+                link: "হাতের সূচিকর্ম "
             },
             {
                 name: "Bags & Accessories",
                 image: "assets/madur/mad3.png",
                 category: "555",
                 price: "₹55",
-                link: "handwoven-bag.html"
+                link: "হাতের সূচিকর্ম "
             },
             {
                 name: "Bags & Accessories",
