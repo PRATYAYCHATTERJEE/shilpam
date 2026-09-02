@@ -111,11 +111,11 @@ document.addEventListener("DOMContentLoaded", () => {
         {
             id: 7,
             name: "Lata Halder",
-            category: "bamboo",
+            category: "noooooo",
             craft: "Jute Artisan",
-            location: "Hooghly, West Bengal",
+            location: "Bardhaman, West Bengal",
             district: "hooghly",
-            experience: 1,
+            experience: 4,
             rating: 4.6,
             reviews: 7,
             description:
@@ -132,7 +132,7 @@ document.addEventListener("DOMContentLoaded", () => {
             location: "Pingla, Paschim Medinipur",
             district: "paschim medinipur",
             experience: 1,
-            rating: 4.0,
+            rating: 4.4,
             reviews: 110,
             description:
                 "Bringing Bengali folk art to life with vibrant colors.",
