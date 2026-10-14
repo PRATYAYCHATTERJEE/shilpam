@@ -10,11 +10,6 @@
 
 :root {
 
-    --artisan-paper: #f8f1e7;
-    --artisan-paper-light: #fffaf2;
-
-    --artisan-brown: #241710;
-    --artisan-brown-soft: #5b4030;
 
     --artisan-terracotta: #a84416;
     --artisan-terracotta-dark: #88350f;
@@ -62,17 +57,13 @@
 
     background:
 
-        radial-gradient(
-            circle at 20% 10%,
+        radial-gradient(circle at 20% 10%,
             rgba(183, 122, 58, .055),
-            transparent 28%
-        ),
+            transparent 28%),
 
-        radial-gradient(
-            circle at 85% 25%,
+        radial-gradient(circle at 85% 25%,
             rgba(168, 68, 22, .045),
-            transparent 25%
-        ),
+            transparent 25%),
 
         var(--artisan-paper);
 
@@ -103,10 +94,8 @@
 
     background-image:
 
-        radial-gradient(
-            rgba(83, 55, 37, .12) .5px,
-            transparent .5px
-        );
+        radial-gradient(rgba(83, 55, 37, .12) .5px,
+            transparent .5px);
 
     background-size: 6px 6px;
 
@@ -242,7 +231,7 @@
 
     font-weight: 600;
 
-    background: rgba(255,255,255,.38);
+    background: rgba(255, 255, 255, .38);
 
     transition: .25s ease;
 
@@ -346,9 +335,7 @@
 
     padding:
 
-        27px
-        20px
-        28px;
+        27px 20px 28px;
 
 }
 
@@ -495,11 +482,9 @@
 
     background:
 
-        linear-gradient(
-            135deg,
-            rgba(255,255,255,.48),
-            rgba(249,237,220,.55)
-        );
+        linear-gradient(135deg,
+            rgba(255, 255, 255, .48),
+            rgba(249, 237, 220, .55));
 
     border: 1px solid var(--artisan-border);
 
@@ -542,7 +527,7 @@
 
     border: 1px solid var(--artisan-border);
 
-    background: rgba(255,255,255,.36);
+    background: rgba(255, 255, 255, .36);
 
     color: var(--artisan-brown);
 
@@ -590,7 +575,7 @@
     border-color: var(--artisan-terracotta);
 
     box-shadow:
-        0 5px 12px rgba(168,68,22,.16);
+        0 5px 12px rgba(168, 68, 22, .16);
 
 }
 
@@ -624,19 +609,15 @@
 
     background:
 
-        linear-gradient(
-            45deg,
+        linear-gradient(45deg,
             transparent 50%,
-            var(--artisan-brown-soft) 50%
-        ) calc(100% - 16px) 15px / 6px 6px no-repeat,
+            var(--artisan-brown-soft) 50%) calc(100% - 16px) 15px / 6px 6px no-repeat,
 
-        linear-gradient(
-            135deg,
+        linear-gradient(135deg,
             var(--artisan-brown-soft) 50%,
-            transparent 50%
-        ) calc(100% - 12px) 15px / 6px 6px no-repeat,
+            transparent 50%) calc(100% - 12px) 15px / 6px 6px no-repeat,
 
-        rgba(255,255,255,.5);
+        rgba(255, 255, 255, .5);
 
     color: var(--artisan-brown);
 
@@ -686,18 +667,16 @@
     column-gap: 20px;
 
     background:
-        linear-gradient(
-            145deg,
-            rgba(255,253,247,.96),
-            rgba(250,243,232,.96)
-        );
+        linear-gradient(145deg,
+            rgba(255, 253, 247, .96),
+            rgba(250, 243, 232, .96));
 
-    border: 1px solid rgba(91,64,48,.12);
+    border: 1px solid rgba(91, 64, 48, .12);
 
     border-radius: 14px;
 
     box-shadow:
-        0 4px 13px rgba(76,44,23,.07);
+        0 4px 13px rgba(76, 44, 23, .07);
 
     overflow: hidden;
 
@@ -718,7 +697,7 @@
     transform: translateY(-3px);
 
     box-shadow:
-        0 12px 25px rgba(76,44,23,.12);
+        0 12px 25px rgba(76, 44, 23, .12);
 
 }
 
@@ -741,7 +720,7 @@
     border: 2px solid #fff;
 
     outline:
-        1px solid rgba(168,68,22,.35);
+        1px solid rgba(168, 68, 22, .35);
 
     background: #d8c4ad;
 
@@ -770,8 +749,7 @@
 }
 
 
-.artisan-card:hover
-.artisan-card-photo img {
+.artisan-card:hover .artisan-card-photo img {
 
     transform: scale(1.05);
 
@@ -990,7 +968,7 @@
     padding-top: 12px;
 
     border-top:
-        1px solid rgba(91,64,48,.12);
+        1px solid rgba(91, 64, 48, .12);
 
     display: flex;
 
@@ -1166,7 +1144,7 @@
         translateY(-2px);
 
     box-shadow:
-        0 5px 12px rgba(168,68,22,.20);
+        0 5px 12px rgba(168, 68, 22, .20);
 
 }
 
@@ -1363,48 +1341,42 @@
    CATEGORY COLOR VARIANTS
 ========================================================= */
 
-.artisan-card[data-category="bamboo"]
-.artisan-badge {
+.artisan-card[data-category="bamboo"] .artisan-badge {
 
     background: #dfe4c9;
 
 }
 
 
-.artisan-card[data-category="dokhra"]
-.artisan-badge {
+.artisan-card[data-category="dokhra"] .artisan-badge {
 
     background: #f1d8a9;
 
 }
 
 
-.artisan-card[data-category="textile"]
-.artisan-badge {
+.artisan-card[data-category="textile"] .artisan-badge {
 
     background: #ddd0e0;
 
 }
 
 
-.artisan-card[data-category="woodcraft"]
-.artisan-badge {
+.artisan-card[data-category="woodcraft"] .artisan-badge {
 
     background: #ead8bf;
 
 }
 
 
-.artisan-card[data-category="jewellery"]
-.artisan-badge {
+.artisan-card[data-category="jewellery"] .artisan-badge {
 
     background: #edc9cf;
 
 }
 
 
-.artisan-card[data-category="others"]
-.artisan-badge {
+.artisan-card[data-category="others"] .artisan-badge {
 
     background: #f3c48f;
 
@@ -1420,8 +1392,7 @@
     display: grid;
 
     grid-template-columns:
-        1.05fr
-        1.95fr;
+        1.05fr 1.95fr;
 
     border: 1px solid var(--artisan-border);
 
@@ -1429,11 +1400,9 @@
 
     background:
 
-        linear-gradient(
-            120deg,
+        linear-gradient(120deg,
             #fff5e8,
-            #f8e8d2
-        );
+            #f8e8d2);
 
     min-height: 95px;
 
@@ -1456,7 +1425,7 @@
 
     padding: 14px 25px;
 
-    border-right: 1px dashed rgba(168,68,22,.22);
+    border-right: 1px dashed rgba(168, 68, 22, .22);
 
 }
 
@@ -1547,7 +1516,7 @@
 
     padding: 10px;
 
-    border-left: 1px solid rgba(91,64,48,.14);
+    border-left: 1px solid rgba(91, 64, 48, .14);
 
     text-align: center;
 
@@ -1742,7 +1711,7 @@
 
         border-right: 0;
 
-        border-bottom: 1px dashed rgba(168,68,22,.22);
+        border-bottom: 1px dashed rgba(168, 68, 22, .22);
 
     }
 
@@ -1804,9 +1773,7 @@
 
         padding:
 
-            22px
-            12px
-            22px;
+            22px 12px 22px;
 
     }
 
