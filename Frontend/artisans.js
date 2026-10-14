@@ -14,7 +14,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
         {
             id: 1,
-            name: "Gopal Pal",
+            name: "Gopal Pala",
             category: "terracotta",
             craft: "Terracotta Artisan",
             location: "Bishnupur, Bankura",
@@ -49,9 +49,9 @@ document.addEventListener("DOMContentLoaded", () => {
             name: "Haripada Saha",
             category: "dokhra",
             craft: "Dokra Artisan",
-            location: "Purulia",
+            location: "Puruliaaaa",
             district: "purulia",
-            experience: 30,
+            experience: 303,
             rating: 4.9,
             reviews: 150,
             description:
@@ -69,7 +69,7 @@ document.addEventListener("DOMContentLoaded", () => {
             district: "murshidabad",
             experience: 1,
             rating: 4.8,
-            reviews: 102,
+            reviews: 30,
             description:
                 "Stitching stories with threads in every Kantha piece.",
             image: "images/artisans/sabita-roy.jpg"
