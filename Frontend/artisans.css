@@ -10,6 +10,11 @@
 
 :root {
 
+    --artisan-paper: #f8f1e7;
+    --artisan-paper-light: #fffaf2;
+
+    --artisan-brown: #241710;
+    --artisan-brown-soft: #5b4030;
 
     --artisan-terracotta: #a84416;
     --artisan-terracotta-dark: #88350f;
