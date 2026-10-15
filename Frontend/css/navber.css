@@ -27,17 +27,6 @@
    MOVING TRACK
 ========================================= */
 
-.announcement-track {
-    display: flex;
-
-    width: max-content;
-
-    flex-shrink: 0;
-
-    animation: announcementScroll 32s linear infinite;
-}
-
-
 /* =========================================
    ANNOUNCEMENT GROUP
 ========================================= */
