@@ -76,7 +76,20 @@ document.addEventListener("DOMContentLoaded", () => {
         },
 
 
-
+        {
+            id: 5,
+            name: " Mondal",
+            category: "woodcraft",
+            craft: "Woodcraft Artisan",
+            location: "Nadia, West Bengal",
+            district: "kolkata",
+            experience: 0,
+            rating: 4.7,
+            reviews: 80,
+            description:
+                "Turning wood into timeless handcrafted masterpieces.",
+            image: "images/artisans/rina-mondal.jpg"
+        },
 
 
         {
