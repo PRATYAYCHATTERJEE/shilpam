@@ -92,6 +92,20 @@ document.addEventListener("DOMContentLoaded", () => {
         },
 
 
+        {
+            id: 6,
+            name: "Purnima Karmakar",
+            category: "jewellery",
+            craft: "Jewellery Artisan",
+            location: " West Bengal",
+            district: "mumbai",
+            experience: 12,
+            rating: 4.8,
+            reviews: 95,
+            description:
+                "Designing handcrafted jewellery inspired by tradition.",
+            image: "images/artisans/purnima-karmakar.jpg"
+        },
 
 
         {
