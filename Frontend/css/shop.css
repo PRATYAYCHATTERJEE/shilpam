@@ -2,13 +2,7 @@
    SILPAM MAIN SHOP AREA
 ========================================= */
 
-.shop-main {
-    width: 100%;
 
-    padding: 20px 0 35px;
-
-    background: #f6ecdc;
-}
 
 
 /* =========================================
@@ -25,16 +19,12 @@
     padding: 26px 30px 35px;
 
     background:
-        radial-gradient(
-            circle at 20% 20%,
+        radial-gradient(circle at 20% 20%,
             rgba(173, 102, 54, 0.025) 1px,
-            transparent 1.5px
-        ),
-        radial-gradient(
-            circle at 80% 80%,
+            transparent 1.5px),
+        radial-gradient(circle at 80% 80%,
             rgba(173, 102, 54, 0.025) 1px,
-            transparent 1.5px
-        ),
+            transparent 1.5px),
         #fffaf1;
 
     background-size:
@@ -166,8 +156,7 @@
     gap: 15px;
 
     margin:
-        0 auto
-        24px;
+        0 auto 24px;
 }
 
 .section-heading h2 {
@@ -246,8 +235,7 @@
         rgba(139, 67, 38, 0.35);
 
     box-shadow:
-        0 12px 28px
-        rgba(83, 42, 24, 0.14);
+        0 12px 28px rgba(83, 42, 24, 0.14);
 }
 
 
@@ -285,8 +273,7 @@
 
 /* IMAGE HOVER */
 
-.craft-category-card:hover
-.craft-category-image img {
+.craft-category-card:hover .craft-category-image img {
     transform: scale(1.05);
 }
 
@@ -394,8 +381,7 @@
 
 /* EXPLORE HOVER */
 
-.craft-category-card:hover
-.craft-category-explore {
+.craft-category-card:hover .craft-category-explore {
 
     color: #7d321b;
 
@@ -571,6 +557,3 @@
         font-size: 9px;
     }
 }
-
-
-
