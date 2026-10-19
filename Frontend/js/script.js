@@ -6,7 +6,11 @@ document.addEventListener("DOMContentLoaded", () => {
 
     const intro = document.getElementById("intro");
 
+    /*
+        Time before opening screen disappears.
 
+        3000ms = 3 seconds
+    */
 
     const introDuration = 3200;
 
