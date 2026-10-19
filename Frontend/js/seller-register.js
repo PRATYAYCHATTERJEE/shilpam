@@ -1,3 +1,13 @@
+const step1 = document.getElementById("step1");
+const step2 = document.getElementById("step2");
+
+const indicator1 = document.getElementById("stepIndicator1");
+const indicator2 = document.getElementById("stepIndicator2");
+
+const backBtn = document.getElementById("backBtn");
+
+// Temporary seller account data
+let sellerAccountData = {};
 
 
 /* =========================================
