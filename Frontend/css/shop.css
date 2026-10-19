@@ -2,7 +2,13 @@
    SILPAM MAIN SHOP AREA
 ========================================= */
 
+.shop-main {
+    width: 100%;
 
+    padding: 20px 0 35px;
+
+    background: #f6ecdc;
+}
 
 
 /* =========================================
