@@ -12,14 +12,6 @@ document.addEventListener("DOMContentLoaded", () => {
 
 
     // Check if seller data exists
-    if (!sellerData) {
-
-        console.error(
-            "No seller data found in Local Storage."
-        );
-
-        return;
-    }
 
 
     // Convert JSON string into object
