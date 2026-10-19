@@ -6,11 +6,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     const intro = document.getElementById("intro");
 
-    /*
-        Time before opening screen disappears.
 
-        3000ms = 3 seconds
-    */
 
     const introDuration = 3200;
 
@@ -85,10 +81,10 @@ function moveHeroSlide(index) {
 
     if (index >= totalHeroSlides) {
         currentHeroSlide = 0;
-    } 
+    }
     else if (index < 0) {
         currentHeroSlide = totalHeroSlides - 1;
-    } 
+    }
     else {
         currentHeroSlide = index;
     }
