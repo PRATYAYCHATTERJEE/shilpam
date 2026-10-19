@@ -99,7 +99,7 @@ document.addEventListener("DOMContentLoaded", () => {
             craft: "Jewellery Artisan",
             location: " West Bengal",
             district: "mumbai",
-            experience: 11,
+            experience: 17,
             rating: 4.8,
             reviews: 95,
             description:
@@ -111,7 +111,7 @@ document.addEventListener("DOMContentLoaded", () => {
         {
             id: 7,
             name: "Lata Halder",
-            category: "noooooo",
+            category: "nooo",
             craft: "Jute Artisan",
             location: "Bardhaman, West Bengal",
             district: "hooghly",
