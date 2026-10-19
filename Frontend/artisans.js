@@ -99,7 +99,7 @@ document.addEventListener("DOMContentLoaded", () => {
             craft: "Jewellery Artisan",
             location: " West Bengal",
             district: "mumbai",
-            experience: 12,
+            experience: 11,
             rating: 4.8,
             reviews: 95,
             description:
