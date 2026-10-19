@@ -1,13 +1,3 @@
-const step1 = document.getElementById("step1");
-const step2 = document.getElementById("step2");
-
-const indicator1 = document.getElementById("stepIndicator1");
-const indicator2 = document.getElementById("stepIndicator2");
-
-const backBtn = document.getElementById("backBtn");
-
-// Temporary seller account data
-let sellerAccountData = {};
 
 
 /* =========================================
@@ -196,20 +186,20 @@ step2.addEventListener("submit", async function (e) {
 
 
         // Success
-            console.log(
-                "Seller registration successful:",data);
+        console.log(
+            "Seller registration successful:", data);
 
 
         // Save seller information
-            localStorage.setItem("seller", JSON.stringify(data.seller));
+        localStorage.setItem("seller", JSON.stringify(data.seller));
 
 
         // Success message
-            alert("Thank you! Your partnership request has been submitted successfully.");
+        alert("Thank you! Your partnership request has been submitted successfully.");
 
 
         // Redirect to seller dashboard
-            window.location.href = "seller-dashboard.html";
+        window.location.href = "seller-dashboard.html";
 
 
     } catch (error) {
