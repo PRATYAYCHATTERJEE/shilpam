@@ -129,7 +129,7 @@ document.addEventListener("DOMContentLoaded", () => {
             name: "Anjali Chitrakar",
             category: "others",
             craft: "Folk Art Artisan",
-            location: "Pingla, Paschim ",
+            location: "Pingla, Paschim Medinipur",
             district: "paschim medinipur",
             experience: 111,
             rating: 4.4,

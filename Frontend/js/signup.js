@@ -9,6 +9,8 @@ document.addEventListener("DOMContentLoaded", () => {
        PASSWORD
     ========================================= */
 
+
+
     const password =
         document.getElementById("password");
 
@@ -87,116 +89,116 @@ document.addEventListener("DOMContentLoaded", () => {
    SIGNUP FORM
 ========================================= */
 
-const signupForm =
-    document.getElementById("signupForm");
+    const signupForm =
+        document.getElementById("signupForm");
 
-if (signupForm) {
-    signupForm.addEventListener(
-        "submit",
-        async (event) => {
+    if (signupForm) {
+        signupForm.addEventListener(
+            "submit",
+            async (event) => {
 
-            event.preventDefault();
+                event.preventDefault();
 
-            const name =
-                document.getElementById("name").value.trim();
+                const name =
+                    document.getElementById("name").value.trim();
 
-            const email =
-                document.getElementById("email").value.trim();
+                const email =
+                    document.getElementById("email").value.trim();
 
-            const phone =
-                document.getElementById("phone").value.trim();
+                const phone =
+                    document.getElementById("phone").value.trim();
 
-            const passwordValue =
-                password.value;
+                const passwordValue =
+                    password.value;
 
-            const confirmPasswordValue =
-                confirmPassword.value;
-
-
-            /* =================================
-               PASSWORD MATCH
-            ================================= */
-
-            if (
-                passwordValue !==
-                confirmPasswordValue
-            ) {
-                alert("Passwords do not match.");
-                return;
-            }
-
-
-            /* =================================
-               BASIC PASSWORD CHECK
-            ================================= */
-
-            if (passwordValue.length < 6) {
-                alert(
-                    "Password must contain at least 6 characters."
-                );
-                return;
-            }
-
-
-            /* =================================
-               SEND DATA TO BACKEND
-            ================================= */
-
-            try {
-
-                const response = await fetch(
-                    "http://localhost:5000/api/auth/register",
-                    {
-                        method: "POST",
-
-                        headers: {
-                            "Content-Type": "application/json"
-                        },
-
-                        body: JSON.stringify({
-                            name: name,
-                            email: email,
-                            phone: phone,
-                            password: passwordValue
-                        })
-                    }
-                );
-
-
-                const data = await response.json();
+                const confirmPasswordValue =
+                    confirmPassword.value;
 
 
                 /* =================================
-                   HANDLE RESPONSE
+                   PASSWORD MATCH
                 ================================= */
 
-                if (!response.ok) {
-
-                    alert(data.message || "Registration failed.");
-
+                if (
+                    passwordValue !==
+                    confirmPasswordValue
+                ) {
+                    alert("Passwords do not match.");
                     return;
                 }
 
 
-                alert("Account created successfully!");
+                /* =================================
+                   BASIC PASSWORD CHECK
+                ================================= */
 
-                // Go to login page
-                window.location.href = "login.html";
+                if (passwordValue.length < 6) {
+                    alert(
+                        "Password must contain at least 6 characters."
+                    );
+                    return;
+                }
 
 
-            } catch (error) {
+                /* =================================
+                   SEND DATA TO BACKEND
+                ================================= */
 
-                console.error(
-                    "Registration error:",
-                    error
-                );
+                try {
 
-                alert(
-                    "Unable to connect to the server. Please try again."
-                );
+                    const response = await fetch(
+                        "http://localhost:5000/api/auth/register",
+                        {
+                            method: "POST",
+
+                            headers: {
+                                "Content-Type": "application/json"
+                            },
+
+                            body: JSON.stringify({
+                                name: name,
+                                email: email,
+                                phone: phone,
+                                password: passwordValue
+                            })
+                        }
+                    );
+
+
+                    const data = await response.json();
+
+
+                    /* =================================
+                       HANDLE RESPONSE
+                    ================================= */
+
+                    if (!response.ok) {
+
+                        alert(data.message || "Registration failed.");
+
+                        return;
+                    }
+
+
+                    alert("Account created successfully!");
+
+                    // Go to login page
+                    window.location.href = "login.html";
+
+
+                } catch (error) {
+
+                    console.error(
+                        "Registration error:",
+                        error
+                    );
+
+                    alert(
+                        "Unable to connect to the server. Please try again."
+                    );
+                }
             }
-        }
-    );
-}
+        );
+    }
 
 });
