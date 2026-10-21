@@ -86,7 +86,7 @@ const craftCategories = {
                 name: "Sowpeace Terracotta Kathakali Horse",
                 image: "assets/Terracotta/terra1.png    ",
                 category: "Terracotta",
-                price: "₹650",
+                price: "₹6",
                 link: "terracotta-vase.html"
             },
             {
