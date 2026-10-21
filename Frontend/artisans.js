@@ -116,7 +116,7 @@ document.addEventListener("DOMContentLoaded", () => {
             location: "Bardhaman, West Bengal",
             district: "hooghly",
             experience: 4,
-            rating: 4.6,
+            rating: 4.7,
             reviews: 7,
             description:
                 "Eco-friendly jute creations for a better tomorrow.",
