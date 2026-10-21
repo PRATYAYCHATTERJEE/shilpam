@@ -131,7 +131,7 @@ document.addEventListener("DOMContentLoaded", () => {
             craft: "Folk Art Artisan",
             location: "Pingla, Paschim Medinipur",
             district: "paschim medinipur",
-            experience: 111,
+            experience: 11,
             rating: 4.4,
             reviews: 110,
             description:
