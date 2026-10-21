@@ -138,10 +138,9 @@ document.addEventListener(
                     if (text) {
 
                         text.textContent =
-                            `${files.length} photo${
-                                files.length > 1
-                                    ? "s"
-                                    : ""
+                            `${files.length} photo${files.length > 1
+                                ? "s"
+                                : ""
                             } selected`;
 
                     }
@@ -210,10 +209,9 @@ document.addEventListener(
                         if (text) {
 
                             text.textContent =
-                                `${files.length} photo${
-                                    files.length > 1
-                                        ? "s"
-                                        : ""
+                                `${files.length} photo${files.length > 1
+                                    ? "s"
+                                    : ""
                                 } selected`;
 
                         }
