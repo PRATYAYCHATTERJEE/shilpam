@@ -5,19 +5,19 @@ const craftCategories = {
 
         cards: [
             {
-    name: "Terracotta Vase",
-    image: "assets/Bamboo/bamboo1.png",
-    category: "Terracotta",
-    price: "₹899",
-    link: "terracotta-vase.html"
-},
-             {
-    name: "Terracotta Vase",
-    image: "assets/Terracotta/terra1.png",
-    category: "Terracotta",
-    price: "₹899",
-    link: "terracotta-vase.html"
-},
+                name: "Terracotta Vase",
+                image: "assets/Bamboo/bamboo1.png",
+                category: "Terracotta",
+                price: "₹89",
+                link: "terracotta-vase.html"
+            },
+            {
+                name: "Terracotta Vase",
+                image: "assets/Terracotta/terra1.png",
+                category: "Terracotta",
+                price: "₹899",
+                link: "terracotta-vase.html"
+            },
             {
                 name: "Kantha & Textiles",
                 image: "assets/Jwellary/jwellary1.png",
@@ -32,13 +32,13 @@ const craftCategories = {
                 price: "₹55",
                 link: "terracotta-vase.html"
             },
-             {
-    name: "Terracotta Vase",
-    image: "assets/dokra/dok3.png",
-    category: "Terracotta",
-    price: "₹899",
-    link: "terracotta-vase.html"
-},
+            {
+                name: "Terracotta Vase",
+                image: "assets/dokra/dok3.png",
+                category: "Terracotta",
+                price: "₹899",
+                link: "terracotta-vase.html"
+            },
             {
                 name: "Kantha & Textiles",
                 image: "assets/woodcraft/wood8.jpeg",
@@ -46,22 +46,22 @@ const craftCategories = {
                 price: "₹55",
                 link: "terracotta-vase.html"
             },
-             { 
-    name: "Terracotta Vase",
-    image: "assets/Terracotta/terra9.png",
-    category: "Terracotta",
-    price: "₹899",
-    link: "terracotta-vase.html"
-},
-             {
-    name: "Terracotta Vase",
-    image: "assets/Bags/bag1.png",
-    category: "Terracotta",
-    price: "₹899",
-    link: "terracotta-vase.html"
-},
             {
-                 name: "Woodcraft",
+                name: "Terracotta Vase",
+                image: "assets/Terracotta/terra9.png",
+                category: "Terracotta",
+                price: "₹899",
+                link: "terracotta-vase.html"
+            },
+            {
+                name: "Terracotta Vase",
+                image: "assets/Bags/bag1.png",
+                category: "Terracotta",
+                price: "₹899",
+                link: "terracotta-vase.html"
+            },
+            {
+                name: "Woodcraft",
                 image: "assets/Artworks/art1.png",
                 category: "55",
                 price: "₹55",
@@ -82,13 +82,13 @@ const craftCategories = {
         title: "Terracotta Crafts",
 
         cards: [
-             {
-    name: "Sowpeace Terracotta Kathakali Horse",
-    image: "assets/Terracotta/terra1.png    ",
-    category: "Terracotta",
-    price: "₹650",
-    link: "terracotta-vase.html"
-},
+            {
+                name: "Sowpeace Terracotta Kathakali Horse",
+                image: "assets/Terracotta/terra1.png    ",
+                category: "Terracotta",
+                price: "₹650",
+                link: "terracotta-vase.html"
+            },
             {
                 name: "Sowpeace Terracotta Large Durga",
                 image: "assets/Terracotta/terra2.png",
@@ -97,7 +97,7 @@ const craftCategories = {
                 link: "terracotta-vase.html"
             },
             {
-                 name: "Frog & Butterflay Terracotta Fountain",
+                name: "Frog & Butterflay Terracotta Fountain",
                 image: "assets/Terracotta/terra3.png",
                 category: "55",
                 price: "₹2399",
@@ -110,13 +110,13 @@ const craftCategories = {
                 price: "₹650",
                 link: "terracotta-vase.html"
             },
-             {
-    name: "Terracotta Clay Diya Set – Handmade Pranati (6 pcs)",
-    image: "assets/Terracotta/terra5.png",
-    category: "Terracotta",
-    price: "₹120",
-    link: "terracotta-vase.html"
-},
+            {
+                name: "Terracotta Clay Diya Set – Handmade Pranati (6 pcs)",
+                image: "assets/Terracotta/terra5.png",
+                category: "Terracotta",
+                price: "₹120",
+                link: "terracotta-vase.html"
+            },
             {
                 name: "Claysip Terracotta Tea Cup (160 mL Each) - Set of Six",
                 image: "assets/Terracotta/terra6.png",
@@ -125,12 +125,12 @@ const craftCategories = {
                 link: "terracotta-vase.html"
             },
             {
-                 name: "Wind Chimes",
-    image: "assets/Terracotta/terra7.png",
-    category: "Terracotta",
-    price: "₹899",
-    link: "terracotta-vase.html"
-},
+                name: "Wind Chimes",
+                image: "assets/Terracotta/terra7.png",
+                category: "Terracotta",
+                price: "₹899",
+                link: "terracotta-vase.html"
+            },
             {
                 name: "Handmade Outdoor Glow - Clayelle Terracotta Lamp",
                 image: "assets/Terracotta/terra8.png",
@@ -148,11 +148,11 @@ const craftCategories = {
             {
                 name: " Handmade Terracotta Water Bottle 1 Litre",
                 image: "assets/Terracotta/terra10.png",
-                 category: "55",
+                category: "55",
                 price: "₹299",
                 link: "terracotta-vase.html"
             },
-            
+
         ]
     },
 
@@ -175,62 +175,62 @@ const craftCategories = {
                 price: "₹55",
                 link: "terracotta-vase.html"
             },
-             {
-    name: "artworks & Paintings",
-    image: "assets/Artworks/art3.png",
-    category: "Artworks",
-    price: "₹899",
-    link: "terracotta-vase.html"
-}, {
-    name: "artworks & Paintings",
-    image: "assets/Artworks/art4.png",
-    category: "Artworks",
-    price: "₹899",
-    link: "terracotta-vase.html"
-},
-             {
-    name: "artworks & Paintings",
-    image: "assets/Artworks/art5.png",
-    category: "Artworks",
-    price: "₹899",
-    link: "terracotta-vase.html"
-},  
-{
-    name: "artworks & Paintings",
-    image: "assets/Artworks/art6.png",
-    category: "Artworks",
-    price: "₹899",
-    link: "terracotta-vase.html"
-},
-{
-    name: "artworks & Paintings",
-    image: "assets/Artworks/art7.png",
-    category: "Artworks",
-    price: "₹899",
-    link: "terracotta-vase.html"
-},
-{
-    name: "artworks & Paintings",
-    image: "assets/Artworks/art8.png",
-    category: "Artworks",
-    price: "₹899",
-    link: "terracotta-vase.html"
-},
-{
-    name: "artworks & Paintings",
-    image: "assets/Artworks/art9.png",
-    category: "Artworks",
-    price: "₹899",
-    link: "terracotta-vase.html"
-},
-{
-    name: "artworks & Paintings",
-    image: "assets/Artworks/art10.png",
-    category: "Artworks",
-    price: "₹899",
-    link: "terracotta-vase.html"
-},
- 
+            {
+                name: "artworks & Paintings",
+                image: "assets/Artworks/art3.png",
+                category: "Artworks",
+                price: "₹899",
+                link: "terracotta-vase.html"
+            }, {
+                name: "artworks & Paintings",
+                image: "assets/Artworks/art4.png",
+                category: "Artworks",
+                price: "₹899",
+                link: "terracotta-vase.html"
+            },
+            {
+                name: "artworks & Paintings",
+                image: "assets/Artworks/art5.png",
+                category: "Artworks",
+                price: "₹899",
+                link: "terracotta-vase.html"
+            },
+            {
+                name: "artworks & Paintings",
+                image: "assets/Artworks/art6.png",
+                category: "Artworks",
+                price: "₹899",
+                link: "terracotta-vase.html"
+            },
+            {
+                name: "artworks & Paintings",
+                image: "assets/Artworks/art7.png",
+                category: "Artworks",
+                price: "₹899",
+                link: "terracotta-vase.html"
+            },
+            {
+                name: "artworks & Paintings",
+                image: "assets/Artworks/art8.png",
+                category: "Artworks",
+                price: "₹899",
+                link: "terracotta-vase.html"
+            },
+            {
+                name: "artworks & Paintings",
+                image: "assets/Artworks/art9.png",
+                category: "Artworks",
+                price: "₹899",
+                link: "terracotta-vase.html"
+            },
+            {
+                name: "artworks & Paintings",
+                image: "assets/Artworks/art10.png",
+                category: "Artworks",
+                price: "₹899",
+                link: "terracotta-vase.html"
+            },
+
         ]
     },
 
@@ -239,10 +239,10 @@ const craftCategories = {
         title: "Bamboo & Cane Crafts",
 
         cards: [
-           {
+            {
                 name: "Handmade Bamboo Basket",
                 image: "assets/bamboo/bamboo1.png",
-                 category: "bamboo",
+                category: "bamboo",
                 price: "₹55",
                 link: "terracotta-vase.html"
             },
@@ -281,7 +281,7 @@ const craftCategories = {
                 price: "₹55",
                 link: "terracotta-vase.html"
             },
-           
+
             {
                 name: "Bamboo Furniture",
                 image: "assets/bamboo/bamboo7.png",
@@ -289,7 +289,7 @@ const craftCategories = {
                 price: "₹55",
                 link: "terracotta-vase.html"
             },
-            
+
             {
                 name: "Bamboo Décor",
                 image: "assets/bamboo/bamboo8.png",
@@ -300,7 +300,7 @@ const craftCategories = {
             {
                 name: "Clay Lamps",
                 image: "assets/bamboo/bamboo9.png",
-                 category: "55",
+                category: "55",
                 price: "₹55",
                 link: "terracotta-vase.html"
             },
@@ -325,7 +325,7 @@ const craftCategories = {
                 category: "55",
                 price: "₹55",
                 link: "Dokra & Metal Art"
-                
+
             },
             {
                 name: "Sowpeace Handcrafted Dhokra Art Deer Sitting Brass Showpiece,Tabletop Home Decor For Living Room.",
@@ -557,7 +557,7 @@ const craftCategories = {
             {
                 name: "Traditional Jewellery",
                 image: "assets/Jwellary/jwellary1.png",
-                 category: "55",
+                category: "55",
                 price: "₹55",
                 link: "terracotta-vase.html"
             },
@@ -582,45 +582,45 @@ const craftCategories = {
                 price: "₹55",
                 link: "terracotta-vase.html"
             },
-             {
+            {
                 name: "Traditional Jewellery",
                 image: "assets/Jwellary/jwellary5.png",
-                 category: "55",
+                category: "55",
                 price: "₹55",
                 link: "terracotta-vase.html"
             },
-             {
+            {
                 name: "Traditional Jewellery",
                 image: "assets/Jwellary/jwellary6.png",
-                 category: "55",
+                category: "55",
                 price: "₹55",
                 link: "terracotta-vase.html"
             },
-             {
+            {
                 name: "Traditional Jewellery",
                 image: "assets/Jwellary/jwellary7.png",
-                 category: "55",
+                category: "55",
                 price: "₹55",
                 link: "terracotta-vase.html"
             },
-             {
+            {
                 name: "Traditional Jewellery",
                 image: "assets/Jwellary/jwellary8.png",
-                 category: "55",
+                category: "55",
                 price: "₹55",
                 link: "terracotta-vase.html"
             },
-             {
+            {
                 name: "Traditional Jewellery",
                 image: "assets/Jwellary/jwellary9.png",
-                 category: "55",
+                category: "55",
                 price: "₹55",
                 link: "terracotta-vase.html"
             },
-             {
+            {
                 name: "Traditional Jewellery",
                 image: "assets/Jwellary/jwellary10.png",
-                 category: "55",
+                category: "55",
                 price: "₹55",
                 link: "terracotta-vase.html"
             }
@@ -658,44 +658,44 @@ const craftCategories = {
                 image: "assets/Bags/bag4.png",
                 category: "55",
                 price: "₹55",
-                link: "traditional-bags.html"  
+                link: "traditional-bags.html"
             },
-             {
+            {
                 name: "Bags & Accessories",
                 image: "assets/Bags/bag5.png",
                 category: "55",
                 price: "₹55",
                 link: "Dokra & Metal Art"
             },
-             {
+            {
                 name: "Bags & Accessories",
                 image: "assets/Bags/bag6.jpeg",
                 category: "55",
                 price: "₹55",
                 link: "Dokra & Metal Art"
             },
-             {
+            {
                 name: "Bags & Accessories",
                 image: "assets/Bags/bag7.png",
                 category: "55",
                 price: "₹55",
                 link: "Dokra & Metal Art"
             },
-             {
+            {
                 name: "Bags & Accessories",
                 image: "assets/Bags/bag8.png",
                 category: "55",
                 price: "₹55",
                 link: "Dokra & Metal Art"
             },
-             {
+            {
                 name: "Bags & Accessories",
                 image: "assets/Bags/bag9.png",
                 category: "55",
                 price: "₹55",
                 link: "Dokra & Metal Art"
             },
-             {
+            {
                 name: "Bags & Accessories",
                 image: "assets/Bags/bag10.png",
                 category: "55",
@@ -737,42 +737,42 @@ const craftCategories = {
                 price: "₹55",
                 link: "হাতের সূচিকর্ম "
             },
-             {
+            {
                 name: "Bags & Accessories",
                 image: "assets/madur/mad5.png",
                 category: "55",
                 price: "₹55",
                 link: "হাতের সূচিকর্ম "
             },
-             {
+            {
                 name: "Bags & Accessories",
                 image: "assets/madur/mad6.png",
                 category: "55",
                 price: "₹55",
                 link: "হাতের সূচিকর্ম "
             },
-             {
+            {
                 name: "Bags & Accessories",
                 image: "assets/madur/mad7.png",
                 category: "55",
                 price: "₹555",
                 link: "হাতের সূচিকর্ম "
             },
-             {
+            {
                 name: "Bags & Accessories",
                 image: "assets/madur/mad8.png",
                 category: "55",
                 price: "₹55",
                 link: "হাতের সূচিকর্ম "
             },
-             {
+            {
                 name: "Bags & Accessories",
                 image: "assets/madur/mad9.png",
                 category: "55",
                 price: "₹55",
                 link: "হাতের সূচিকর্ম "
             },
-             {
+            {
                 name: "Bags & Accessories",
                 image: "assets/madur/mad10.png",
                 category: "55",
