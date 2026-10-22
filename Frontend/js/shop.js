@@ -162,7 +162,11 @@ const craftCategories = {
 
         cards: [
             {
-
+                name: "artworks & Paintings",
+                image: "assets/Artworks/art1.png",
+                category: "55",
+                price: "₹55",
+                link: "terracotta-vase.html"
             },
             {
                 name: "artworks & Paintings",
