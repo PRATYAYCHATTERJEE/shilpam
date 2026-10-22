@@ -93,7 +93,7 @@ const craftCategories = {
                 name: "Sowpeace Terracotta Large Durga",
                 image: "assets/Terracotta/terra2.png",
                 category: "55",
-                price: "₹1799",
+                price: "₹199",
                 link: "terracotta-vase.html"
             },
             {
