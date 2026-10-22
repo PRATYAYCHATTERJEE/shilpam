@@ -119,6 +119,19 @@
 
     z-index: 20;
 
+    width: min(1450px, 94%);
+
+    height: 82px;
+
+    margin: auto;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    border-bottom: 1px solid var(--artisan-border);
 
 }
 
