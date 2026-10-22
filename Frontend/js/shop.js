@@ -100,7 +100,7 @@ const craftCategories = {
                 name: "Frog & Butterflay Terracotta Fountain",
                 image: "assets/Terracotta/terra3.png",
                 category: "55",
-                price: "₹99",
+                price: "₹9",
                 link: "terracotta-vase.html"
             },
             {
