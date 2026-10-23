@@ -83,7 +83,7 @@ document.addEventListener("DOMContentLoaded", () => {
             craft: "Woodcraft Artisan",
             location: "Nadia, West Bengal",
             district: "kolkata",
-            experience: 0,
+            experience: 9,
             rating: 4.7,
             reviews: 70,
             description:
