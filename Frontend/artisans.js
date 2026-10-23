@@ -115,7 +115,7 @@ document.addEventListener("DOMContentLoaded", () => {
             craft: "Jute Artisan",
             location: "Bardhaman, West Bengal",
             district: "hooghly",
-            experience: 8,
+            experience: 7,
             rating: 4.7,
             reviews: 7,
             description:
