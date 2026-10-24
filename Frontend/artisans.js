@@ -101,7 +101,7 @@ document.addEventListener("DOMContentLoaded", () => {
             district: "mumbai",
             experience: 17,
             rating: 4.8,
-            reviews: 95,
+            reviews: 90,
             description:
                 "Designing handcrafted jewellery inspired by tradition.",
             image: "images/artisans/purnima-karmakar.jpg"
