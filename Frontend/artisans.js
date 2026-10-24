@@ -85,7 +85,7 @@ document.addEventListener("DOMContentLoaded", () => {
             district: "kolkata",
             experience: 9,
             rating: 4.3,
-            reviews: 70,
+            reviews: 60,
             description:
                 "Turning wood into timeless handcrafted masterpieces.",
             image: "images/artisans/rina-mondal.jpg"
