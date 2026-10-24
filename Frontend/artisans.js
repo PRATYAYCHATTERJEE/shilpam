@@ -84,7 +84,7 @@ document.addEventListener("DOMContentLoaded", () => {
             location: "Nadia, West Bengal",
             district: "kolkata",
             experience: 9,
-            rating: 4.8,
+            rating: 4.3,
             reviews: 70,
             description:
                 "Turning wood into timeless handcrafted masterpieces.",
